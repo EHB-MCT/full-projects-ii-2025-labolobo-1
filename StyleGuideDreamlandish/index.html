@@ -3,37 +3,70 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./styles.css" />
 		<link href="./reset.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="./styles.css" />
 		<script type="module" src="./index.js" defer></script>
 		<title>Styleguide "Dreamlandish"</title>
 	</head>
 	<body>
-		<section>
+		<div class="colorMode">
+			<button id="modeButton" type="button">
+				<span id="innerCircle"></span>
+				<span id="circle"></span>
+			</button>
+		</div>
+
+		<section class="divider">
 			<h1>Typography</h1>
-			<h1>Heading 1</h1>
-			<h2>Heading 2</h2>
-			<h3>Heading 3</h3>
-			<p
-				>Paragraph text. <strong>Bold</strong>, <em>Italic</em>,
-				<a href="#">Link</a></p
-			>
+			<h1>h1: Bebas Neue (Black) 50px</h1>
+			<h2>h2: Bebas Neue (Bold) 28px</h2>
+			<h3>h3: Bebas Neue (Bold) 18px</h3>
+			<p>
+				p: Open Sans (Regular) 12px <br /><strong>Bold</strong>,
+				<br /><em>Italic</em>, <br /><a class="link" href="#">Link</a>
+			</p>
 			<blockquote>Blockquote text.</blockquote>
 			<code>Inline code</code>
 			<pre><code>Preformatted block</code></pre>
 		</section>
-
-		<section>
+		<section class="divider">
+			<h4>Colors</h4>
+			<div class="color-container">
+				<div class="color" id="color1"> </div>
+				<div class="color" id="color2"> </div>
+				<div class="color" id="color3"> </div>
+				<div class="color" id="color4"> </div>
+				<div class="color" id="color5"> </div>
+				<div class="color" id="color6"> </div>
+			</div>
+			<div class="hexcodes">
+				<p>#5F12E6</p>
+				<p>#12E63A</p>
+				<p>#E68312</p>
+				<p>#91693C</p>
+				<p>#4B3B66</p>
+				<p>#3B6643</p>
+			</div>
+		</section>
+		<section class="divider">
 			<h1>Buttons</h1>
-			<button class="primary active">Primary Active</button>
-			<button class="primary hover">Primary Hover</button>
-			<button class="primary inactive">Primary Inactive</button>
-			<button class="secondary active">Secondary Active</button>
-			<button class="secondary hover">Secondary Hover</button>
-			<button class="secondary inactive">Secondary Inactive</button>
+			<button id="mainActive" class="main buttons">
+				Primary Active
+			</button>
+			<button id="mainHover" class="main buttons"> Primary Hover </button>
+			<button id="mainInactive" class="main buttons">
+				Primary Inactive
+			</button>
+			<button id="ctaActive" class="cta buttons">
+				Secondary Active
+			</button>
+			<button id="ctaHover" class="cta buttons"> Secondary Hover </button>
+			<button id="ctaInactive" class="cta buttons">
+				Secondary Inactive
+			</button>
 		</section>
 
-		<section>
+		<section class="divider">
 			<h1>Forms</h1>
 			<form>
 				<label for="text">Text Input</label>
@@ -58,7 +91,7 @@
 			</form>
 		</section>
 
-		<section>
+		<section class="divider">
 			<h1>Lists</h1>
 			<ul>
 				<li>Unordered item</li>
@@ -74,7 +107,7 @@
 			</dl>
 		</section>
 
-		<section>
+		<section class="divider">
 			<h1>Tables</h1>
 			<table border="1">
 				<thead>
@@ -87,7 +120,7 @@
 			</table>
 		</section>
 
-		<section>
+		<section class="divider">
 			<h1>Grid</h1>
 			<div
 				style="
@@ -100,48 +133,5 @@
 				<div>Grid Item 3</div>
 			</div>
 		</section>
-		<div class="colorMode">
-			<button id="modeButton" type="button">
-				<span id="innerCircle"></span>
-				<span id="circle"></span>
-			</button>
-		</div>
-		<h4>Text Style</h4>
-		<h1>h1: Bebas Neue (Black) 50px</h1>
-		<h2>h2: Bebas Neue (Bold) 28px</h2>
-		<h3>h3: Bebas Neue (Bold) 18px</h3>
-		<p>p: Open Sans (Regular) 12px</p>
-		<hr class="rounded" />
-		<h4>Colors</h4>
-		<div class="color-container">
-			<div class="color" id="color1"> </div>
-			<div class="color" id="color2"> </div>
-			<div class="color" id="color3"> </div>
-			<div class="color" id="color4"> </div>
-			<div class="color" id="color5"> </div>
-			<div class="color" id="color6"> </div>
-		</div>
-		<div class="hexcodes">
-			<p>#5F12E6</p>
-			<p>#12E63A</p>
-			<p>#E68312</p>
-			<p>#91693C</p>
-			<p>#4B3B66</p>
-			<p>#3B6643</p>
-		</div>
-		<hr class="rounded" />
-		<h4>Buttons</h4>
-		<div class="button-container">
-			<button class="call-to-action" id="buttons"
-				>This is a CTA button</button
-			>
-			<button class="casual" id="buttons">This is a normal button</button>
-			<button class="header-inactive" id="buttons"
-				>This is an inactive header</button
-			>
-			<button class="header-active" id="buttons"
-				>This is an active header</button
-			>
-		</div>
 	</body>
 </html>
