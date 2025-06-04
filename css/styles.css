@@ -1,194 +1,204 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
-.color-container {
-  display: flex;
-}
-
-h4 {
-  font-family: "Bebas Neue", sans-serif;
-  color: #282828;
-  text-decoration: underline;
-  font-size: 25px;
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
-
-.call-to-action {
-  width: 200px;
-  height: 60px;
-  padding: 15px;
-  background-color: #0b0835;
-  border: 2px solid #f28a0f;
-  border-radius: 10px;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 18px;
-  color: #ffe7bd;
-}
-
-.call-to-action:hover {
-  background-color: #f28a0f;
-  border: 2px solid #ffe7bd;
-  color: #0b0835;
-  transition: 0.1s;
-}
-
-.casual {
-  padding: 15px;
-  width: 200px;
-  height: 60px;
-  padding: 15px;
-  background-color: #0b0835;
-  border: none;
-  border-radius: 30px;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 18px;
-  color: #3f8a8c;
-}
-
-.casual:hover {
-  padding: 15px;
-  width: 200px;
-  height: 60px;
-  padding: 15px;
-  border: 2px solid #0b0835;
-  background-color: #3f8a8c;
-  border-radius: 30px;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 18px;
-  color: #0b0835;
-  transition: 0.1s;
-}
-
-.header-inactive {
-  padding: 15px;
-  width: 200px;
-  height: 60px;
-  padding: 15px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-color: black;
-  border: none;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 18px;
-  color: #ffe7bd;
-}
-
-.header-inactive:hover {
-  padding: 15px;
-  width: 200px;
-  height: 60px;
-  padding: 15px;
-  background-color: #ffe7bd;
-  border: none;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 18px;
-  color: black;
-  transition: 0.1s;
-}
-
-.header-active {
-  padding: 15px;
-  width: 200px;
-  height: 60px;
-  padding: 15px;
-  background-color: #d6cbb6;
-  border-width: 3px 1px 0px 1px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 18px;
-  color: black;
-}
-
-.button-container {
-  display: flex;
-}
-
-.buttons {
-  margin-right: 30px;
-}
-
-.hexcodes {
-  display: flex;
-}
-
-.hexcodes p {
-  margin-right: 30px;
-  margin-left: 30px;
-}
-
-.color {
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-  margin: 5px;
-  flex-direction: row;
-}
-
-#color1 {
-  background-color: #3f8a8c;
-}
-
-#color2 {
-  background-color: #0c5679;
-}
-
-#color3 {
-  background-color: #0b0835;
-}
-
-#color4 {
-  background-color: #e5340b;
-}
-
-#color5 {
-  background-color: #f28a0f;
-}
-
-#color6 {
-  background-color: #ffe7bd;
-}
-
-body {
-  margin: 50px;
-  background-color: #d6cbb6;
-}
+/* Text */
 
 h1 {
-  color: #282828;
-  font-size: 50px;
-  font-weight: bolder;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-family: "Bebas Neue", "black", sans-serif;
+	color: #282828;
+	font-size: 50px;
+	font-weight: bolder;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: "Bebas Neue", "black", sans-serif;
 }
 
 h2 {
-  color: #282828;
-  font-size: 28px;
-  font-weight: bold;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-family: "Bebas Neue", "bold", sans-serif;
+	color: #282828;
+	font-size: 28px;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: "Bebas Neue", "bold", sans-serif;
 }
 
 h3 {
-  color: #282828;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: "Bebas Neue", "bold", sans-serif;
+	color: #282828;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "Bebas Neue", "bold", sans-serif;
 }
 
 p {
-  color: #282828;
-  font-size: 12px;
-  font-family: "Open Sans", "regular", sans-serif;
+	color: #282828;
+	font-size: 12px;
+	font-family: "Open Sans", "regular", sans-serif;
+}
+
+/* Buttons */
+
+.call-to-action {
+	width: 200px;
+	height: 60px;
+	padding: 15px;
+	background-color: #0b0835;
+	border: 2px solid #f28a0f;
+	border-radius: 10px;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 18px;
+	color: #ffe7bd;
+}
+
+.call-to-action:hover {
+	background-color: #f28a0f;
+	border: 2px solid #ffe7bd;
+	color: #0b0835;
+	transition: 0.1s;
+}
+
+.casual {
+	padding: 15px;
+	width: 200px;
+	height: 60px;
+	padding: 15px;
+	background-color: #0b0835;
+	border: none;
+	border-radius: 30px;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 18px;
+	color: #3f8a8c;
+}
+
+.casual:hover {
+	padding: 15px;
+	width: 200px;
+	height: 60px;
+	padding: 15px;
+	border: 2px solid #0b0835;
+	background-color: #3f8a8c;
+	border-radius: 30px;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 18px;
+	color: #0b0835;
+	transition: 0.1s;
+}
+
+.header-inactive {
+	padding: 15px;
+	width: 200px;
+	height: 60px;
+	padding: 15px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: black;
+	border: none;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 18px;
+	color: #ffe7bd;
+}
+
+.header-inactive:hover {
+	padding: 15px;
+	width: 200px;
+	height: 60px;
+	padding: 15px;
+	background-color: #ffe7bd;
+	border: none;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 18px;
+	color: black;
+	transition: 0.1s;
+}
+
+.header-active {
+	padding: 15px;
+	width: 200px;
+	height: 60px;
+	padding: 15px;
+	background-color: #d6cbb6;
+	border-width: 3px 1px 0px 1px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 18px;
+	color: black;
+}
+
+.button-container {
+	display: flex;
+}
+
+.buttons {
+	margin-right: 30px;
+}
+
+/* Colors */
+
+.color-container {
+	display: flex;
+}
+
+.hexcodes {
+	display: flex;
+}
+
+.hexcodes p {
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+.color {
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	margin: 5px;
+	flex-direction: row;
+}
+
+#color1 {
+	background-color: #3f8a8c;
+}
+
+#color2 {
+	background-color: #0c5679;
+}
+
+#color3 {
+	background-color: #0b0835;
+}
+
+#color4 {
+	background-color: #e5340b;
+}
+
+#color5 {
+	background-color: #f28a0f;
+}
+
+#color6 {
+	background-color: #ffe7bd;
+}
+
+/* General Styling */
+
+body {
+	margin: 50px;
+	background-color: #d6cbb6;
 }
 
 hr.rounded {
-  border-top: 2px solid #282828;
-  border-radius: 5px;
+	border-top: 2px solid #282828;
+	border-radius: 5px;
 
-  justify-items: start;
+	justify-items: start;
+}
+
+/* only for style guide titles */
+
+h4 {
+	font-family: "Bebas Neue", sans-serif;
+	color: #282828;
+	text-decoration: underline;
+	font-size: 25px;
+	margin-bottom: 10px;
+	margin-top: 20px;
 }
