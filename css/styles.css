@@ -295,8 +295,8 @@ form {
   }
 
   input[type="checkbox"] {
-    width: 1.5em;
-    height: 1.5em;
+    width: 1.3em;
+    height: 1.3em;
     cursor: pointer;
     margin: 0;
   }
@@ -306,6 +306,7 @@ form {
     cursor: pointer;
     width: 1.3em;
     height: 1.3em;
+    border-radius: 100%;
     accent-color: #0b0835;
   }
 
