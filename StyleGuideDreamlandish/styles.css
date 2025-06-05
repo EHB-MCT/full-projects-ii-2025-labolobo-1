@@ -38,6 +38,10 @@ p {
 	color: #e68312;
 	font-weight: bold;
 }
+.link:hover {
+	text-decoration: underline;
+	font-size: larger;
+}
 em {
 	font-style: italic;
 }
@@ -390,10 +394,9 @@ hr.rounded {
 	margin-bottom: 2%;
 }
 /* only for style guide titles */
-h4 {
-	font-family: "Bebas Neue", sans-serif;
-	text-decoration: underline;
-	font-size: 25px;
-	margin-bottom: 10px;
-	margin-top: 20px;
+.title {
+	border-bottom: 5px solid seashell;
+	border-bottom-right-radius: 30px;
+	max-width: 15%;
+	margin-bottom: 2%;
 }
