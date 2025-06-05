@@ -449,7 +449,26 @@ ol {
 ol li {
 	padding-left: 5px;
 }
-
+dl {
+	font-size: 15px;
+	display: flex;
+	border: 1.5px solid darkslategray;
+	flex-flow: row;
+	max-width: 50%;
+	font-family: "Open Sans", "regular", sans-serif;
+	margin: 2% 0 2% 0;
+}
+dt {
+	text-align: right;
+	flex-basis: 30%;
+	background-color: rgba(255, 255, 255, 0.4);
+	padding: 1em 1.8em 1em 0;
+	font-weight: bolder;
+}
+dd {
+	flex-basis: 60%;
+	padding: 1em 0 1em 1.8em;
+}
 
 /* General Styling */
 body {
