@@ -94,13 +94,11 @@ strong {
 
 .main:hover {
 	box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.5);
-	font-family: "Bebas Neue", sans-serif;
 	transform: scale(1.1);
 	transition: 0.1s;
 }
 #mainHover {
 	box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.5);
-	font-family: "Bebas Neue", sans-serif;
 	transform: scale(1.1);
 	transition: 0.1s;
 }
@@ -190,6 +188,26 @@ strong {
 #modeButton:hover {
 	background-color: #6e6d50;
 	transform: scale(1.08);
+}
+#submitBut {
+	width: 5em;
+	height: 2em;
+	background-color: #4b3b66;
+	border-radius: 15px;
+	font-family: "Open Sans", "regular", sans-serif;
+	font-weight: bolder;
+	font-size: 14px;
+	color: seashell;
+	border: none;
+	display: block;
+	position: absolute;
+	margin-top: -2%;
+	left: 15%;
+}
+#submitBut:hover {
+	box-shadow: inset 2px -3px 1px rgba(0, 0, 0, 0.3);
+	transform: scale(1.1);
+	transition: 0.1s;
 }
 
 /* Colors */
@@ -328,6 +346,16 @@ input[type="radio"]:checked::before {
 input[type="radio"]:checked {
 	border: 3px solid #5f12e6;
 }
+#textarea {
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 30px;
+	height: 4em;
+	width: 25%;
+	border: none;
+	margin-bottom: 10px;
+	box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+	display: block;
+}
 .label {
 	font-size: 14px;
 	font-weight: bolder;
@@ -340,6 +368,7 @@ input[type="radio"]:checked {
 .form {
 	position: relative;
 	width: 50%;
+	margin-bottom: 2%;
 }
 /* General Styling */
 
