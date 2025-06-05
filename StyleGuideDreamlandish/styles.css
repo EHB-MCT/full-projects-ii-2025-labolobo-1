@@ -48,6 +48,33 @@ em {
 strong {
 	font-weight: 800;
 }
+blockquote {
+	width: 60%;
+	height: 50px;
+	margin: 50px auto;
+	padding: 2em 100px 2em 100px;
+	border-left: 4px dashed #5f12e6;
+	border-top: 4px dashed #5f12e6;
+	position: relative;
+	font-size: 15px;
+	font-weight: 800;
+	font-family: "Open Sans", "regular", sans-serif;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+blockquote::before {
+	font-family: Arial;
+	content: "\275D";
+	color: #5f12e6;
+	font-size: 5em;
+	position: absolute;
+	left: 10px;
+	top: 0px;
+}
+
+blockquote::after {
+	content: "";
+}
 
 /* Buttons */
 
