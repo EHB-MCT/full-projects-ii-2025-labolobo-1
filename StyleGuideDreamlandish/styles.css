@@ -273,13 +273,27 @@ strong {
 }
 input[type="checkbox"] {
 	appearance: none;
-	box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+	box-shadow: inset 1px 3px 1px rgba(0, 0, 0, 0.5);
 	border-radius: 5px;
 	position: relative;
 	width: 1.5em;
 	height: 1.5em;
 	border: 3px solid gray;
 	vertical-align: -2px;
+}
+input[type="checkbox"]:hover {
+}
+input[type="checkbox"]::before {
+	color: seashell;
+	content: "✔";
+	position: absolute;
+	font-size: 1.2em;
+	right: -1px;
+	top: -0.3em;
+	visibility: hidden;
+}
+input[type="checkbox"]:checked::before {
+	visibility: visible;
 }
 .label {
 	font-size: 14px;
