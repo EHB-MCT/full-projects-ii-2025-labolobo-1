@@ -435,6 +435,21 @@ ul {
 	margin-bottom: 4px;
 	font-family: "Open Sans", "regular", sans-serif;
 }
+ul li {
+	padding-left: 10px;
+}
+ol {
+	font-size: 14px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-family: "Open Sans", "regular", sans-serif;
+	list-style: decimal;
+	margin-left: 5px;
+}
+ol li {
+	padding-left: 5px;
+}
+
 
 /* General Styling */
 body {
