@@ -159,8 +159,8 @@ em {
 }
 
 .hexcodes p {
-  margin-right: 26px;
-  margin-left: 26px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .color {
@@ -265,8 +265,7 @@ pre {
 }
 
 form {
-  display: flex;
-  flex-direction: column;
+  display: block;
   align-self: center;
   max-width: 400px;
   padding: 2rem;
@@ -290,23 +289,29 @@ form {
     cursor: pointer;
   }
 
+  label {
+    text-align: center;
+    vertical-align: middle;
+  }
+
   input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
+    width: 1.5em;
+    height: 1.5em;
     cursor: pointer;
-    accent-color: #0b0835;
+    margin: 0;
   }
 
   input[type="radio"] {
+    margin: 0;
     cursor: pointer;
-    width: 20px;
+    width: 1.3em;
+    height: 1.3em;
     accent-color: #0b0835;
   }
 
   button[type="submit"] {
-    width: 90%;
-
-    margin: 0 auto;
+    width: fit-content;
+    padding: 5px 10px;
     height: 2rem;
     background-color: #0b0835;
     color: #3f8a8c;
