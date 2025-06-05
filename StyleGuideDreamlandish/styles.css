@@ -28,7 +28,7 @@ h3 {
 }
 
 p {
-	font-size: 12px;
+	font-size: 14px;
 	margin-top: 4px;
 	margin-bottom: 4px;
 	font-family: "Open Sans", "regular", sans-serif;
@@ -74,6 +74,30 @@ blockquote::before {
 
 blockquote::after {
 	content: "";
+}
+code {
+	color: #12e63a;
+	font-family: monospace;
+	font-size: 15px;
+	background: darkslategray;
+	word-wrap: break-word;
+	box-decoration-break: clone;
+	padding: 0.1rem 0.3rem 0.2rem;
+	border-radius: 0.2rem;
+	margin-top: 2%;
+}
+
+pre code {
+	display: block;
+	background: darkslategray;
+	white-space: pre;
+	-webkit-overflow-scrolling: touch;
+	overflow-x: scroll;
+	max-width: 100%;
+	min-width: 100px;
+	min-height: 150px;
+	padding: 0.2rem;
+	margin-top: 2%;
 }
 
 /* Buttons */
@@ -227,7 +251,7 @@ blockquote::after {
 	border-radius: 15px;
 	font-family: "Open Sans", "regular", sans-serif;
 	font-weight: bolder;
-	font-size: 14px;
+	font-size: 16px;
 	color: seashell;
 	border: none;
 	display: block;
@@ -388,7 +412,7 @@ input[type="radio"]:checked {
 	display: block;
 }
 .label {
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: bolder;
 	margin-top: 4px;
 	margin-bottom: 8px;
@@ -396,13 +420,23 @@ input[type="radio"]:checked {
 	display: block;
 	align-content: center;
 }
+
 .form {
 	position: relative;
 	width: 50%;
 	margin-bottom: 2%;
 }
-/* General Styling */
 
+/* Lists */
+ul {
+	list-style: "\2767";
+	font-size: 14px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-family: "Open Sans", "regular", sans-serif;
+}
+
+/* General Styling */
 body {
 	margin: 50px;
 	background-color: #322c3c;
