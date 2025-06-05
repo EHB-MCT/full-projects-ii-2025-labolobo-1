@@ -327,3 +327,16 @@ form {
 ::placeholder {
   color: #0c5679;
 }
+
+ul,
+ol {
+  margin: 0 10px;
+}
+
+ul li {
+  list-style-type: disc;
+}
+
+ol li {
+  list-style-type: decimal;
+}
