@@ -330,7 +330,7 @@ form {
 
 ul,
 ol {
-  margin: 0 10px;
+  margin-left: 10px;
 }
 
 ul li {
@@ -339,4 +339,17 @@ ul li {
 
 ol li {
   list-style-type: decimal;
+}
+
+dl {
+  margin-left: 2px;
+}
+
+dt {
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+}
+
+dd {
+  margin-left: 20px;
 }
