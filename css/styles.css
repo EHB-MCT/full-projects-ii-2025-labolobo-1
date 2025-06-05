@@ -3,6 +3,14 @@
 
 /* Text */
 
+body {
+  margin: 50px;
+  background-color: #d6cbb6;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #282828;
+}
+
 h1 {
   color: #282828;
   font-size: 50px;
@@ -189,13 +197,6 @@ em {
 
 /* General Styling */
 
-body {
-  margin: 50px;
-  background-color: #d6cbb6;
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-}
-
 hr.rounded {
   border-top: 2px solid #282828;
   border-radius: 5px;
@@ -277,6 +278,7 @@ form {
     border: 1px solid #0b0835;
     border-radius: 5px;
     margin: 5px 0;
+    background-color: #3f8a8c20;
   }
 
   select {
@@ -317,5 +319,5 @@ form {
 }
 
 ::placeholder {
-  color: #0c567990;
+  color: #0c5679;
 }
