@@ -246,8 +246,15 @@ strong {
 	border-radius: 30px;
 	border: none;
 	height: 2em;
+	margin-bottom: 10px;
 }
-
+.label {
+	font-size: 14px;
+	font-weight: bolder;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-family: "Open Sans", "regular", sans-serif;
+}
 /* General Styling */
 
 body {
