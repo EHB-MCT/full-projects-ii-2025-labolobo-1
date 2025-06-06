@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="./reset.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="./styles.css" />
+		<script type="module" src="./index.js" defer></script>
+		<title>Styleguide "Dreamlandish"</title>
+	</head>
+	<body>
+		<div class="colorMode">
+			<button id="modeButton" type="button">
+				<span id="innerCircle"></span>
+				<span id="circle"></span>
+			</button>
+		</div>
+
+		<section class="divider">
+			<h1 class="title">Typography</h1>
+			<h1>h1: Bebas Neue (Black) 50px</h1>
+			<h2>h2: Bebas Neue (Bold) 28px</h2>
+			<h3>h3: Bebas Neue (Bold) 18px</h3>
+			<p>
+				p: Open Sans (Regular) 14px <br />
+				<strong>Bold</strong>, <br />
+				<em>Italic</em>, <br />
+				<a class="link" href="#">Link</a>
+			</p>
+			<blockquote>Blockquote text.</blockquote>
+			<code>Inline code</code>
+			<pre><code>Preformatted block</code></pre>
+		</section>
+		<section class="divider">
+			<h1 class="title">Colors</h1>
+			<div class="color-container">
+				<div class="color" id="color1"> </div>
+				<div class="color" id="color2"> </div>
+				<div class="color" id="color3"> </div>
+				<div class="color" id="color4"> </div>
+				<div class="color" id="color5"> </div>
+				<div class="color" id="color6"> </div>
+			</div>
+			<div class="hexcodes">
+				<p>#5F12E6</p>
+				<p>#12E63A</p>
+				<p>#E68312</p>
+				<p>#91693C</p>
+				<p>#4B3B66</p>
+				<p>#3B6643</p>
+			</div>
+		</section>
+		<section class="divider">
+			<h1 class="title">Buttons</h1>
+			<button id="mainActive" class="main buttons">
+				Primary Active
+			</button>
+			<button id="mainHover" class="main buttons"> Primary Hover </button>
+			<button id="mainInactive" class="main buttons">
+				Primary Inactive
+			</button>
+			<button id="ctaActive" class="cta buttons">
+				Secondary Active
+			</button>
+			<button id="ctaHover" class="cta buttons"> Secondary Hover </button>
+			<button id="ctaInactive" class="cta buttons">
+				Secondary Inactive
+			</button>
+		</section>
+
+		<section class="divider">
+			<h1 class="title">Forms</h1>
+			<form class="form">
+				<label class="label" for="text">Text Input</label>
+				<input type="text" id="text" name="text" /> <br />
+
+				<label class="label" for="email">Email</label>
+				<input type="email" id="email" name="email" /> <br />
+
+				<label class="label" for="select">Select</label>
+				<select id="select" name="select">
+					<option>Option 1</option>
+					<option>Option 2</option>
+				</select>
+				<br />
+
+				<label class="label"><input type="checkbox" /> Checkbox</label
+				><br />
+				<label class="label"
+					><input type="radio" name="radio" /> Radio</label
+				><br />
+
+				<label class="label" for="textarea">Textarea</label><br />
+				<textarea id="textarea"></textarea><br />
+
+				<button id="submitBut" class="buttons" type="submit">
+					Submit
+				</button>
+			</form>
+		</section>
+
+		<section class="divider">
+			<h1 class="title">Lists</h1>
+			<ul>
+				<li>Unordered item</li>
+				<li>Unordered item</li>
+			</ul>
+			<ol>
+				<li>Ordered item</li>
+				<li>Ordered item</li>
+			</ol>
+			<dl>
+				<dt>Term</dt>
+				<dd>Definition</dd>
+			</dl>
+		</section>
+		<!-- ////// Not needed in our design /////-->
+		<!--<section class="divider">
+			<h1>Tables</h1>
+			<table border="1">
+				<thead>
+					<tr><th>Header 1</th><th>Header 2</th></tr>
+				</thead>
+				<tbody>
+					<tr><td>Row 1 Cell 1</td><td>Row 1 Cell 2</td></tr>
+					<tr><td>Row 2 Cell 1</td><td>Row 2 Cell 2</td></tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section class="divider">
+			<h1>Grid</h1>
+			<div
+				style="
+					display: grid;
+					grid-template-columns: repeat(3, 1fr);
+					gap: 10px;
+				">
+				<div>Grid Item 1</div>
+				<div>Grid Item 2</div>
+				<div>Grid Item 3</div>
+			</div>
+		</section>-->
+	</body>
+</html>
