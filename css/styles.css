@@ -299,6 +299,8 @@ form {
     height: 1.3em;
     cursor: pointer;
     margin: 0;
+    background-color: grey;
+    accent-color: #3f8a8c;
   }
 
   input[type="radio"] {
@@ -307,7 +309,7 @@ form {
     width: 1.3em;
     height: 1.3em;
     border-radius: 100%;
-    accent-color: #0b0835;
+    accent-color: #3f8a8c;
   }
 
   button[type="submit"] {
