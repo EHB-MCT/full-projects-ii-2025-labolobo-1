@@ -17,12 +17,12 @@
 		</div>
 
 		<section class="divider">
-			<h1>Typography</h1>
+			<h1 class="title">Typography</h1>
 			<h1>h1: Bebas Neue (Black) 50px</h1>
 			<h2>h2: Bebas Neue (Bold) 28px</h2>
 			<h3>h3: Bebas Neue (Bold) 18px</h3>
 			<p>
-				p: Open Sans (Regular) 12px <br />
+				p: Open Sans (Regular) 14px <br />
 				<strong>Bold</strong>, <br />
 				<em>Italic</em>, <br />
 				<a class="link" href="#">Link</a>
@@ -32,7 +32,7 @@
 			<pre><code>Preformatted block</code></pre>
 		</section>
 		<section class="divider">
-			<h4>Colors</h4>
+			<h1 class="title">Colors</h1>
 			<div class="color-container">
 				<div class="color" id="color1"> </div>
 				<div class="color" id="color2"> </div>
@@ -51,7 +51,7 @@
 			</div>
 		</section>
 		<section class="divider">
-			<h1>Buttons</h1>
+			<h1 class="title">Buttons</h1>
 			<button id="mainActive" class="main buttons">
 				Primary Active
 			</button>
@@ -69,32 +69,38 @@
 		</section>
 
 		<section class="divider">
-			<h1>Forms</h1>
-			<form>
-				<label for="text">Text Input</label>
-				<input type="text" id="text" name="text" /><br />
+			<h1 class="title">Forms</h1>
+			<form class="form">
+				<label class="label" for="text">Text Input</label>
+				<input type="text" id="text" name="text" /> <br />
 
-				<label for="email">Email</label>
-				<input type="email" id="email" name="email" /><br />
+				<label class="label" for="email">Email</label>
+				<input type="email" id="email" name="email" /> <br />
 
-				<label for="select">Select</label>
+				<label class="label" for="select">Select</label>
 				<select id="select" name="select">
 					<option>Option 1</option>
-					<option>Option 2</option> </select
+					<option>Option 2</option>
+				</select>
+				<br />
+
+				<label class="label"><input type="checkbox" /> Checkbox</label
+				><br />
+				<label class="label"
+					><input type="radio" name="radio" /> Radio</label
 				><br />
 
-				<label><input type="checkbox" /> Checkbox</label><br />
-				<label><input type="radio" name="radio" /> Radio</label><br />
-
-				<label for="textarea">Textarea</label><br />
+				<label class="label" for="textarea">Textarea</label><br />
 				<textarea id="textarea"></textarea><br />
 
-				<button type="submit">Submit</button>
+				<button id="submitBut" class="buttons" type="submit">
+					Submit
+				</button>
 			</form>
 		</section>
 
 		<section class="divider">
-			<h1>Lists</h1>
+			<h1 class="title">Lists</h1>
 			<ul>
 				<li>Unordered item</li>
 				<li>Unordered item</li>
@@ -108,8 +114,8 @@
 				<dd>Definition</dd>
 			</dl>
 		</section>
-
-		<section class="divider">
+		<!-- ////// Not needed in our design /////-->
+		<!--<section class="divider">
 			<h1>Tables</h1>
 			<table border="1">
 				<thead>
@@ -134,6 +140,6 @@
 				<div>Grid Item 2</div>
 				<div>Grid Item 3</div>
 			</div>
-		</section>
+		</section>-->
 	</body>
 </html>
