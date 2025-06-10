@@ -1,6 +1,39 @@
+.background {
+  width: 100vw;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
 .header {
   padding: 10px 0;
   .header-logo {
     width: 100px;
+  }
+}
+
+li ul li {
+  margin-left: 10px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+  justify-content: space-between;
+
+  .mainNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: text-top;
+
+    width: 80%;
+  }
+
+  .lang {
+    margin-right: 2rem;
   }
 }
