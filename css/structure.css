@@ -41,3 +41,19 @@ remove this from the base */
     margin-right: 2rem;
   }
 }
+
+.horizontalScroll {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px 0;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.project img {
+  max-width: 25rem;
+}
+
+.personImg {
+  width: 200px;
+}
