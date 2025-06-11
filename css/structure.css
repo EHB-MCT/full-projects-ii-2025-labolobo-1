@@ -63,20 +63,29 @@ remove this from the base */
   display: flex;
   flex-direction: row;
   gap: 20px;
-  padding: 10px 0;
+  padding: 20px 0;
 
   img {
     width: 70px;
   }
 
   .partnerName {
+    opacity: 0;
     font-size: 0.8rem;
     width: 100%;
     text-align: center;
     background-color: #7676764e;
     position: absolute;
-    bottom: 0;
+    bottom: -0.5rem;
     left: 50%;
     transform: translate(-50%, 0);
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.partnerLogo:hover {
+  .partnerName {
+    opacity: 1;
+    bottom: 0;
   }
 }
