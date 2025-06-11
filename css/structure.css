@@ -89,3 +89,10 @@ remove this from the base */
     bottom: 0;
   }
 }
+
+.footerContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0;
+}
