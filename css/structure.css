@@ -63,14 +63,14 @@ body:has(.nav.active) {
 
 .nav .lang {
   margin-bottom: 1rem;
-  align-self: flex-start;
 }
 
 .mainNav {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 10px;
+  gap: 20px;
+  margin-bottom: 20px; /* Space between nav and language, unset on desktop */
 }
 
 .mainNav li {
@@ -79,8 +79,6 @@ body:has(.nav.active) {
 
 .mainNav a {
   text-decoration: none;
-  color: black;
-  font-weight: bold;
 }
 
 @media (min-width: 768px) {
