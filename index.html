@@ -1,182 +1,186 @@
 <!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Labolobo</title>
+		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<script src="js/index.js"></script>
+		<div class="container headerContainer">
+			<div class="header">
+				<img class="header-logo" src="./assets/labolobo_black.png" />
+				<div class="nav">
+					<ul class="mainNav">
+						<li>
+							<a href="#" class="hasDrop">HOME</a>
+							<ul class="dropDown">
+								<li><a href="#">WIE ZIJN WIJ?</a></li>
+							</ul>
+						</li>
+						<li><a href="#">PROJECTEN</a></li>
+						<li>
+							<a href="#" class="hasDrop">UPDATES</a>
+							<ul class="dropDown">
+								<li><a href="#" class="sub">BLOG</a></li>
+								<li><a href="#" class="sub">SOCIALS</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#" class="hasDrop">STEUN ONS</a>
+							<ul class="dropDown">
+								<li><a href="#" class="sub">WORD VRVIJWILLIGER</a></li>
+								<li><a href="#" class="sub">DONEER</a></li>
+							</ul>
+						</li>
 
-<head>
-  <link href="css/reset.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
-</head>
-<body>
-  <script src="js/index.js"></script>
-  <div class="container headerContainer">
-    <div class="header">
-      <img class="header-logo" src="./assets/labolobo_black.png" />
-      <div class="nav">
-        <ul class="mainNav">
-          <li>
-            <a href="#" class="hasDrop">HOME</a>
-            <ul class="dropDown">
-              <li><a href="#">WIE ZIJN WIJ?</a></li>
-            </ul>
-          </li>
-          <li><a href="#">PROJECTEN</a></li>
-          <li>
-            <a href="#" class="hasDrop">UPDATES</a>
-            <ul class="dropDown">
-              <li><a href="#" class="sub">BLOG</a></li>
-              <li><a href="#" class="sub">SOCIALS</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#" class="hasDrop">STEUN ONS</a>
-            <ul class="dropDown">
-              <li><a href="#" class="sub">WORD VRVIJWILLIGER</a></li>
-              <li><a href="#" class="sub">DONEER</a></li>
-            </ul>
-          </li>
-
-          <li>
-            <a href="#" class="hasDrop">INSCHRIJVEN</a>
-            <ul class="dropDown">
-              <li><a href="#" class="sub">VRIJWILLIGER</a></li>
-              <li><a href="#" class="sub">NIEUWSBRIEF</a></li>
-            </ul>
-          </li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-        <div class="lang">lang</div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="body">
-      <div class="welcomeContainer">
-        <div class="slogan">
-          <h1>
-            LABOLOBO,<br />
-            SOLIDARITY BETWEEN GENERATIONS
-          </h1>
-        </div>
-        <div class="intro">
-          <p>
-            Labolobo brengt leeftijden samen in onze stad, op een creatieve en
-            transversale manier. We bestrijden isolement en
-            leeftijdsstereotypering. We bevorderen empathie, respect en
-            solidariteit. Omdat we allemaal veel van elkaar kunnen leren. Omdat
-            leeftijd geen drempel mag zijn. Omdat intergenerationele
-            uitwisseling aan de basis ligt van een beter samenleven.
-          </p>
-        </div>
-        <div class="slogan2">
-          <h2>DOE EENS LOCO, KIES LABOLOBO</h2>
-        </div>
-      </div>
-      <div class="projects">
-        <h2>ONZE PROJECTEN</h2>
-        <div class="projectCarousel horizontalScroll">
-          <!--
+						<li>
+							<a href="#" class="hasDrop">INSCHRIJVEN</a>
+							<ul class="dropDown">
+								<li><a href="#" class="sub">VRIJWILLIGER</a></li>
+								<li><a href="#" class="sub">NIEUWSBRIEF</a></li>
+							</ul>
+						</li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+					<div class="lang">lang</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="body">
+				<div class="welcomeContainer">
+					<div class="slogan">
+						<h1>
+							LABOLOBO,<br />
+							SOLIDARITY BETWEEN GENERATIONS
+						</h1>
+					</div>
+					<div class="intro">
+						<p>
+							Labolobo brengt leeftijden samen in onze stad, op een creatieve en
+							transversale manier. We bestrijden isolement en
+							leeftijdsstereotypering. We bevorderen empathie, respect en
+							solidariteit. Omdat we allemaal veel van elkaar kunnen leren.
+							Omdat leeftijd geen drempel mag zijn. Omdat intergenerationele
+							uitwisseling aan de basis ligt van een beter samenleven.
+						</p>
+					</div>
+					<div class="slogan2">
+						<h2>DOE EENS LOCO, KIES LABOLOBO</h2>
+					</div>
+				</div>
+				<div class="projects">
+					<h2>ONZE PROJECTEN</h2>
+					<div class="projectCarousel horizontalScroll">
+						<!--
             The following divs should be dynamically generated by JavaScript
             Each project should have a class of "project" and contain relevant
             information such as title, description, and image.
           <!-- add projects in carousel -->
-          <div class="project">
-            <img
-              class="projectImg"
-              src="./assets/labolobo_black.png"
-              alt="Project 1"
-            />
-            <h3>Project 1</h3>
-            <p>Beschrijving van project 1.</p>
-          </div>
-          <div class="project">
-            <img
-              class="projectImg"
-              src="./assets/labolobo_black.png"
-              alt="Project 1"
-            />
-            <h3>Project 1</h3>
-            <p>Beschrijving van project 1.</p>
-          </div>
-          <div class="project">
-            <img
-              class="projectImg"
-              src="./assets/labolobo_black.png"
-              alt="Project 1"
-            />
-            <h3>Project 1</h3>
-            <p>Beschrijving van project 1.</p>
-          </div>
-          <div class="project">
-            <img
-              class="projectImg"
-              src="./assets/labolobo_black.png"
-              alt="Project 1"
-            />
-            <h3>Project 1</h3>
-            <p>Beschrijving van project 1.</p>
-          </div>
-          <div class="project">
-            <img
-              class="projectImg"
-              src="./assets/labolobo_black.png"
-              alt="Project 1"
-            />
-            <h3>Project 1</h3>
-            <p>Beschrijving van project 1.</p>
-          </div>
-        </div>
-        <button class="cta ctaVolunteer">WORD VRIJWILLIGER!</button>
-      </div>
-      <div class="mission">
-        <div class="missionIntro">
-          <h2>ONZE MISSIE</h2>
-          <p>
-            Sinds 2014 overbrugt Labolobo vzw de leeftijdskloven in onze stad op
-            creatieve en transversale manieren ter bevordering van de sociale
-            cohesie. We bestrijden isolement en leeftijdsstereotypering door
-            intergenerationele uitwisselingen op te zetten en empathie, respect
-            en solidariteit te bevorderen.
-          </p>
-          <p>Ons project berust op vier pijlers:</p>
-        </div>
-        <button class="cta ctaHelp">HELP LABOLOBO</button>
-      </div>
-      <div class="whoAreWe">
-        <h2>WIE ZIJN WIJ?</h2>
-        <h3>OP HET TERREIN:</h3>
-        <div class="people">
-          <div class="person">
-            <img
-              class="personImg"
-              src="./assets/labolobo_black.png"
-              alt="Kevin Deruyver"
-            />
-            <div class="personInfo">
-              <h5>Kevin Deruyver</h5>
-              <ul>
-                <li>Projectcoördinator</li>
-                <li>intergenerationele projecten (NL)</li>
-                <li>Tuktuk Jette</li>
-                <li>Villa Vélo</li>
-              </ul>
-            </div>
-          </div>
-          <div class="person">
-            <img
-              class="personImg"
-              src="./assets/labolobo_black.png"
-              alt="Kevin Deruyver"
-            />
-            <div class="personInfo">
-              <h5>Maud Catalan</h5>
-              <ul>
-                <li>Projectcoördinator</li>
-                <li>intergenerationele projecten (FR)</li>
-                <li>Tuktuk Included</li>
-                <li>Soupe Solidaire</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
+						<div class="project">
+							<img
+								class="projectImg"
+								src="./assets/labolobo_black.png"
+								alt="Project 1"
+							/>
+							<h3>Project 1</h3>
+							<p>Beschrijving van project 1.</p>
+						</div>
+						<div class="project">
+							<img
+								class="projectImg"
+								src="./assets/labolobo_black.png"
+								alt="Project 1"
+							/>
+							<h3>Project 1</h3>
+							<p>Beschrijving van project 1.</p>
+						</div>
+						<div class="project">
+							<img
+								class="projectImg"
+								src="./assets/labolobo_black.png"
+								alt="Project 1"
+							/>
+							<h3>Project 1</h3>
+							<p>Beschrijving van project 1.</p>
+						</div>
+						<div class="project">
+							<img
+								class="projectImg"
+								src="./assets/labolobo_black.png"
+								alt="Project 1"
+							/>
+							<h3>Project 1</h3>
+							<p>Beschrijving van project 1.</p>
+						</div>
+						<div class="project">
+							<img
+								class="projectImg"
+								src="./assets/labolobo_black.png"
+								alt="Project 1"
+							/>
+							<h3>Project 1</h3>
+							<p>Beschrijving van project 1.</p>
+						</div>
+					</div>
+					<button class="cta ctaVolunteer">WORD VRIJWILLIGER!</button>
+				</div>
+				<div class="mission">
+					<div class="missionIntro">
+						<h2>ONZE MISSIE</h2>
+						<p>
+							Sinds 2014 overbrugt Labolobo vzw de leeftijdskloven in onze stad
+							op creatieve en transversale manieren ter bevordering van de
+							sociale cohesie. We bestrijden isolement en
+							leeftijdsstereotypering door intergenerationele uitwisselingen op
+							te zetten en empathie, respect en solidariteit te bevorderen.
+						</p>
+						<p>Ons project berust op vier pijlers:</p>
+					</div>
+					<button class="cta ctaHelp">HELP LABOLOBO</button>
+				</div>
+				<div class="whoAreWe">
+					<h2>WIE ZIJN WIJ?</h2>
+					<h3>OP HET TERREIN:</h3>
+					<div class="people">
+						<div class="person">
+							<img
+								class="personImg"
+								src="./assets/labolobo_black.png"
+								alt="Kevin Deruyver"
+							/>
+							<div class="personInfo">
+								<h5>Kevin Deruyver</h5>
+								<ul>
+									<li>Projectcoördinator</li>
+									<li>intergenerationele projecten (NL)</li>
+									<li>Tuktuk Jette</li>
+									<li>Villa Vélo</li>
+								</ul>
+							</div>
+						</div>
+						<div class="person">
+							<img
+								class="personImg"
+								src="./assets/labolobo_black.png"
+								alt="Kevin Deruyver"
+							/>
+							<div class="personInfo">
+								<h5>Maud Catalan</h5>
+								<ul>
+									<li>Projectcoördinator</li>
+									<li>intergenerationele projecten (FR)</li>
+									<li>Tuktuk Included</li>
+									<li>Soupe Solidaire</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
