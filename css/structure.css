@@ -6,16 +6,37 @@
 
 .header {
 	padding: 10px 0;
+	.header-logo {
+		width: 100px;
+	}
+}
+
+li ul li {
+	margin-left: 10px;
 }
 
 /* current version is desktop, add this to the bigger screens
 remove this from the base */
+.nav {
+	display: flex;
+	flex-direction: row;
+	padding: 10px 0;
+	justify-content: space-between;
 
-.lang {
-	margin-right: 2rem;
-	text-align: right;
-	margin-bottom: 20px;
+	.mainNav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		vertical-align: text-top;
+
+		width: 80%;
+	}
+
+	.lang {
+		margin-right: 2rem;
+	}
 }
+
 .horizontalScroll {
 	display: flex;
 	overflow-x: auto;
@@ -74,191 +95,4 @@ remove this from the base */
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 20px 0;
-}
-
-img {
-	width: 100%;
-	height: auto;
-	display: block;
-	margin: 0;
-	padding: 0;
-}
-
-.burger-menu {
-	display: none;
-	cursor: pointer;
-	padding: 15px;
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	z-index: 100;
-}
-
-.burger-menu span {
-	display: block;
-	width: 25px;
-	height: 3px;
-	background-color: black;
-	margin: 5px 0;
-	transition: 0.4s;
-}
-/* ========== ALGEMENE STIJLEN ========== */
-.container {
-	width: 95%;
-	margin: 0 auto;
-}
-.header {
-	padding: 10px 0;
-}
-img {
-	width: 100%;
-	height: auto;
-	display: block;
-	margin: 0;
-	padding: 0;
-}
-
-/* ========== BURGER-MENU BASIS ========== */
-.burger-menu {
-	display: none;
-	cursor: pointer;
-	padding: 15px;
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	z-index: 1001;
-}
-
-.burger-menu span {
-	display: block;
-	width: 25px;
-	height: 3px;
-	background-color: black;
-	margin: 5px 0;
-	transition: 0.4s;
-}
-
-.burger-menu.active span:nth-child(1) {
-	transform: rotate(-45deg) translate(-5px, 6px);
-}
-.burger-menu.active span:nth-child(2) {
-	opacity: 0;
-}
-.burger-menu.active span:nth-child(3) {
-	transform: rotate(45deg) translate(-5px, -6px);
-}
-
-/* ========== MENU BASIS (desktop) ========== */
-.menu {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 3px;
-	margin: 0;
-	padding: 0;
-}
-.menu-item {
-	text-align: center;
-	text-transform: uppercase;
-	color: white;
-	font-size: 14px;
-	padding: 10px 0;
-	background-color: orange;
-	position: relative;
-	flex: 1;
-}
-.menu-item:not(.logo)::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 2px;
-	height: 100%;
-	background-color: white;
-	z-index: 1;
-}
-.menu-item.logo img {
-	height: 50px;
-	padding: 10px;
-}
-.menu-item:hover {
-	background-color: black;
-	color: white;
-}
-
-/* ========== MOBILE FIRST (tot 767px) ========== */
-@media (max-width: 767px) {
-	.logo {
-		position: fixed;
-		top: 10px;
-		left: 20px;
-		z-index: 1002;
-	}
-	.logo img {
-		width: 70px;
-	}
-
-	.burger-menu {
-		display: block;
-	}
-
-	.menu {
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: center;
-		position: fixed;
-		top: 0;
-		right: -100%;
-		width: 100%;
-		height: 100vh;
-		background-color: whitesmoke;
-		padding-top: 80px;
-		transition: right 0.4s ease-in-out;
-		z-index: 1000;
-	}
-
-	.menu.active {
-		right: 0;
-	}
-
-	.menu-item {
-		width: 100%;
-		padding: 15px 0;
-		background-color: transparent;
-		color: black;
-		border-bottom: 1px solid #ccc;
-	}
-
-	.menu-item:hover {
-		color: orange;
-		background-color: transparent;
-	}
-}
-
-/* ========== TABLET ========== */
-@media (min-width: 768px) {
-	.burger-menu {
-		display: none;
-	}
-
-	.menu {
-		flex-direction: row;
-		position: relative;
-		height: auto;
-		background-color: silver;
-		border-bottom: 2px solid white;
-	}
-}
-
-/* ========== DESKTOP  ========== */
-@media (min-width: 960px) {
-	.menu-item {
-		font-weight: bold;
-		background-color: #f28a0f;
-	}
-
-	.menu-item:hover {
-		background-color: whitesmoke;
-		color: black;
-	}
 }
