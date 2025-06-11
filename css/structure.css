@@ -58,3 +58,25 @@ remove this from the base */
 .personImg {
   width: 200px;
 }
+
+.partnerLogos {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px 0;
+
+  img {
+    width: 70px;
+  }
+
+  .partnerName {
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: center;
+    background-color: #7676764e;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}

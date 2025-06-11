@@ -1,3 +1,12 @@
 @import "./structure.css";
 @import "typo.css";
 @import "buttons.css";
+
+.partnerLogo {
+  scale: 1;
+  transition: 0.2s ease-in-out;
+}
+
+.partnerLogo:hover {
+  scale: 1.1;
+}
