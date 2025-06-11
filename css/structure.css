@@ -54,6 +54,12 @@ remove this from the base */
   max-width: 25rem;
 }
 
+.people {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
 .personImg {
   width: 200px;
 }
