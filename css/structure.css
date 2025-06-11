@@ -2,6 +2,7 @@
 .container {
 	width: 95%;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .header {
@@ -15,84 +16,86 @@ li ul li {
 	margin-left: 10px;
 }
 
-/* current version is desktop, add this to the bigger screens
-remove this from the base */
+/* --- Hamburger menu functionaliteit (mobile) --- */
+
+.burger-menu {
+	cursor: pointer;
+	padding: 15px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 100;
+}
+
+.burger-menu span {
+	display: block;
+	width: 25px;
+	height: 3px;
+	background-color: black;
+	margin: 5px 0;
+	transition: 0.4s;
+}
+.lang {
+	align-items: center;
+}
 .nav {
-	display: flex;
-	flex-direction: row;
-	padding: 10px 0;
-	justify-content: space-between;
+	display: none;
+	flex-direction: column;
+	text-align: center;
+	background: white;
+	position: absolute;
 
-	.mainNav {
-		display: flex;
+	right: -10%;
+	width: 100%;
+
+	height: 100%;
+	padding: 3rem;
+
+	z-index: 1000;
+}
+
+.nav.active {
+	display: flex;
+}
+
+.nav .lang {
+	margin-bottom: 1rem;
+	align-self: flex-start;
+}
+
+.mainNav {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 10px;
+}
+
+.mainNav li {
+	list-style: none;
+}
+
+.mainNav a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+@media (min-width: 768px) {
+	.burger-menu {
+		display: none;
+	}
+
+	.nav {
+		display: flex !important;
+		position: static;
 		flex-direction: row;
-		justify-content: space-between;
-		vertical-align: text-top;
-
-		width: 80%;
+		align-items: center;
+		box-shadow: none;
+		width: auto;
+		padding: 0;
 	}
 
-	.lang {
-		margin-right: 2rem;
+	.nav .lang {
+		margin: 0 2rem 0 0;
 	}
-}
-
-.horizontalScroll {
-	display: flex;
-	overflow-x: auto;
-	padding: 10px 0;
-	white-space: nowrap;
-	-webkit-overflow-scrolling: touch;
-}
-
-.project img {
-	max-width: 25rem;
-}
-
-.people {
-	display: flex;
-	flex-direction: row;
-	gap: 20px;
-}
-
-.personImg {
-	width: 200px;
-}
-
-.partnerLogos {
-	display: flex;
-	flex-direction: row;
-	gap: 20px;
-	padding: 20px 0;
-
-	img {
-		width: 70px;
-	}
-
-	.partnerName {
-		opacity: 0;
-		font-size: 0.8rem;
-		width: 100%;
-		text-align: center;
-		background-color: #7676764e;
-		position: absolute;
-		bottom: -0.5rem;
-		left: 50%;
-		transform: translate(-50%, 0);
-		transition: all 0.2s ease-in-out;
-	}
-}
-
-.partnerLogo:hover {
-	.partnerName {
-		opacity: 1;
-		bottom: 0;
-	}
-}
-
-.footerContent {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding: 20px 0;
 }
