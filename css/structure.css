@@ -155,39 +155,6 @@ body:has(.nav.active) {
     display: flex;
     right: 0;
   }
-
-  .partners {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .partnerLogo img,
-  .projectImg,
-  .personImg {
-    max-width: 120px;
-    height: auto;
-    gap: 10px;
-  }
-
-  .partnerLogos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    gap: 15px;
-    align-items: center;
-  }
-
-  .partnerLogos img {
-    overflow: hidden;
-    width: 60px;
-    max-width: 120px;
-    height: auto;
-    display: block;
-    flex-direction: row;
-  }
 }
 
 @media only screen and (min-width: 768px) {
