@@ -183,19 +183,19 @@ body:has(.nav.active) {
   overflow: hidden;
 }
 
-/* .mainNav {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	gap: 20px;
-	margin-bottom: 20px;
-	display: flex;
-	flex-direction: column;
-	gap: 40px;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-} */
+.mainNav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 .mainNav li {
   list-style: none;
