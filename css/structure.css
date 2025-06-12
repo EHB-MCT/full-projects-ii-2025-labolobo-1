@@ -78,9 +78,8 @@ li ul li {
 	display: block;
 	cursor: pointer;
 	padding: 15px;
-	position: absolute;
-	right: 20px;
-	top: 20px;
+	position: relative;
+  justify-content: space-between;
 	z-index: 100;
 }
 
