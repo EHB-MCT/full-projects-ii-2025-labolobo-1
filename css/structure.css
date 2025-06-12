@@ -4,6 +4,11 @@
   margin: 0 auto;
 }
 
+.headerContainer {
+  position: sticky;
+  top: 0;
+}
+
 .header {
   z-index: 1;
   padding: 10px 0;
@@ -192,11 +197,6 @@ h2 {
     height: 100vh;
     transition: right 0.2s ease; /* not in use rn needs an after state before this does anything*/
   }
-
-  .nav.active {
-    display: flex;
-    right: 0;
-  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -210,7 +210,7 @@ h2 {
 
   .nav {
     display: flex;
-    position: static;
+    position: inherit;
     flex-direction: row;
     padding: 10px 0;
     justify-content: space-between;
