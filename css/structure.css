@@ -262,6 +262,58 @@ body:has(.nav.active) {
 	align-self: center;
 }
 
+.horizontalScroll {
+	display: flex;
+	overflow-x: auto;
+	padding: 10px 0;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+}
+
+.project img {
+	max-width: 20rem;
+}
+
+.people {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.personImg {
+	max-width: 200px;
+	width: 100%; /* adjust to smth that works to automatically resize */
+}
+
+.partnerLogos {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	padding: 20px 0;
+
+	img {
+		width: 70px;
+	}
+}
+
+.partnerName {
+	display: flex;
+	position: relative;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+	bottom: 0px;
+}
+
+.partnerLogo:hover {
+	.partnerName {
+		opacity: 1;
+		bottom: 1rem;
+		background-color: gray;
+	}
+}
+
 @media (max-width: 480px) {
 	.nav {
 		display: none;
