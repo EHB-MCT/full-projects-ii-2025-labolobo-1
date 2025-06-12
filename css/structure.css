@@ -25,6 +25,30 @@
   gap: 20px;
 }
 
+.footerLinks dd, a{
+  margin-top: 10px;
+}
+
+.footerLinks h3{
+  margin-top: 20px;
+}
+
+.footerMiddle dd, a{
+  margin-top: 10px;
+}
+
+.footerMiddle h3{
+  margin-top: 20px;
+}
+
+.footerSocials dd, a{
+  margin-top: 10px;
+}
+
+.footerSocials h3{
+  margin-top: 20px;
+}
+
 li ul li {
   margin-left: 10px;
 }
