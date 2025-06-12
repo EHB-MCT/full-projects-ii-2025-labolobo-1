@@ -3,7 +3,6 @@
   padding: 10px 0;
   flex-direction: horizontal;
   flex-wrap: wrap;
-  justify-content: space-between;
 
   .project {
     max-width: 20rem;
