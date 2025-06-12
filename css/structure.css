@@ -90,11 +90,10 @@ body:has(.nav.active) {
     display: flex !important;
     position: static;
     flex-direction: row;
-    align-items: center;
     box-shadow: none;
-    width: auto;
-    padding: 0;
+    padding: 10px 0;
     justify-content: space-between;
+    text-align: left;
 
     .mainNav {
       flex-direction: row;
