@@ -81,6 +81,10 @@ body:has(.nav.active) {
   text-decoration: none;
 }
 
+.sub {
+  padding: 10px;
+}
+
 @media only screen and (min-width: 768px) {
   .burger-menu {
     display: none;
@@ -104,6 +108,19 @@ body:has(.nav.active) {
 
   .nav .lang {
     margin: 0 2rem 0 0;
+  }
+
+  .dropDown {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+    padding: 10px 0;
+  }
+
+  .hasDrop:hover .dropDown {
+    display: block;
+    opacity: 1;
   }
 }
 
