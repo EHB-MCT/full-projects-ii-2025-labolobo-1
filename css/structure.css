@@ -8,6 +8,7 @@
 .header {
   z-index: 1;
   padding: 10px 0;
+  padding-bottom: 50px;
   .header-logo {
     width: 100px;
   }
@@ -60,7 +61,7 @@ li ul li {
   padding: 15px;
   position: relative;
   justify-content: space-between;
-  z-index: 1;
+
 }
 
 .burger-menu.active span:nth-child(1) {
@@ -278,7 +279,6 @@ body:has(.nav.active) {
     padding-top: 80px;
     padding-bottom: 20px;
     transition: right 0.4s ease;
-    z-index: 1;
   }
 
   .nav.active {
