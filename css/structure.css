@@ -196,7 +196,7 @@ b {
   text-align: left;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
   .burger-menu {
     display: block;
   }
@@ -216,10 +216,6 @@ b {
     display: none;
   }
 
-  .mainNav li {
-    margin-left: 0;
-  }
-
   .nav {
     display: flex;
     position: inherit;
@@ -235,7 +231,11 @@ b {
     .mainNav {
       flex-direction: row;
       justify-content: space-between;
-      width: 80%;
+      width: 90%;
+
+      li {
+        margin-left: 0;
+      }
     }
 
     .dropDown {
@@ -249,5 +249,11 @@ b {
   .hasDrop:hover .dropDown {
     display: block;
     opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .mainNav {
+    width: 80%;
   }
 }

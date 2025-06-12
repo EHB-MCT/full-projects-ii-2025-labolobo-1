@@ -2,8 +2,11 @@ button {
 	cursor: pointer;
 }
 
-.cta {
+.buttons {
 	padding: 15px;
+}
+
+.cta {
 	background-color: #0b0835;
 	color: whitesmoke;
 	border-radius: 10px;
@@ -20,6 +23,21 @@ button {
 	box-shadow: inset 0 -5px 0 rgba(255, 255, 255, 0.3);
 	transition: 0.1s;
 }
+.casual {
+	background-color: #4b3b66;
+	border-radius: 15px;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 18px;
+	color: seashell;
+	border: none;
+}
+
+.casual:hover {
+	box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.5);
+	transform: scale(1.1);
+	transition: 0.1s;
+}
+
 /*.ctaVolunteer {
 }
 .ctaHelp {
