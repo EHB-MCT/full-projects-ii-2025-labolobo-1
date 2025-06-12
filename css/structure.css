@@ -136,7 +136,7 @@ body:has(.nav.active) {
   padding: 10px 0;
   flex-direction: horizontal;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 
   .project {
     max-width: 20rem;
@@ -256,8 +256,4 @@ b {
   .mainNav {
     width: 80%;
   }
-
-  /* center projects (just carousel) when only one is shown
-  Do this in the base (above), then change it here for bigger screens
-  */
 }
