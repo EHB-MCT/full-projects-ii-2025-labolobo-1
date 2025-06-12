@@ -32,6 +32,13 @@ div {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  div {
+    width: 100%;
+  }
+
+  div:last-child {
+    width: 50%;
+  }
 }
 
 .footerLinks dd,
@@ -52,13 +59,23 @@ a {
   margin-top: 20px;
 }
 
-.footerSocials dd,
-a {
-  margin-top: 10px;
+.footerSocials {
+  h3 {
+    margin-top: 20px;
+  }
+  dd,
+  a {
+    margin-top: 10px;
+  }
+  img {
+    width: 30px;
+  }
 }
 
-.footerSocials h3 {
-  margin-top: 20px;
+.copyright {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
 }
 
 li ul li {
