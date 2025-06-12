@@ -20,10 +20,22 @@ h2 {
 }
 
 h3 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 18px;
   color: #0b0835;
 }
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #0b0835;
+}
+
+dd {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #0b0835;
+} 
 
 
 .copyright {
