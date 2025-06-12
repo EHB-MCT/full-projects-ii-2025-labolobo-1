@@ -30,10 +30,6 @@ li ul li {
   z-index: 100;
 }
 
-.header-logo {
-  width: 100px;
-}
-
 .burger-menu span {
   display: block;
   width: 25px;
@@ -79,7 +75,6 @@ li ul li {
   display: none;
   flex-direction: column;
   text-align: center;
-  background: white;
   position: absolute;
   left: auto;
   padding-top: 80px;
@@ -88,7 +83,6 @@ li ul li {
   top: 0;
   right: -100%;
   width: 100%;
-  background-color: whitesmoke;
 }
 
 body:has(.nav.active) {
@@ -274,7 +268,6 @@ body:has(.nav.active) {
     right: -100%;
     width: 100%;
     height: 100vh;
-    background-color: whitesmoke;
     padding-top: 80px;
     padding-bottom: 20px;
     transition: right 0.4s ease;
