@@ -154,17 +154,6 @@ body:has(.nav.active) {
 	text-align: center;
 	align-self: center;
 }
-.burger-menu.active span:nth-child(1) {
-	transform: rotate(45deg) translate(5px, 5px);
-}
-
-.burger-menu.active span:nth-child(2) {
-	opacity: 0;
-}
-
-.burger-menu.active span:nth-child(3) {
-	transform: rotate(-45deg) translate(5px, -5px);
-}
 
 .nav {
 	display: none;
@@ -305,6 +294,18 @@ body:has(.nav.active) {
 	.burger-menu {
 		display: block;
 	}
+
+	.burger-menu.active span:nth-child(1) {
+		transform: rotate(45deg) translate(5px, 5px);
+	}
+
+	.burger-menu.active span:nth-child(2) {
+		opacity: 0;
+	}
+
+	.burger-menu.active span:nth-child(3) {
+		transform: rotate(-45deg) translate(5px, -5px);
+	}
 	.nav {
 		flex-direction: column;
 		position: fixed;
@@ -319,42 +320,39 @@ body:has(.nav.active) {
 		z-index: 999;
 	}
 
-	.nav.active {
-		display: flex;
-		right: 0;
+	.partners {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 15px;
 	}
-}
-.partners {
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 15px;
-}
 
-.partnerLogo img,
-.projectImg,
-.personImg {
-	max-width: 120px;
-	height: auto;
-	gap: 10px;
-}
+	.partnerLogo img,
+	.projectImg,
+	.personImg {
+		max-width: 120px;
+		height: auto;
+		gap: 10px;
+	}
 
-.partnerLogos {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	gap: 15px;
-	align-items: center;
-}
+	.partnerLogos {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		gap: 15px;
+		align-items: center;
+	}
 
-.partnerLogos img {
-	overflow: hidden;
-	width: 60px;
-	max-width: 120px;
-	height: auto;
-	display: block;
-	flex-direction: row;
+	.partnerLogos img {
+		overflow: hidden;
+		width: 60px;
+		max-width: 120px;
+		height: auto;
+		display: block;
+		flex-direction: row;
+	}
+
 	.nav {
 		display: none; /* standaard verbergen */
 		flex-direction: column;
