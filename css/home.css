@@ -33,7 +33,14 @@
 .partnerLogo {
   scale: 1;
   transition: 0.2s ease-in-out;
-  width: 80px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+
+  img {
+    justify-self: center;
+    width: 100%;
+  }
 }
 
 .partnerLogo:hover {
@@ -47,9 +54,6 @@
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px 0;
-  img {
-    width: 100%;
-  }
 }
 
 .partnerName {
