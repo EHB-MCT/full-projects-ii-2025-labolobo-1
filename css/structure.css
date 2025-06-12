@@ -1,4 +1,13 @@
 /* mobile first */
+
+html {
+  scroll-behavior: smooth;
+}
+
+div {
+  scroll-margin-top: 160px;
+}
+
 .container {
   width: 85%;
   margin: 0 auto;
