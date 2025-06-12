@@ -3,5 +3,9 @@
 @import "buttons.css";
 
 .headerContainer {
+  background-color: red;
+}
+
+.dropDown {
   background-color: white;
 }
