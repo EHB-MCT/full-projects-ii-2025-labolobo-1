@@ -140,18 +140,21 @@ body:has(.nav.active) {
   padding: 10px 0;
   flex-direction: horizontal;
   flex-wrap: wrap;
-
   justify-content: space-between;
+
+  .project {
+    max-width: 20rem;
+
+    img {
+      width: 100%;
+    }
+  }
 
   /* carousel */
   /* 
   overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch; */
-}
-
-.project img {
-  max-width: 20rem;
 }
 
 .people {
