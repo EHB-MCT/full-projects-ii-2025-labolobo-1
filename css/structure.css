@@ -63,9 +63,8 @@ li ul li {
 	display: block;
 	cursor: pointer;
 	padding: 15px;
-	position: absolute;
-	right: 20px;
-	top: 20px;
+	position: relative;
+	justify-content: space-between;
 	z-index: 100;
 }
 
@@ -119,11 +118,11 @@ body:has(.nav.active) {
 	overflow: hidden;
 }
 
-.nav .lang {
+/* .nav .lang {
 	margin-bottom: 1rem;
 	display: flex;
 	right: 0;
-}
+} */
 
 .mainNav {
 	display: flex;
@@ -190,12 +189,6 @@ body:has(.nav.active) {
 	overflow: hidden;
 }
 
-.nav .lang {
-	margin-bottom: 1rem;
-	display: flex;
-	right: 0;
-}
-
 .mainNav {
 	display: flex;
 	flex-direction: column;
@@ -220,12 +213,6 @@ body:has(.nav.active) {
 
 .sub {
 	padding: 10px;
-}
-
-.nav .lang {
-	margin-bottom: 1rem;
-	text-align: center;
-	align-self: center;
 }
 
 .horizontalScroll {
@@ -537,8 +524,4 @@ body:has(.nav.active) {
 	}
 }
 @media only screen and (min-width: 960px) {
-	.nav .lang {
-		margin: 0 2rem 0 0;
-		align-self: center;
-	}
 }
