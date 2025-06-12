@@ -170,6 +170,7 @@ body:has(.nav.active) {
   flex-direction: horizontal;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 50px;
 
   .project {
     max-width: 20rem;
