@@ -12,10 +12,7 @@
 }
 
 .header {
-<<<<<<< HEAD
-=======
   z-index: 4;
->>>>>>> 887fcc2cafe2717f36035a69975c0aec5b85cad7
   padding: 10px 0;
   .header-logo {
     width: 100px;
@@ -195,7 +192,7 @@ b {
   text-indent: 10px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
   .burger-menu {
     display: block;
   }
@@ -209,10 +206,6 @@ b {
 @media only screen and (min-width: 768px) {
   .burger-menu {
     display: none;
-  }
-
-  .mainNav li {
-    margin-left: 0;
   }
 
   .nav {
@@ -230,7 +223,11 @@ b {
     .mainNav {
       flex-direction: row;
       justify-content: space-between;
-      width: 80%;
+      width: 90%;
+
+      li {
+        margin-left: 0;
+      }
     }
 
     .dropDown {
@@ -244,5 +241,11 @@ b {
   .hasDrop:hover .dropDown {
     display: block;
     opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .mainNav {
+    width: 80%;
   }
 }
