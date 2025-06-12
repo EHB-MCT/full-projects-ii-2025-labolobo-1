@@ -2,3 +2,7 @@
 @import "typo.css";
 @import "buttons.css";
 
+b,
+bold {
+  font-weight: bold;
+}

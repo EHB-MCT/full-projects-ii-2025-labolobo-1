@@ -264,14 +264,24 @@ body:has(.nav.active) {
 
 .horizontalScroll {
 	display: flex;
-	overflow-x: auto;
 	padding: 10px 0;
-	white-space: nowrap;
-	-webkit-overflow-scrolling: touch;
-}
+	flex-direction: horizontal;
+	flex-wrap: wrap;
+	justify-content: space-between;
 
-.project img {
-	max-width: 20rem;
+	.project {
+		max-width: 20rem;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	/* carousel */
+	/* 
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch; */
 }
 
 .people {
