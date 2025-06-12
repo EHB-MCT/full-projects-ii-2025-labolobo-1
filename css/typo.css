@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
 
+b,
+bold {
+  font-weight: bold;
+}
+
 .copyright {
   font-size: 0.7rem;
 }
@@ -8,29 +13,29 @@
 .nav.active a {
   font-family: "Bebas Neue", sans-serif;
   font-size: 28px;
-  color: #0B0835;
+  color: #0b0835;
 }
 
 .nav.active a.sub {
   font-family: "Bebas Neue", sans-serif;
   font-size: 18px;
-  color: #0B0835;
+  color: #0b0835;
 }
 
 .nav a {
   font-family: "Bebas Neue", sans-serif;
   font-size: 28px;
-  color: #0B0835;
+  color: #0b0835;
 }
 
 .nav a.sub {
   font-family: "Bebas Neue", sans-serif;
   font-size: 18px;
-  color: #0B0835;
+  color: #0b0835;
 }
 
 .language {
   font-family: "Bebas Neue", sans-serif;
   font-size: 28px;
-  color: #0B0835;
+  color: #0b0835;
 }
