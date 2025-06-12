@@ -253,6 +253,19 @@ b {
   justify-self: center;
 }
 
+.partners {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.partners p {
+  text-align: center;
+}
+
+.partnerLogos {
+  justify-content: center;
+}
+
 @media (max-width: 550px) {
   .burger-menu {
     display: block;
