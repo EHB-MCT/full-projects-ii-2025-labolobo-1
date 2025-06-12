@@ -6,7 +6,7 @@ img {
 	padding: 0;
 }
 
-.burger-menu {
+.burgerMenu {
 	display: none;
 	cursor: pointer;
 	padding: 15px;
@@ -16,7 +16,7 @@ img {
 	z-index: 100;
 }
 
-.burger-menu span {
+.burgerMenu span {
 	display: block;
 	width: 25px;
 	height: 3px;
