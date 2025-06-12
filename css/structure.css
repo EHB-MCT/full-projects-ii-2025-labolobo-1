@@ -2,12 +2,12 @@
 .container {
   width: 95%;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .header {
+  z-index: 1;
   padding: 10px 0;
-  z-index: 5;
+  padding-bottom: 50px;
   .header-logo {
     width: 100px;
   }
@@ -27,11 +27,7 @@ li ul li {
   position: absolute;
   right: 20px;
   top: 20px;
-  z-index: 100;
-}
-
-.header-logo {
-  width: 100px;
+  z-index: 2;
 }
 
 .burger-menu span {
@@ -60,7 +56,6 @@ li ul li {
   padding: 15px;
   position: relative;
   justify-content: space-between;
-  z-index: 100;
 }
 
 .burger-menu.active span:nth-child(1) {
@@ -79,7 +74,6 @@ li ul li {
   display: none;
   flex-direction: column;
   text-align: center;
-  background: white;
   position: absolute;
   left: auto;
   padding-top: 80px;
@@ -88,7 +82,6 @@ li ul li {
   top: 0;
   right: -100%;
   width: 100%;
-  background-color: whitesmoke;
 }
 
 body:has(.nav.active) {
@@ -176,46 +169,6 @@ body:has(.nav.active) {
   -webkit-overflow-scrolling: touch; */
 }
 
-.people {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
-.personImg {
-  max-width: 200px;
-  width: 100%; /* adjust to smth that works to automatically resize */
-}
-
-.partnerLogos {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  padding: 20px 0;
-
-  img {
-    width: 70px;
-  }
-}
-
-.partnerName {
-  display: flex;
-  position: relative;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
-  bottom: 0px;
-}
-
-.partnerLogo:hover {
-  .partnerName {
-    opacity: 1;
-    bottom: 1rem;
-    background-color: gray;
-  }
-}
-
 @media (max-width: 480px) {
   .burger-menu {
     display: block;
@@ -274,11 +227,9 @@ body:has(.nav.active) {
     right: -100%;
     width: 100%;
     height: 100vh;
-    background-color: whitesmoke;
     padding-top: 80px;
     padding-bottom: 20px;
     transition: right 0.4s ease;
-    z-index: 999;
   }
 
   .nav.active {
