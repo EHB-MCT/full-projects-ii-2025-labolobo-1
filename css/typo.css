@@ -4,3 +4,33 @@
 .copyright {
   font-size: 0.7rem;
 }
+
+.nav.active a {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 28px;
+  color: #0B0835;
+}
+
+.nav.active a.sub {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+  color: #0B0835;
+}
+
+.nav a {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 28px;
+  color: #0B0835;
+}
+
+.nav a.sub {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+  color: #0B0835;
+}
+
+.language {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 28px;
+  color: #0B0835;
+}
