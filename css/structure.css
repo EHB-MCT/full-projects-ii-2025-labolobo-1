@@ -19,6 +19,12 @@
   }
 }
 
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 li ul li {
   margin-left: 10px;
 }
