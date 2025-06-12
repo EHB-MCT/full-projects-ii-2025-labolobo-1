@@ -6,6 +6,10 @@ bold {
   font-weight: bold;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 h1 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 50px;
@@ -16,7 +20,6 @@ h2 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 28px;
   color: #0b0835;
-  text-transform: uppercase;
 }
 
 h3 {
@@ -26,17 +29,14 @@ h3 {
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: #0b0835;
 }
 
 dd {
-  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: #0b0835;
-} 
-
+}
 
 .copyright {
   font-size: 0.7rem;
@@ -71,4 +71,3 @@ dd {
   font-size: 28px;
   color: #0b0835;
 }
-
