@@ -192,15 +192,11 @@ b {
   text-indent: 10px;
 }
 
-<<<<<<< HEAD
-@media (max-width: 550px) {
-=======
 .project h2 {
   text-align: left;
 }
 
-@media (max-width: 480px) {
->>>>>>> d78b9162dc85429d1e2db06342d780e53d1b6356
+@media (max-width: 550px) {
   .burger-menu {
     display: block;
   }
