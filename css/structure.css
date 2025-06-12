@@ -2,7 +2,6 @@
 .container {
   width: 95%;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .header {
@@ -57,7 +56,6 @@ li ul li {
   padding: 15px;
   position: relative;
   justify-content: space-between;
-
 }
 
 .burger-menu.active span:nth-child(1) {
@@ -169,46 +167,6 @@ body:has(.nav.active) {
   overflow-x: auto;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch; */
-}
-
-.people {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
-.personImg {
-  max-width: 200px;
-  width: 100%; /* adjust to smth that works to automatically resize */
-}
-
-.partnerLogos {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  padding: 20px 0;
-
-  img {
-    width: 70px;
-  }
-}
-
-.partnerName {
-  display: flex;
-  position: relative;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
-  bottom: 0px;
-}
-
-.partnerLogo:hover {
-  .partnerName {
-    opacity: 1;
-    bottom: 1rem;
-    background-color: gray;
-  }
 }
 
 @media (max-width: 480px) {
