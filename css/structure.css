@@ -137,10 +137,17 @@ body:has(.nav.active) {
 
 .horizontalScroll {
   display: flex;
-  overflow-x: auto;
   padding: 10px 0;
+  flex-direction: horizontal;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+
+  /* carousel */
+  /* 
+  overflow-x: auto;
   white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch; */
 }
 
 .project img {
