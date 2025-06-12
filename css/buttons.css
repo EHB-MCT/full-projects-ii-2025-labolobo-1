@@ -1,17 +1,113 @@
 button {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .cta {
-  padding: 10px 20px;
-  background-color: #0b0835;
-  color: whitesmoke;
-  border-radius: 10px;
-  box-shadow: 1px 1px #12e63a;
+	padding: 15px;
+	background-color: #0b0835;
+	color: whitesmoke;
+	border-radius: 10px;
+	box-shadow: 1px 1px #12e63a;
+	font-size: 18px;
+	font-family: "Bebas Neue", sans-serif;
+}
+
+.cta:hover {
+	background-color: #f28a0f;
+	border: 2px solid #ffe7bd;
+	color: #0b0835;
+	transition: 0.1s;
 }
 
 .ctaVolunteer {
 }
 .ctaHelp {
-  /* help labolobo */
+	/* help labolobo */
 }
+/* .call-to-action {
+	width: 200px;
+	height: 60px;
+}
+
+.call-to-action:hover {
+	background-color: #f28a0f;
+	border: 2px solid #ffe7bd;
+	color: #0b0835;
+	transition: 0.1s;
+}
+
+.casual {
+	padding: 15px;
+	width: 200px;
+	height: 60px;
+	padding: 15px;
+	background-color: #0b0835;
+	border: none;
+	border-radius: 30px;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 18px;
+	color: #3f8a8c;
+}
+
+.casual:hover {
+	padding: 15px;
+	width: 200px;
+	height: 60px;
+	padding: 15px;
+	border: 2px solid #0b0835;
+	background-color: #3f8a8c;
+	border-radius: 30px;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 18px;
+	color: #0b0835;
+	transition: 0.1s;
+}
+
+.header-inactive {
+	padding: 15px;
+	width: 200px;
+	height: 60px;
+	padding: 15px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: black;
+	border: none;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 18px;
+	color: #ffe7bd;
+}
+
+.header-inactive:hover {
+	padding: 15px;
+	width: 200px;
+	height: 60px;
+	padding: 15px;
+	background-color: #ffe7bd;
+	border: none;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 18px;
+	color: black;
+	transition: 0.1s;
+}
+
+.header-active {
+	padding: 15px;
+	width: 200px;
+	height: 60px;
+	padding: 15px;
+	background-color: #d6cbb6;
+	border-width: 3px 1px 0px 1px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 18px;
+	color: black;
+}
+
+.button-container {
+	display: flex;
+}
+
+.buttons {
+	margin-right: 30px;
+} */
