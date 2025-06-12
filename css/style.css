@@ -11,6 +11,10 @@ body {
   background: linear-gradient(90deg, #0c5679 0%, #d6cbb6 50%, #0c5679 100%);
 }
 
+.navWrap {
+  background-color: #0b08351e;
+}
+
 .dropDown {
   background-color: #0d5678;
 }
