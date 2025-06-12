@@ -25,32 +25,35 @@
   gap: 20px;
 }
 
-.footerLinks dd, a{
+.footerLinks dd,
+a {
   margin-top: 10px;
 }
 
-.footerLinks h3{
+.footerLinks h3 {
   margin-top: 20px;
 }
 
-.footerMiddle dd, a{
+.footerMiddle dd,
+a {
   margin-top: 10px;
 }
 
-.footerMiddle h3{
+.footerMiddle h3 {
   margin-top: 20px;
 }
 
-.footerSocials dd, a{
+.footerSocials dd,
+a {
   margin-top: 10px;
 }
 
-.footerSocials h3{
+.footerSocials h3 {
   margin-top: 20px;
 }
 
 li ul li {
-  margin-left: 10px;
+  margin-left: 0px;
 }
 
 /* --- Hamburger menu functionaliteit (mobile) --- */
@@ -78,6 +81,7 @@ li ul li {
 .nav.active {
   display: flex;
   right: 0;
+  height: 100vh;
 }
 
 .mainNav {
@@ -118,7 +122,6 @@ li ul li {
   top: 0;
   right: -100%;
   width: 100%;
-  background-color: white;
 }
 
 body:has(.nav.active) {
@@ -266,7 +269,6 @@ b {
     padding: 10px 0;
     justify-content: space-between;
     text-align: left;
-    background-color: unset;
     .mainNav li {
       margin-left: 0;
     }
