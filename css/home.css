@@ -33,6 +33,7 @@
 .partnerLogo {
   scale: 1;
   transition: 0.2s ease-in-out;
+  width: 80px;
 }
 
 .partnerLogo:hover {
@@ -43,10 +44,11 @@
   z-index: 1;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 20px;
   padding: 20px 0;
   img {
-    width: 70px;
+    width: 100%;
   }
 }
 
@@ -60,17 +62,17 @@
   justify-self: center;
   p {
     font-size: 0.5rem;
-
     text-indent: 0;
+    text-wrap: wrap;
   }
 }
 
 .partnerLogo:hover {
   .partnerName {
     opacity: 1;
-    bottom: 2rem;
+    bottom: 1.4rem;
     width: 100%;
-    background-color: rgba(128, 128, 128, 0.407);
+    background-color: rgba(206, 205, 205, 0.788);
   }
 }
 
