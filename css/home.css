@@ -1,12 +1,3 @@
-.partnerLogo {
-  scale: 1;
-  transition: 0.2s ease-in-out;
-}
-
-.partnerLogo:hover {
-  scale: 1.1;
-}
-
 .horizontalScroll {
   display: flex;
   padding: 10px 0;
@@ -40,6 +31,15 @@
   width: 100%;
 }
 
+.partnerLogo {
+  scale: 1;
+  transition: 0.2s ease-in-out;
+}
+
+.partnerLogo:hover {
+  scale: 1.1;
+}
+
 .partnerLogos {
   z-index: 1;
   display: flex;
@@ -58,16 +58,19 @@
   opacity: 0;
   transition: all 0.2s ease-in-out;
   bottom: 0px;
-  margin: 0 auto;
   font-size: 0.8rem;
-  padding: 0.1rem 0;
   text-align: center;
+  justify-self: center;
+  p {
+    text-indent: 0;
+  }
 }
 
 .partnerLogo:hover {
   .partnerName {
     opacity: 1;
-    bottom: 1.1rem;
+    bottom: 2rem;
+    width: 100%;
     background-color: rgba(128, 128, 128, 0.407);
   }
 }
