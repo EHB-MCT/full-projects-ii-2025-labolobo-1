@@ -2,8 +2,12 @@
 @import "typo.css";
 @import "buttons.css";
 
+body {
+  color: #0b0835;
+}
+
 .headerContainer {
-  background: linear-gradient(180deg, white 83%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, #fff 83%, #ffffff00 100%);
 }
 
 .dropDown {
