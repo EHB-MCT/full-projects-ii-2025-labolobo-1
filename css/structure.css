@@ -48,7 +48,7 @@ li ul li {
 }
 .lang {
   align-items: center;
-
+}
 .burger-menu.active span:nth-child(1) {
 	transform: rotate(45deg) translate(5px, 5px);
 }
@@ -135,6 +135,26 @@ body:has(.nav.active) {
 }
 
 @media (max-width: 480px) {
+	.nav {
+    display: none;  /* standaard verbergen */
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    transition: right 0.4s ease;
+    z-index: 999;
+  }
+
+  .nav.active {
+    display: flex;
+    right: 0;
+  }
+}	
 	.partners {
 		flex-direction: row;
 		flex-wrap: wrap;
