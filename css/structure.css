@@ -2,11 +2,13 @@
 .container {
   width: 95%;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .header {
   padding: 10px 0;
+  position: sticky;
+  top: 0px;
+
   .header-logo {
     width: 100px;
   }
@@ -122,7 +124,55 @@ body:has(.nav.active) {
     display: block;
     opacity: 1;
   }
-}
 
+  .horizontalScroll {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .project img {
+    max-width: 25rem;
+  }
+
+  .people {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .personImg {
+    max-width: 200px;
+    width: 200px; /* adjust to smth that works to automatically resize */
+  }
+
+  .partnerLogos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px 0;
+
+    img {
+      width: 70px;
+    }
+  }
+
+  .partnerName {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .partnerLogo:hover {
+    .partnerName {
+      opacity: 1;
+      bottom: 0;
+    }
+  }
+}
 @media only screen and (min-width: 960px) {
 }
