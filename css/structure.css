@@ -175,6 +175,14 @@ h2 {
   margin: 100px;
 }
 
+.project h3, h4, p, b{
+  margin-top: 15px;
+}
+
+.project h3, h4, p, b{
+  text-indent: 10px;
+}
+
 @media (max-width: 480px) {
   .burger-menu {
     display: block;
