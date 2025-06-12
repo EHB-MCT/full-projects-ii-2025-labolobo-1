@@ -12,6 +12,10 @@
 }
 
 .header {
+<<<<<<< HEAD
+=======
+  z-index: 4;
+>>>>>>> 887fcc2cafe2717f36035a69975c0aec5b85cad7
   padding: 10px 0;
   .header-logo {
     width: 100px;
@@ -32,7 +36,7 @@ li ul li {
   position: absolute;
   right: 20px;
   top: 20px;
-  z-index: 2;
+  z-index: 5;
 }
 
 .burger-menu span {
