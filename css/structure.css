@@ -8,10 +8,10 @@
   position: sticky;
   top: 0;
   padding-bottom: 5px;
+  z-index: 1;
 }
 
 .header {
-  z-index: 1;
   padding: 10px 0;
   .header-logo {
     width: 100px;
