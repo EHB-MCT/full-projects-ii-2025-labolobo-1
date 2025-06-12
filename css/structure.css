@@ -4,6 +4,10 @@ html {
   scroll-behavior: smooth;
 }
 
+div {
+  scroll-margin-top: 160px;
+}
+
 .container {
   width: 95%;
   margin: 0 auto;
@@ -59,10 +63,6 @@ a {
 
 li ul li {
   margin-left: 0px;
-}
-
-div {
-  scroll-margin-top: 80px;
 }
 
 button.buttons.cta.ctaVolunteer {
