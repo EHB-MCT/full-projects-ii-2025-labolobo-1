@@ -56,6 +56,16 @@ li ul li {
   margin-left: 0px;
 }
 
+button.buttons.cta.ctaVolunteer {
+  display: flex;
+  justify-self: center;
+}
+
+.atOurSide p {
+  display: flex;
+  justify-content: center;
+}
+
 /* --- Hamburger menu functionaliteit (mobile) --- */
 .burger-menu {
   justify-content: space-between;
