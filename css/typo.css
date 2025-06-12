@@ -45,3 +45,10 @@ h1 {
   font-size: 50px;
   color: #0b0835;
 }
+
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 28px;
+  color: #0b0835;
+  text-transform: uppercase;
+}
