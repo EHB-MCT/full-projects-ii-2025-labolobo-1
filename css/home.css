@@ -6,3 +6,67 @@
 .partnerLogo:hover {
   scale: 1.1;
 }
+
+.horizontalScroll {
+  display: flex;
+  padding: 10px 0;
+  flex-direction: horizontal;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .project {
+    max-width: 20rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  /* carousel */
+  /* 
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch; */
+}
+
+.people {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.personImg {
+  max-width: 200px;
+  width: 100%; /* adjust to smth that works to automatically resize */
+}
+
+.partnerLogos {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px 0;
+
+  img {
+    width: 70px;
+  }
+}
+
+.partnerName {
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  bottom: 0px;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  padding: 0.1rem 0;
+  text-align: center;
+}
+
+.partnerLogo:hover {
+  .partnerName {
+    opacity: 1;
+    bottom: 1.1rem;
+    background-color: rgba(128, 128, 128, 0.407);
+  }
+}
