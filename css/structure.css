@@ -157,6 +157,12 @@ h2 {
   text-align: center;
 }
 
+.sloganAlign {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+}
+
 @media (max-width: 480px) {
   .burger-menu {
     display: block;
