@@ -261,7 +261,7 @@ body:has(.nav.active) {
     .mainNav {
       flex-direction: row;
       justify-content: space-between;
-      width: 80%;
+      width: 90%;
     }
 
     .dropDown {
