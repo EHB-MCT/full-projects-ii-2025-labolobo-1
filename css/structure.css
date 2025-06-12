@@ -157,8 +157,20 @@ body:has(.nav.active) {
 
 .sloganAlign {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   padding: 30px;
+}
+
+
+.intro {
+  text-align: center;
+  max-width: 478px;
+  justify-self: center;
+}
+
+
+.projects {
+  margin: 100px;
 }
 
 @media (max-width: 480px) {
