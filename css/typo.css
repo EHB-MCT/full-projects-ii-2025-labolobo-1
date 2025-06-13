@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
+
+b,
+bold {
+  font-weight: bold;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 50px;
+  color: #0b0835;
+  z-index: 3;
+}
+
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 28px;
+  color: #0b0835;
+}
+
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+  color: #0b0835;
+}
+
+p {
+  font-size: 14px;
+  line-height: 120%;
+  color: #0b0835;
+}
+
+dd {
+  font-size: 14px;
+  color: #0b0835;
+}
+
+.copyright {
+  font-size: 0.7rem;
+}
+
+.nav.active a {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 28px;
+  color: #0b0835;
+}
+
+.nav.active a.sub {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+  color: #0b0835;
+}
+
+.nav a {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  color: #0b0835;
+}
+
+.nav a.sub {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+  color: #0b0835;
+}
+
+.lang {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 28px;
+  color: #0b0835;
+}

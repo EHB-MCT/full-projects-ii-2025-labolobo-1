@@ -1,0 +1,11 @@
+/* elongates pages so the footer isn't floating around like a retard */
+
+body {
+  height: 100vh;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
