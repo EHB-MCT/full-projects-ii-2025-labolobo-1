@@ -1,0 +1,57 @@
+button {
+	cursor: pointer;
+}
+
+.buttons {
+	padding: 15px;
+	font-size: 18px;
+	font-family: "Bebas Neue", sans-serif;
+	margin: 1%;
+}
+
+.cta {
+	background-color: #0b0835;
+	color: whitesmoke;
+	border-radius: 10px;
+	box-shadow: 1.5px 1.5px #12e63a;
+}
+
+.cta:hover {
+	background-color: #0c5679;
+	border: 2px solid #12e63a;
+	transform: scale(1.05);
+	transition: 0.1s;
+}
+.casual {
+	background-color: #4b3b66;
+	border-radius: 15px;
+	color: #ffe7bd;
+	border: 2px solid #f28a0f;
+}
+
+.casual:hover {
+	box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.5);
+	border: none;
+	transform: scale(1.1);
+	transition: 0.1s;
+}
+
+.submitBut {
+	background-color: #4b3b66;
+	border-radius: 30px;
+	color: seashell;
+	border: none;
+}
+.submitBut:hover {
+	box-shadow: inset 2px -3px 1px rgba(0, 0, 0, 0.3);
+	transform: scale(1.1);
+	transition: 0.1s;
+}
+
+/*.ctaVolunteer {
+}
+.ctaHelp {
+	 help labolobo 
+}
+
+*/

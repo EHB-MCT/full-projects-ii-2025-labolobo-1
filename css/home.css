@@ -1,0 +1,87 @@
+.horizontalScroll {
+  display: flex;
+  padding: 10px 0;
+  flex-direction: horizontal;
+  flex-wrap: wrap;
+
+  .project {
+    max-width: 20rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  /* carousel */
+  /* 
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch; */
+}
+
+.people {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.personImg {
+  max-width: 200px;
+  width: 100%;
+}
+
+.partnerLogo {
+  scale: 1;
+  transition: 0.2s ease-in-out;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+
+  img {
+    justify-self: center;
+    width: 100%;
+  }
+}
+
+.partnerLogo:hover {
+  scale: 1.1;
+}
+
+.partnerLogos {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.partnerName {
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  bottom: 0px;
+  text-align: center;
+  justify-self: center;
+  p {
+    font-size: 0.5rem;
+    text-indent: 0;
+    text-wrap: wrap;
+  }
+}
+
+.partnerLogo:hover {
+  .partnerName {
+    opacity: 1;
+    bottom: 1.4rem;
+    width: 100%;
+    background-color: rgba(206, 205, 205, 0.788);
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* center projects (just carousel) when only one is shown
+  Do this in the base (above), then change it here for bigger screens
+  */
+}

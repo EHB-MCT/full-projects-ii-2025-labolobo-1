@@ -1,1 +1,57 @@
+@import "structure.css";
+@import "typo.css";
+@import "buttons.css";
 
+body {
+  color: #0b0835;
+  background-color: #d6cbb6;
+}
+
+.headerContainer {
+  background: linear-gradient(90deg, #0c5679 0%, #d6cbb6 50%, #0c5679 100%);
+}
+
+.navWrap {
+  background-color: #0b08351e;
+}
+
+.dropDown {
+  background-color: #0d5678;
+}
+
+.active {
+  background-color: #d6cbb6;
+}
+
+footer {
+  background-color: #0b0835;
+  padding-bottom: 5px;
+
+  p,
+  h3,
+  a,
+  dt,
+  dl,
+  dd {
+    color: #d6cbb6;
+  }
+
+  hr {
+    border: 1px solid #d6cbb6;
+  }
+}
+
+.partnerLogo {
+  background-color: white;
+
+  img {
+    height: auto;
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dropDown {
+    background-color: transparent;
+  }
+}
