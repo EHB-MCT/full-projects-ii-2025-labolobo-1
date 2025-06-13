@@ -1,9 +1,2 @@
-# full-projects-starter
-
-
-## structure
-
-index.html -> html code
-css/* -> styling
-js/* -> javascript code
-js/* -> javascript directory
+# link
+[live website](https://ehb-mct.github.io/full-projects-ii-2025-labolobo-1/)
