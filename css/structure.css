@@ -11,8 +11,55 @@ body {
 @media (min-width: 768px) {
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 816px) {
+  .burger-menu {
+    display: none;
+  }
+
+  .containerLogo {
+    img {
+      width: 50px;
+    }
+  }
+
+  .nav {
+    display: flex;
+    position: inherit;
+    flex-direction: row;
+    padding: 5px 0;
+    margin-top: 5px;
+    justify-content: space-between;
+    text-align: left;
+    .mainNav li {
+      margin-left: 0;
+    }
+
+    .mainNav {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 90%;
+
+      li {
+        margin-left: 0;
+      }
+    }
+
+    .dropDown {
+      display: none;
+      opacity: 0;
+      position: absolute;
+      transition: all 0.2s ease-in-out;
+      padding: 10px 0;
+    }
+  }
+  .hasDrop:hover .dropDown {
+    display: block;
+    opacity: 1;
+  }
 }
 
 @media only screen and (min-width: 900px) {
+  .mainNav {
+    width: 80%;
+  }
 }
