@@ -11,16 +11,6 @@
 		margin: 1rem;
 	}
 }
-.burger-menu {
-	justify-content: space-between;
-	align-items: center;
-	display: block;
-	cursor: pointer;
-	padding: 15px;
-	position: absolute;
-	right: 20px;
-	top: 20px;
-}
 
 @media only screen and (max-width: 768px) {
 	.logo {

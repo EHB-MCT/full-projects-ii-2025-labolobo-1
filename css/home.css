@@ -24,12 +24,11 @@
 		display: flex;
 	}
 	.navItem {
-		text-align: center;
-
 		background-color: black;
 		height: 30px;
 	}
 	.menu {
+		align-items: end;
 		display: flex;
 		flex-direction: column;
 		position: absolute;
