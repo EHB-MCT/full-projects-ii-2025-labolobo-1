@@ -46,14 +46,23 @@
 		position: absolute;
 		top: 30px;
 		right: 10px;
-		background: black;
-		color: whitesmoke;
+		background: blck;
 		padding: 1em;
 		border-radius: 8px;
 	}
+
 	.logo {
 		background-image: url("./assets/Eersteselectiewebsite/DDD 3.jpeg#");
 		height: 600px;
+	}
+	h2,
+	h3,
+	p {
+		margin: 20px;
+	}
+	button {
+		margin-left: 20px;
+		width: 100px;
 	}
 	/*
 	.menu.open {
