@@ -1,3 +1,5 @@
-button {
-  cursor: pointer;
+button,
+headerButton,
+hamburgerButton {
+	cursor: pointer;
 }
