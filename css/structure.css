@@ -1,13 +1,19 @@
 .container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto;
 }
 
-.headerLogo {
-  height: auto;
-  img {
-    height: 6rem;
-    margin: 1rem;
-  }
+.headerLogo,
+.footerContact {
+	height: auto;
+	img {
+		height: 6rem;
+		margin: 1rem;
+	}
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
 }
