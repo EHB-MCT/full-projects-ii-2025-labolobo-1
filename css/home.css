@@ -56,13 +56,31 @@
 		height: 600px;
 	}
 	h2,
-	h3,
+	h3 {
+		margin-top: 20px;
+		margin-bottom: 5px;
+		text-align: center;
+	}
 	p {
-		margin: 20px;
+		margin-left: 10px;
 	}
 	button {
 		margin-left: 20px;
 		width: 100px;
+	}
+	.Nieuws {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 500px;
+		flex-direction: column;
+	}
+	.nieuwsimg {
+		width: 100%;
+		max-width: 300px;
+
+		justify-content: center;
+		align-items: center;
 	}
 	/*
 	.menu.open {
