@@ -5,5 +5,10 @@ function init() {
 }
 
 async function fetcher() {
-  fetch(URL);
+  const rep = await fetch(URL);
+  if (!Response.ok) {
+    throw new Error(`response: ${rep.status}`);
+  }
+
+  const json = await rep.json();
 }
