@@ -8,6 +8,10 @@ body {
   min-height: 100vh;
 }
 
+div {
+  scroll-margin-top: 180px;
+}
+
 .container {
   width: 85%;
   margin: 0 auto;
