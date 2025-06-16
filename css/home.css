@@ -55,17 +55,20 @@
 		background-image: url("./assets/Eersteselectiewebsite/DDD 3.jpeg#");
 		height: 600px;
 	}
-	h2,
-	h3 {
+	h2 {
 		margin-top: 20px;
 		margin-bottom: 5px;
 		text-align: center;
 	}
+	h3 {
+		margin: 10px;
+	}
 	p {
 		margin-left: 10px;
+		text-align: left;
 	}
 	button {
-		margin-left: 20px;
+		margin-left: 10px;
 		width: 100px;
 	}
 	.Nieuws {
@@ -78,9 +81,6 @@
 	.nieuwsimg {
 		width: 100%;
 		max-width: 300px;
-
-		justify-content: center;
-		align-items: center;
 	}
 	/*
 	.menu.open {
