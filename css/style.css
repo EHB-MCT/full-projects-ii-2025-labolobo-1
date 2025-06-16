@@ -1,6 +1,6 @@
-@import "structure.css";
-@import "typo.css";
-@import "buttons.css";
+@import "./structure.css";
+@import "./typo.css";
+@import "./buttons.css";
 
 header {
   background-color: black;
