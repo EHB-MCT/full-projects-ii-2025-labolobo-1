@@ -44,14 +44,18 @@
 	.burger-menu {
 		display: flex;
 	}
+	.navItem {
+		text-align: center;
 
+		background-color: black;
+		height: 30px;
+	}
 	.menu {
 		display: flex;
 		flex-direction: column;
 		position: absolute;
 		top: 30px;
 		right: 10px;
-		background: blck;
 		padding: 1em;
 		border-radius: 8px;
 	}
@@ -77,9 +81,8 @@
 	}
 	.Nieuws {
 		display: flex;
-		justify-content: center;
 		align-items: center;
-		height: 500px;
+		height: 350px;
 		flex-direction: column;
 	}
 	.nieuwsimg {
@@ -96,7 +99,7 @@
 	.contact-info p,
 	.donatie p,
 	.footer-bottom p {
-		margin: 10px 0;
+		margin: 20px 0;
 		font-size: 14px;
 		color: white;
 	}
