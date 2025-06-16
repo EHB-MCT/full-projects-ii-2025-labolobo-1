@@ -51,9 +51,9 @@
 		padding: 1em;
 		border-radius: 8px;
 	}
-	.headerImg {
-		width: 100%;
-		height: auto;
+	.logo {
+		background-image: url("./assets/Eersteselectiewebsite/DDD 3.jpeg#");
+		height: 600px;
 	}
 	/*
 	.menu.open {
