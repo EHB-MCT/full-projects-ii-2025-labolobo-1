@@ -83,11 +83,9 @@
 		flex-direction: column;
 	}
 	.nieuwsimg {
-		width: 100%;
 		max-width: 300px;
 	}
 	.logofooter {
-		width: 100%;
 		max-width: 90px;
 		height: auto;
 		margin: 20px;
