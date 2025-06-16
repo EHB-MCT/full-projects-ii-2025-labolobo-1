@@ -41,12 +41,12 @@
 	}
 
 	.menu {
-		display: none;
+		display: ;
 		flex-direction: column;
 		position: absolute;
-		top: 60px;
-		right: 20px;
-		background: white;
+		top: 30px;
+		right: 10px;
+		background: black;
 		padding: 1em;
 		border-radius: 8px;
 	}
