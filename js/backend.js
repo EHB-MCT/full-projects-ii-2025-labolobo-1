@@ -11,4 +11,5 @@ async function fetcher() {
   }
 
   const json = await rep.json();
+  console.log(json);
 }
