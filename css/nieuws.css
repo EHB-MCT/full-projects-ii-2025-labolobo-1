@@ -2,7 +2,8 @@
 	.burger-menu {
 		display: flex;
 	}
-	.navItem {
+	/*
+    .navItem {
 		text-align: center;
 
 		background-color: black;
@@ -17,7 +18,7 @@
 		padding: 1em;
 		border-radius: 8px;
 	}
-
+*/
 	.logo {
 		background-image: url("./assets/Eersteselectiewebsite/DDD 3.jpeg#");
 		height: 600px;
