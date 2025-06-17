@@ -65,53 +65,13 @@
 	}
 }
 
-@media only screen and (max-width: 768px) {
-	.burger-menu {
-		display: flex;
-	}
-
-	.menu {
-		align-items: end;
-		display: flex;
-		flex-direction: column;
-		position: absolute;
-		top: 30px;
-		right: 10px;
-		padding: 1em;
-		border-radius: 8px;
-	}
-
-	.logo {
-		background-image: url("./assets/Eersteselectiewebsite/DDD 3.jpeg#");
-		height: 600px;
-	}
-	.Nieuws {
-		display: flex;
-		height: 350px;
-		flex-direction: column;
-	}
-	.HomeImg {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-	}
-}
-
-.menu-container {
-	display: flex;
-	justify-content: space-between;
-	text-align: right;
-    padding: 20px;
-    padding-bottom: 400px;
+.burger-menu span {
+    display: none;
 }
 
 @media only screen and (max-width: 768px) {
 	.burger-menu {
-		display: flex;
-	}
-	.navItem {
-		height: 30px;
+		display: none;
 	}
 	.menu {
 		align-items: end;
@@ -132,6 +92,7 @@
 		display: flex;
 		height: 350px;
 		flex-direction: column;
+        justify-self: center;
 	}
 	.HomeImg {
 		display: flex;
@@ -142,5 +103,16 @@
 	.partnerLogo {
 		margin-left: 10px;
 	}
-}
 
+    .menu-container {
+	display: flex;
+	justify-content: space-between;
+	text-align: right;
+    padding: 20px;
+    padding-bottom: 400px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}

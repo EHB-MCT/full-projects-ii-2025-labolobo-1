@@ -62,10 +62,14 @@
 		flex-direction: row;
 		max-width: 300px;
 		flex-wrap: wrap;
+		margin: 10px;
 	}
 
-	.Nieuws-container h3 {
-		align-self: center;
+	.newsDivs {
+		justify-content: space-around;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 	
 	.nieuwsimg {
@@ -94,7 +98,7 @@
 	}
 	h3 {
 		margin: 10px;
-		text-align: left;
+		text-align: center;
 	}
 	p {
 		text-align: left;
