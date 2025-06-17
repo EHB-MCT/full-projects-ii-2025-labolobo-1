@@ -5,8 +5,6 @@ let language = navigator.language;
 init();
 
 function init() {
-  fetcher();
-
   console.log(language);
   if (language.toLowerCase().includes("nl")) {
     localStorage.setItem("lang", "nl");
@@ -15,9 +13,13 @@ function init() {
   } else {
     localStorage.setItem("lang", "nl");
   }
+
+  language = localStorage.getItem("lang");
+
+  fetcher(language);
 }
 
-async function fetcher() {
+async function fetcher(language) {
   const rep = await fetch(URL + projects);
 
   const json = await rep.json();
