@@ -3,6 +3,8 @@
 	grid-template-columns: repeat(12, 1fr);
 	column-gap: 16px;
 	grid-template-rows: auto;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .headerLogo,
@@ -14,7 +16,6 @@
 	}
 }
 
-.container {
-	width: 90%;
-	margin: 0 auto;
+.topMargin {
+	margin-top: 25px;
 }
