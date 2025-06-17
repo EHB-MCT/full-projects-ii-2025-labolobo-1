@@ -1,5 +1,8 @@
 const URL = `http://localhost:8090/api/collections`;
 const projects = `/projects/records`;
+const txt = `/txt/records`;
+const articles = `/articles/records`;
+
 let language = navigator.language;
 
 init();
@@ -25,4 +28,5 @@ async function fetcher() {
   const json = await rep.json();
   console.log(json.items);
   // fetch everything, put in classes
+  // check if we can use `${language}` in the calls
 }
