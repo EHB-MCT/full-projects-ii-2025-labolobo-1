@@ -91,7 +91,6 @@
 		text-align: left;
 	}
 	p {
-		margin-left: 10px;
 		text-align: left;
 		justify-content: left;
 	}
@@ -110,8 +109,6 @@
 	a {
 		text-decoration: underline;
 	}
-
-}
 
 .body-container {
 	display: flex;
