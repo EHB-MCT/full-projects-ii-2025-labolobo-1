@@ -46,7 +46,6 @@
 	text-align: center;
 }
 
-
 .topMargin {
 	margin-top: 25px;
 }
@@ -88,6 +87,7 @@
 		display: inline-block;
 		margin-top: 10px;
 	}
+
 	h2 {
 		margin: 20px;
 		text-align: left;
@@ -100,6 +100,7 @@
 		text-align: left;
 		justify-content: left;
 	}
+
 	button {
 		margin: 10px;
 		width: 100px;
@@ -111,6 +112,18 @@
 		margin: 20px 0;
 	}
 }
+
+	.logofooter {
+		max-width: 90px;
+		height: auto;
+		margin: 20px;
+	}
+
+	.contact-info p,
+	.donatie p,
+	.footer-bottom p {
+		margin: 20px 0;
+	}
 
 	a {
 		text-decoration: underline;
