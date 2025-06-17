@@ -46,7 +46,6 @@
 	text-align: center;
 }
 
-
 .topMargin {
 	margin-top: 25px;
 }
@@ -82,19 +81,7 @@
 		display: inline-block;
 		margin-top: 10px;
 	}
-	h2 {
-		margin: 20px;
-		text-align: left;
-	}
-	h3 {
-		margin: 10px;
-		text-align: left;
-	}
-	p {
-		margin-left: 10px;
-		text-align: left;
-		justify-content: left;
-	}
+
 	button {
 		margin: 10px;
 		width: 100px;
@@ -106,10 +93,37 @@
 		margin: 20px 0;
 	}
 
+	.logofooter {
+		max-width: 90px;
+		height: auto;
+		margin: 20px;
+	}
+
+	.contact-info p,
+	.donatie p,
+	.footer-bottom p {
+		margin: 20px 0;
+	}
+
 	a {
 		text-decoration: underline;
 	}
 
+	hr {
+		border: none;
+		margin: 20px 0;
+	}
+
+	.footer-bottom a {
+		display: inline-block;
+		margin-top: 10px;
+		text-decoration: underline;
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
 }
 
 .body-container {
