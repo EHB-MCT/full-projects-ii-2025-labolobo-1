@@ -3,3 +3,19 @@ headerButton,
 hamburgerButton {
 	cursor: pointer;
 }
+
+button {
+	background-color: black;
+	border-style: solid;
+	border-radius: 20px;
+	margin: 25px 0px;
+	padding: 10px 15px;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+button a {
+	color: whitesmoke;
+	text-decoration: none;
+}
