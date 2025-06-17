@@ -1,14 +1,19 @@
-let baseURL = "https://pocketbase-labolobo.onrender.com/";
+const URL = `http://localhost:8090/api/collections`;
+const posts = `/posts/records`;
+let language = navigator.language;
+
+init();
 
 function init() {
   fetcher();
+
+  console.log(language);
+  if (language.toLowerCase().includes("nl")) {
+  }
 }
 
 async function fetcher() {
-  const rep = await fetch(URL);
-  if (!Response.ok) {
-    throw new Error(`response: ${rep.status}`);
-  }
+  const rep = await fetch(URL + posts);
 
   const json = await rep.json();
   console.log(json);
