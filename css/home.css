@@ -115,4 +115,9 @@
     h2 {
         text-align: center;
     }
+
+    .body-container button {
+        position: relative;
+        justify-content: center;
+    }
 }
