@@ -34,13 +34,15 @@
 .menu.active {
 	display: flex;
 	right: 0;
-	height: 100vh;
+	background-color: black;
+	width: 100%;
+	height: auto;
 }
 
 .navItem {
 	margin: 0.5rem 0;
 	padding: 10px 15px;
-	background-color: #0b08355e; /*1e is the transparency (30%)*/ 
+	background-color: #0b08355e; /*1e is the transparency (30%)*/
 }
 
 .navItem a {
@@ -76,7 +78,7 @@
 		position: relative;
 		gap: 2.5rem;
 	}
-	.logoImg {
-		max-width: 90px;
-	}
+}
+.logoImg {
+	width: 80px;
 }

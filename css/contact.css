@@ -12,4 +12,8 @@
 	p {
 		margin: 10px;
 	}
+	header {
+		background-color: black !important;
+		background-image: none;
+	}
 }

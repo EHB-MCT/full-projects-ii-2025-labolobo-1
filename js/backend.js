@@ -5,8 +5,6 @@ let language = navigator.language;
 init();
 
 function init() {
-  fetcher();
-
   console.log(language);
   if (language.toLowerCase().includes("nl")) {
     localStorage.setItem("lang", "nl");
@@ -15,6 +13,10 @@ function init() {
   } else {
     localStorage.setItem("lang", "nl");
   }
+
+  language = localStorage.getItem("lang");
+
+  fetcher();
 }
 
 async function fetcher() {
@@ -22,4 +24,5 @@ async function fetcher() {
 
   const json = await rep.json();
   console.log(json.items);
+  // fetch everything, put in classes
 }
