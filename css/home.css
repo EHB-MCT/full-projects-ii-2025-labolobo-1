@@ -1,4 +1,3 @@
-
 /* MOBILE: */
 
 .partnerLogo {
@@ -15,7 +14,7 @@
 }
 
 .logoImg {
-    width: 80px;
+	width: 80px;
 }
 
 .partnerLogo:hover {
@@ -61,14 +60,12 @@ h3 {
 	margin: 10px;
 }
 
-=======
-
 .menu-container {
 	display: flex;
 	justify-content: space-between;
 	text-align: right;
-    padding: 20px;
-    padding-bottom: 400px;
+	padding: 20px;
+	padding-bottom: 400px;
 }
 
 @media only screen and (max-width: 768px) {
