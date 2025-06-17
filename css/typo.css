@@ -15,7 +15,6 @@ h1 {
 	font-size: 50px;
 	font-weight: 900;
 	color: #0b0835;
-	z-index: 3;
 }
 
 h2 {
@@ -32,6 +31,7 @@ h3 {
 	font-weight: bold;
 	color: #0b0835;
 	margin: 50px 0px 25px;
+	/* Maybe make HR later */
 	text-decoration: underline;
 	text-decoration-color: rgba(248, 154, 87, 1);
 	text-decoration-thickness: 5px;
@@ -40,6 +40,10 @@ h3 {
 p {
 	font-size: 14px;
 	line-height: 120%;
+	color: #0b0835;
+}
+
+a {
 	color: #0b0835;
 }
 
@@ -55,29 +59,30 @@ dd {
 .nav.active a {
 	font-family: "Bebas Neue", sans-serif;
 	font-size: 28px;
-	color: #0b0835;
 }
 
 .nav.active a.sub {
 	font-family: "Bebas Neue", sans-serif;
 	font-size: 18px;
-	color: #0b0835;
 }
 
 .nav a {
 	font-family: "Bebas Neue", sans-serif;
 	font-size: 24px;
-	color: #0b0835;
 }
 
 .nav a.sub {
 	font-family: "Bebas Neue", sans-serif;
 	font-size: 18px;
-	color: #0b0835;
 }
 
 .lang {
 	font-family: "Bebas Neue", sans-serif;
 	font-size: 28px;
 	color: #0b0835;
+}
+
+footer p,
+footer a {
+	color: whitesmoke;
 }

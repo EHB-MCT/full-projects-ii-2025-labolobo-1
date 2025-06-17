@@ -1,38 +1,4 @@
 @import "./structure.css";
 @import "./typo.css";
 @import "./buttons.css";
-@import url("./nav.css");
-
-header {
-  background-color: black;
-}
-footer {
-  background-color: black;
-}
-
-@media only screen and (max-width: 768px) {
-  .contact-info p,
-  .donatie p,
-  .footer-bottom p {
-    color: white;
-  }
-  a {
-    color: white;
-    text-decoration: underline;
-  }
-  hr {
-    border-top: 1px solid white;
-  }
-  .footer-bottom a {
-    color: white;
-    text-decoration: underline;
-  }
-
-  .footer-bottom a {
-    color: white;
-    text-decoration: underline;
-  }
-  footer {
-    background-color: black;
-  }
-}
+@import "./nav.css";

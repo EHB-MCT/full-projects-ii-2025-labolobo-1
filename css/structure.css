@@ -2,6 +2,8 @@
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: auto;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .headerLogo {
@@ -19,10 +21,46 @@
 		margin: 1rem;
 	}
 }
+.menu-container {
+	position: relative;
+}
 
+.menu {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+
+.navItem {
+	text-decoration: none;
+}
+.footer {
+	padding: 20px;
+	text-align: left;
+}
+
+.partners {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.partners p {
+	text-align: center;
+}
 
 .topMargin {
 	margin-top: 25px;
+}
+
+
+footer {
+	padding: 25px 0px;
+}
+
+footer hr {
+	width: 90vw;
+	margin: 20px 0px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -33,12 +71,18 @@
 
 	.Nieuws {
 		display: flex;
-		align-items: center;
 		height: 350px;
-		flex-direction: column;
-	}
-	.nieuwsimg {
+		flex-direction: row;
 		max-width: 300px;
+		flex-wrap: wrap;
+	}
+
+	.Nieuws-container h3 {
+		align-self: center;
+	}
+	
+	.nieuwsimg {
+		width: 300px;
 	}
 	.logofooter {
 		max-width: 90px;
@@ -56,24 +100,77 @@
 		display: inline-block;
 		margin-top: 10px;
 	}
+
 	h2 {
 		margin: 20px;
-		text-align: center;
+		text-align: left;
 	}
 	h3 {
 		margin: 10px;
-	}
-	p {
-		margin-left: 10px;
 		text-align: left;
 	}
-	button {
-		margin-left: 10px;
-		width: 100px;
+	p {
+		text-align: left;
+		justify-content: left;
 	}
 
-	hr {
-		border: none;
+	button {
+		margin: 10px;
+		width: 100px;
+		justify-content: left;
+  }
+
+.footerContact,
+.footerDono,
+.footerExtra {
+	grid-column: 1 / 13;
+}
+
+	.logofooter {
+		max-width: 90px;
+		height: auto;
+		margin: 20px;
+	}
+
+	.contact-info p,
+	.donatie p,
+	.footer-bottom p {
 		margin: 20px 0;
 	}
+
+.logofooter {
+	max-width: 90px;
+	height: auto;
+	margin: 20px;
+}
+
+.contact-info p,
+.donatie p,
+.footer-bottom p {
+	margin: 20px 0;
+}
+
+a {
+	text-decoration: underline;
+}
+
+.body-container {
+	display: flex;
+	margin: 20px;
+	flex-direction: column;
+}
+.footer {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+
+.Nieuws img {
+	height: auto;
+	max-width: 100%;
+}
+
+.logofooter {
+	height: auto;
+	max-width: 100px;
 }
