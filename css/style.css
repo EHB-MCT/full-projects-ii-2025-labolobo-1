@@ -4,9 +4,12 @@
 @import "./nav.css";
 
 header {
+  background-color: black;
+
 	background-image: url("../assets/Eersteselectiewebsite/HomeBgHQ.png");
 	background-position: center;
 	background-size: cover;
+
 }
 
 .navItem {

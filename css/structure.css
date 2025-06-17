@@ -2,8 +2,6 @@
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: auto;
-	width: 90%;
-	margin: 0 auto;
 }
 
 .headerLogo {
@@ -61,12 +59,13 @@ footer hr {
 	margin: 20px 0px;
 }
 
+
 @media only screen and (max-width: 768px) {
 	.logo {
 		background-image: url("./assets/Eersteselectiewebsite/DDD 3.jpeg#");
 		height: 600px;
 	}
-	
+
 	.Nieuws {
 		display: flex;
 		height: 350px;
@@ -122,23 +121,11 @@ footer hr {
 		justify-content: left;
 	}
 
-	.footerContact,
-	.footerDono,
-	.footerExtra {
-		grid-column: 1 / 13;
-	}
-
-	.logofooter {
-		max-width: 90px;
-		height: auto;
-		margin: 20px;
-	}
-
-	.contact-info p,
-	.donatie p,
-	.footer-bottom p {
+	hr {
+		border: none;
 		margin: 20px 0;
 	}
+}
 
 	.logofooter {
 		max-width: 90px;
