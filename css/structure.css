@@ -60,8 +60,15 @@
 	.Nieuws {
 		display: flex;
 		height: 350px;
-		flex-direction: column;
+		flex-direction: row;
+		max-width: 300px;
+		flex-wrap: wrap;
 	}
+
+	.Nieuws-container h3 {
+		align-self: center;
+	}
+	
 	.nieuwsimg {
 		width: 300px;
 	}
