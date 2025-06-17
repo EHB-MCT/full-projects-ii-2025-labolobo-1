@@ -5,6 +5,12 @@
 }
 
 .headerLogo {
+	column-gap: 16px;
+	grid-template-rows: auto;
+}
+
+.headerLogo,
+.footerContact {
 	height: auto;
 	img {
 		height: 6rem;
@@ -63,4 +69,8 @@
 		border: none;
 		margin: 20px 0;
 	}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
 }
