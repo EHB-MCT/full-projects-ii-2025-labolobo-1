@@ -19,6 +19,32 @@
 		margin: 1rem;
 	}
 }
+.menu-container {
+	position: relative;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+.navItem {
+	text-decoration: none;
+}
+.footer {
+	padding: 20px;
+	text-align: left;
+}
+
+.partners {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.partners p {
+	text-align: center;
+}
 
 
 .topMargin {
@@ -33,12 +59,12 @@
 
 	.Nieuws {
 		display: flex;
-		align-items: center;
 		height: 350px;
 		flex-direction: column;
 	}
 	.nieuwsimg {
-		max-width: 300px;
+		width: 300px;
+		margin: 10px;
 	}
 	.logofooter {
 		max-width: 90px;
@@ -58,22 +84,30 @@
 	}
 	h2 {
 		margin: 20px;
-		text-align: center;
+		text-align: left;
 	}
 	h3 {
 		margin: 10px;
+		text-align: left;
 	}
 	p {
 		margin-left: 10px;
 		text-align: left;
+		justify-content: left;
 	}
 	button {
-		margin-left: 10px;
+		margin: 10px;
 		width: 100px;
+		justify-content: left;
 	}
 
 	hr {
 		border: none;
 		margin: 20px 0;
 	}
+
+	a {
+		text-decoration: underline;
+	}
+
 }
