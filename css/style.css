@@ -1,7 +1,7 @@
 @import "./structure.css";
 @import "./typo.css";
 @import "./buttons.css";
-@import url("./nav.css");
+@import "./nav.css";
 
 header {
 	background-color: black;
