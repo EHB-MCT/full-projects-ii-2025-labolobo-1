@@ -24,6 +24,11 @@
 	margin: 20px;
 	flex-direction: column;
 }
+.footer {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
 
 .Nieuws img {
 	height: auto;
