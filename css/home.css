@@ -1,11 +1,22 @@
+.logoImg {
+	width: 80px;
+	height: 80px;
+}
+
+.menu-container {
+	display: flex;
+	justify-content: space-between;
+	text-align: right;
+	padding: 20px;
+	padding-bottom: 400px;
+}
 /* MOBILE: */
 
 .partnerLogo {
 	scale: 1;
 	transition: 0.2s ease-in-out;
 	width: 100px;
-	height: 100px;
-	margin-bottom: 30px;
+	height: auto;
 
 	img {
 		justify-self: center;
@@ -28,6 +39,7 @@
 	flex-wrap: wrap;
 	gap: 20px;
 	padding: 20px 0;
+	justify-content: space-around;
 }
 
 .partnerName {
@@ -35,7 +47,7 @@
 	-webkit-overflow-scrolling: touch;
 	opacity: 0;
 	transition: all 0.2s ease-in-out;
-	bottom: 0px;
+	bottom: -0.5rem;
 	text-align: center;
 	justify-self: center;
 	p {
@@ -48,7 +60,7 @@
 .partnerLogo:hover {
 	.partnerName {
 		opacity: 1;
-		bottom: 1.4rem;
+		bottom: 0.4rem;
 		width: 100%;
 	}
 }
@@ -72,9 +84,7 @@ h3 {
 	.burger-menu {
 		display: flex;
 	}
-	.navItem {
-		height: 30px;
-	}
+
 	.menu {
 		align-items: end;
 		display: flex;
@@ -100,8 +110,5 @@ h3 {
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-	}
-	.partnerLogo {
-		margin-left: 10px;
 	}
 }
