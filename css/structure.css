@@ -2,8 +2,6 @@
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: auto;
-	width: 90%;
-	margin: 0 auto;
 }
 
 .headerLogo {
@@ -31,7 +29,6 @@
 	gap: 1rem;
 }
 
-
 .navItem {
 	text-decoration: none;
 }
@@ -49,7 +46,6 @@
 	margin-top: 25px;
 }
 
-
 footer {
 	padding: 25px 0px;
 }
@@ -58,6 +54,7 @@ footer hr {
 	width: 90vw;
 	margin: 20px 0px;
 }
+
 
 @media only screen and (max-width: 768px) {
 	.logo {
@@ -76,7 +73,7 @@ footer hr {
 	.Nieuws-container h3 {
 		align-self: center;
 	}
-	
+
 	.nieuwsimg {
 		width: 300px;
 	}
@@ -97,12 +94,29 @@ footer hr {
 		margin-top: 10px;
 	}
 
+	h2 {
+		margin: 20px;
+		text-align: left;
+	}
+	h3 {
+		margin: 10px;
+		text-align: left;
+	}
+	p {
+		text-align: left;
+		justify-content: left;
+	}
 
+	button {
+		margin: 10px;
+		width: 100px;
+		justify-content: left;
+	}
 
-.footerContact,
-.footerDono,
-.footerExtra {
-	grid-column: 1 / 13;
+	hr {
+		border: none;
+		margin: 20px 0;
+	}
 }
 
 	.logofooter {
@@ -117,39 +131,28 @@ footer hr {
 		margin: 20px 0;
 	}
 
-.logofooter {
-	max-width: 90px;
-	height: auto;
-	margin: 20px;
-}
+	a {
+		text-decoration: underline;
+	}
 
-.contact-info p,
-.donatie p,
-.footer-bottom p {
-	margin: 20px 0;
-}
+	.body-container {
+		display: flex;
+		margin: 20px;
+		flex-direction: column;
+	}
+	.footer {
+		display: flex;
+		flex-direction: column;
+		margin: 20px;
+	}
 
-a {
-	text-decoration: underline;
-}
+	.Nieuws img {
+		height: auto;
+		max-width: 100%;
+	}
 
-.body-container {
-	display: flex;
-	margin: 20px;
-	flex-direction: column;
-}
-.footer {
-	display: flex;
-	flex-direction: column;
-	margin: 20px;
-}
-
-.Nieuws img {
-	height: auto;
-	max-width: 100%;
-}
-
-.logofooter {
-	height: auto;
-	max-width: 100px;
+	.logofooter {
+		height: auto;
+		max-width: 100px;
+	}
 }
