@@ -4,14 +4,13 @@
 @import "./nav.css";
 
 header {
-  background-color: gray;
   background-image: url("../assets/Eersteselectiewebsite/HomeBgHQ.png");
   background-position: center;
   background-size: cover;
+	background-color: black;
+
 }
 
-footer {
-	background-color: black;
 }
 .navItem {
 	color: white;
@@ -61,3 +60,4 @@ footer {
 		background-color: rgba(206, 205, 205, 0.788);
 	}
 }
+
