@@ -1,1 +1,9 @@
+.menu-container {
+    img {
+        justify-self: left;
+    }
+}
 
+.logoImg {
+    width: 80px;
+}

@@ -3,5 +3,7 @@
 @import "./buttons.css";
 
 header {
-  background-color: black;
+  background-image: url("../assets/Eersteselectiewebsite/2024 Mais Quelle Annee 2.jpg");
+  background-position: center;
+  background-size: cover;
 }

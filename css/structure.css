@@ -21,6 +21,6 @@
 
 .menu-container {
 	display: flex;
-	justify-content: right;
+	justify-content: space-between;
 	text-align: right;
 }
