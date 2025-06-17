@@ -1,7 +1,5 @@
-import PocketBase from "pocketbase";
-
-const pb = new PocketBase(`http://localhost:8090`);
-
+const URL = `http://localhost:8090/api/collections`;
+const posts = `/posts/records`;
 init();
 
 function init() {
@@ -9,11 +7,8 @@ function init() {
 }
 
 async function fetcher() {
-  const rep = await pb.collection("posts").getFullList({ sort: "Dutch_title" });
-  if (!Response.ok) {
-    throw new Error(`response: ${rep.status}`);
-  }
+  const rep = await fetch(URL + posts);
 
   const json = await rep.json();
-  await console.log(json);
+  console.log(json);
 }
