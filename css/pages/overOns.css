@@ -2,3 +2,6 @@ main img {
 	max-width: 70%;
 	height: auto;
 }
+p a {
+	color: black;
+}
