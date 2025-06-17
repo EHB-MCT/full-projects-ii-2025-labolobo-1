@@ -4,8 +4,12 @@
 @import url("./nav.css");
 
 header {
-	background-color: black;
+  background-color: gray;
+  background-image: url("../assets/Eersteselectiewebsite/HomeBgHQ.png");
+  background-position: center;
+  background-size: cover;
 }
+
 footer {
 	background-color: black;
 }
