@@ -4,6 +4,13 @@
 	grid-template-rows: auto;
 }
 
+.headerLogo {
+	column-gap: 16px;
+	grid-template-rows: auto;
+	width: 90%;
+	margin: 0 auto;
+}
+
 .headerLogo,
 .footerContact {
 	height: auto;
@@ -12,8 +19,130 @@
 		margin: 1rem;
 	}
 }
+.menu-container {
+	position: relative;
+}
 
-.container {
-	width: 90%;
-	margin: 0 auto;
+.menu {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+}
+
+.navItem {
+	text-decoration: none;
+}
+.footer {
+	padding: 20px;
+	text-align: left;
+}
+
+.partners {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.partners p {
+	text-align: center;
+}
+
+.topMargin {
+	margin-top: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+	.logo {
+		background-image: url("./assets/Eersteselectiewebsite/DDD 3.jpeg#");
+		height: 600px;
+	}
+
+	.Nieuws {
+		display: flex;
+		height: 350px;
+		flex-direction: column;
+	}
+	.nieuwsimg {
+		width: 300px;
+		margin: 10px;
+	}
+	.logofooter {
+		max-width: 90px;
+		height: auto;
+		margin: 20px;
+	}
+
+	.contact-info p,
+	.donatie p,
+	.footer-bottom p {
+		margin: 20px 0;
+	}
+
+	.footer-bottom a {
+		display: inline-block;
+		margin-top: 10px;
+	}
+
+	button {
+		margin: 10px;
+		width: 100px;
+		justify-content: left;
+	}
+
+	hr {
+		border: none;
+		margin: 20px 0;
+	}
+
+	.logofooter {
+		max-width: 90px;
+		height: auto;
+		margin: 20px;
+	}
+
+	.contact-info p,
+	.donatie p,
+	.footer-bottom p {
+		margin: 20px 0;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+
+	hr {
+		border: none;
+		margin: 20px 0;
+	}
+
+	.footer-bottom a {
+		display: inline-block;
+		margin-top: 10px;
+		text-decoration: underline;
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+.body-container {
+	display: flex;
+	margin: 20px;
+	flex-direction: column;
+}
+.footer {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+
+.Nieuws img {
+	height: auto;
+	max-width: 100%;
+}
+
+.logofooter {
+	height: auto;
+	max-width: 100px;
 }
