@@ -81,3 +81,8 @@ dd {
 	font-size: 28px;
 	color: #0b0835;
 }
+
+footer p,
+footer a {
+	color: whitesmoke;
+}
