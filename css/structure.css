@@ -52,12 +52,12 @@
 
 	.Nieuws {
 		display: flex;
-		align-items: center;
 		height: 350px;
 		flex-direction: column;
 	}
 	.nieuwsimg {
 		max-width: 300px;
+		margin: 10px;
 	}
 	.logofooter {
 		max-width: 90px;
@@ -77,18 +77,21 @@
 	}
 	h2 {
 		margin: 20px;
-		text-align: center;
+		text-align: left;
 	}
 	h3 {
 		margin: 10px;
+		text-align: left;
 	}
 	p {
 		margin-left: 10px;
 		text-align: left;
+		justify-content: left;
 	}
 	button {
-		margin-left: 10px;
+		margin: 10px;
 		width: 100px;
+		justify-content: left;
 	}
 
 	hr {

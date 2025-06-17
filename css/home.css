@@ -46,7 +46,6 @@
 		opacity: 1;
 		bottom: 1.4rem;
 		width: 100%;
-		background-color: rgba(206, 205, 205, 0.788);
 	}
 }
 
@@ -72,28 +71,21 @@
 		background-image: url("./assets/Eersteselectiewebsite/DDD 3.jpeg#");
 		height: 600px;
 	}
-	h2 {
-		margin: 20px;
-		text-align: center;
-	}
-	h3 {
-		margin: 10px;
-	}
-	p {
-		margin-left: 10px;
-		text-align: left;
-	}
-	button {
-		margin-left: 10px;
-		width: 100px;
-	}
 	.Nieuws {
 		display: flex;
-		align-items: center;
 		height: 350px;
+		flex-direction: column;
+	}
+	.HomeImg {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		flex-direction: column;
 	}
 	.nieuwsimg {
 		max-width: 300px;
+	}
+	.partnerLogo {
+		margin-left: 10px;
 	}
 }
