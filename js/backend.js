@@ -16,12 +16,13 @@ function init() {
 
   language = localStorage.getItem("lang");
 
-  fetcher(language);
+  fetcher();
 }
 
-async function fetcher(language) {
+async function fetcher() {
   const rep = await fetch(URL + projects);
 
   const json = await rep.json();
   console.log(json.items);
+  // fetch everything, put in classes
 }
