@@ -1,6 +1,7 @@
 
 .logoImg {
     width: 80px;
+    height: 80px;
 }
 
 .menu-container {
@@ -67,9 +68,7 @@
 	.burger-menu {
 		display: flex;
 	}
-	.navItem {
-		height: 30px;
-	}
+
 	.menu {
 		align-items: end;
 		display: flex;
