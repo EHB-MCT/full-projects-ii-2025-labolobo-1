@@ -4,10 +4,17 @@
 @import url("./nav.css");
 
 header {
-	background-color: black;
+  background-color: gray;
+  background-image: url("../assets/Eersteselectiewebsite/HomeBgHQ.png");
+  background-position: center;
+  background-size: cover;
 }
+
 footer {
 	background-color: black;
+}
+.navItem {
+	color: white;
 }
 
 @media only screen and (max-width: 768px) {
@@ -34,5 +41,20 @@ footer {
 	}
 	footer {
 		background-color: black;
+	}
+	.navItem {
+		background-color: black;
+	}
+
+	.contact-info p,
+	.donatie p,
+	.footer-bottom p {
+		color: white;
+	}
+}
+
+.partnerLogo:hover {
+	.partnerName {
+		background-color: rgba(206, 205, 205, 0.788);
 	}
 }
