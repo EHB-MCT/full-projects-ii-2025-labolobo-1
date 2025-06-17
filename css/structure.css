@@ -18,9 +18,3 @@
 	width: 90%;
 	margin: 0 auto;
 }
-
-.menu-container {
-	display: flex;
-	justify-content: space-between;
-	text-align: right;
-}

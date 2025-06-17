@@ -7,3 +7,11 @@
 .logoImg {
     width: 80px;
 }
+
+.menu-container {
+	display: flex;
+	justify-content: space-between;
+	text-align: right;
+    padding: 20px;
+    padding-bottom: 448px;
+}
