@@ -18,3 +18,9 @@
 	width: 90%;
 	margin: 0 auto;
 }
+
+.menu-container {
+	display: flex;
+	justify-content: right;
+	text-align: right;
+}
