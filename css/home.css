@@ -1,30 +1,60 @@
-.menu-container {
-	position: relative;
+/* MOBILE: */
+
+.partnerLogo {
+	scale: 1;
+	transition: 0.2s ease-in-out;
+	width: 100px;
+	height: 100px;
+	margin-bottom: 30px;
+
+	img {
+		justify-self: center;
+		width: 100%;
+	}
 }
 
-.menu {
+.partnerLogo:hover {
+	scale: 1.1;
+}
+
+.partnerLogos {
+	z-index: 1;
 	display: flex;
 	flex-direction: row;
-	gap: 1rem;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 20px 0;
 }
 
-.navItem {
-	color: white;
-	text-decoration: none;
-}
-.footer {
-	padding: 20px;
-	background-color: #0d0e1a;
-	text-align: left;
+.partnerName {
+	position: relative;
+	-webkit-overflow-scrolling: touch;
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+	bottom: 0px;
+	text-align: center;
+	justify-self: center;
+	p {
+		font-size: 0.5rem;
+		text-indent: 0;
+		text-wrap: wrap;
+	}
 }
 
-/* MOBILE: */
+.partnerLogo:hover {
+	.partnerName {
+		opacity: 1;
+		bottom: 1.4rem;
+		width: 100%;
+		background-color: rgba(206, 205, 205, 0.788);
+	}
+}
+
 @media only screen and (max-width: 678px) {
 	.burger-menu {
 		display: flex;
 	}
 	.navItem {
-		background-color: black;
 		height: 30px;
 	}
 	.menu {
@@ -66,44 +96,4 @@
 	.nieuwsimg {
 		max-width: 300px;
 	}
-	.logofooter {
-		max-width: 90px;
-		height: auto;
-		margin: 20px;
-	}
-	footer {
-		background-color: black;
-	}
-	.contact-info p,
-	.donatie p,
-	.footer-bottom p {
-		margin: 20px 0;
-		font-size: 14px;
-		color: white;
-	}
-
-	a {
-		color: white;
-		text-decoration: underline;
-	}
-
-	hr {
-		border: none;
-		border-top: 1px solid white;
-		margin: 20px 0;
-	}
-
-	.footer-bottom a {
-		display: inline-block;
-		margin-top: 10px;
-		font-size: 14px;
-		color: white;
-		text-decoration: underline;
-	}
-
-	/*
-	.menu.open {
-		display: flex;
-	}
-        */
 }
