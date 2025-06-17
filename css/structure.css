@@ -7,6 +7,8 @@
 .headerLogo {
 	column-gap: 16px;
 	grid-template-rows: auto;
+	width: 90%;
+	margin: 0 auto;
 }
 
 .headerLogo,
@@ -44,6 +46,10 @@
 	text-align: center;
 }
 
+.topMargin {
+	margin-top: 25px;
+}
+
 @media only screen and (max-width: 768px) {
 	.logo {
 		background-image: url("./assets/Eersteselectiewebsite/DDD 3.jpeg#");
@@ -75,19 +81,7 @@
 		display: inline-block;
 		margin-top: 10px;
 	}
-	h2 {
-		margin: 20px;
-		text-align: left;
-	}
-	h3 {
-		margin: 10px;
-		text-align: left;
-	}
-	p {
-		margin-left: 10px;
-		text-align: left;
-		justify-content: left;
-	}
+
 	button {
 		margin: 10px;
 		width: 100px;
@@ -109,7 +103,6 @@
 	.donatie p,
 	.footer-bottom p {
 		margin: 20px 0;
-		font-size: 14px;
 	}
 
 	a {
@@ -124,7 +117,6 @@
 	.footer-bottom a {
 		display: inline-block;
 		margin-top: 10px;
-		font-size: 14px;
 		text-decoration: underline;
 	}
 
