@@ -2,8 +2,6 @@
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: auto;
-	width: 90%;
-	margin: 0 auto;
 }
 
 .headerLogo {
@@ -31,7 +29,6 @@
 	gap: 1rem;
 }
 
-
 .navItem {
 	text-decoration: none;
 }
@@ -53,22 +50,12 @@
 	margin-top: 25px;
 }
 
-
-footer {
-	padding: 25px 0px;
-}
-
-footer hr {
-	width: 90vw;
-	margin: 20px 0px;
-}
-
 @media only screen and (max-width: 768px) {
 	.logo {
 		background-image: url("./assets/Eersteselectiewebsite/DDD 3.jpeg#");
 		height: 600px;
 	}
-	
+
 	.Nieuws {
 		display: flex;
 		height: 350px;
@@ -122,12 +109,12 @@ footer hr {
 		margin: 10px;
 		width: 100px;
 		justify-content: left;
-  }
+	}
 
-.footerContact,
-.footerDono,
-.footerExtra {
-	grid-column: 1 / 13;
+	hr {
+		border: none;
+		margin: 20px 0;
+	}
 }
 
 	.logofooter {
@@ -142,21 +129,9 @@ footer hr {
 		margin: 20px 0;
 	}
 
-.logofooter {
-	max-width: 90px;
-	height: auto;
-	margin: 20px;
-}
-
-.contact-info p,
-.donatie p,
-.footer-bottom p {
-	margin: 20px 0;
-}
-
-a {
-	text-decoration: underline;
-}
+	a {
+		text-decoration: underline;
+	}
 
 .body-container {
 	display: flex;
