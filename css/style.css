@@ -1,11 +1,17 @@
 @import "./structure.css";
 @import "./typo.css";
 @import "./buttons.css";
-@import url("./nav.css");
+@import "./nav.css";
 
 header {
+  background-image: url("../assets/Eersteselectiewebsite/HomeBgHQ.png");
+  background-position: center;
+  background-size: cover;
 	background-color: black;
+
 }
-footer {
-	background-color: black;
+
+}
+.navItem {
+	color: white;
 }
