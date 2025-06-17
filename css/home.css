@@ -1,20 +1,20 @@
 header {
-    background-image: url("../assets/Eersteselectiewebsite/HomeBgHQ.png");
-    background-position: center;
-    background-size: cover;
+	background-image: url("../assets/Eersteselectiewebsite/HomeBgHQ.png");
+	background-position: center;
+	background-size: cover;
 }
 
 .logoImg {
-    width: 80px;
-    height: 80px;
+	width: 80px;
+	height: 80px;
 }
 
 .menu-container {
 	display: flex;
 	justify-content: space-between;
 	text-align: right;
-    padding: 20px;
-    padding-bottom: 400px;
+	padding: 20px;
+	padding-bottom: 400px;
 }
 /* MOBILE: */
 
@@ -41,17 +41,15 @@ header {
 	flex-wrap: wrap;
 	gap: 20px;
 	padding: 20px 0;
-    justify-content: space-around;
+	justify-content: space-around;
 }
-
-
 
 .partnerName {
 	position: relative;
 	-webkit-overflow-scrolling: touch;
 	opacity: 0;
 	transition: all 0.2s ease-in-out;
-	bottom: -.5rem;
+	bottom: -0.5rem;
 	text-align: center;
 	justify-self: center;
 	p {
@@ -70,7 +68,7 @@ header {
 }
 
 .burger-menu span {
-    display: none;
+	display: none;
 }
 
 .Nieuws {
@@ -83,20 +81,20 @@ header {
 }
 
 .newsDivs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
-.HomeImg img{
-    max-width: 100%;
-    height: auto;
+.HomeImg img {
+	max-width: 100%;
+	height: auto;
 }
 
 .missie {
-    display: flex;
-    flex-direction: column;
-    width: 500px;
+	display: flex;
+	flex-direction: column;
+	width: 500px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -122,7 +120,7 @@ header {
 		display: flex;
 		height: 350px;
 		flex-direction: column;
-        justify-self: center;
+		justify-self: center;
 	}
 	.HomeImg {
 		display: flex;
@@ -134,20 +132,20 @@ header {
 		margin-left: 10px;
 	}
 
-    .menu-container {
-	display: flex;
-	justify-content: space-between;
-	text-align: right;
-    padding: 20px;
-    padding-bottom: 400px;
-    }
+	.menu-container {
+		display: flex;
+		justify-content: space-between;
+		text-align: right;
+		padding: 20px;
+		padding-bottom: 400px;
+	}
 
-    h2 {
-        text-align: center;
-    }
+	h2 {
+		text-align: center;
+	}
 
-    .body-container button {
-        position: relative;
-        justify-content: center;
-    }
+	.body-container button {
+		position: relative;
+		justify-content: center;
+	}
 }
