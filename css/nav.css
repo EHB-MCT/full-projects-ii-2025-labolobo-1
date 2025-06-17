@@ -23,9 +23,6 @@
 	flex-direction: column;
 	background-color: black;
 	position: absolute;
-	top: 140px;
-	height: 100%;
-	width: 100%;
 	align-items: center;
 	padding: 1rem;
 	border-radius: 8px;
@@ -63,13 +60,20 @@
 		display: none;
 	}
 
-	.menu {
-		display: flex !important;
-		flex-direction: row;
-		position: static;
-		transition: right 0.2s ease;
+	.burger-menu {
+		display: none;
+	}
 
-		gap: 20px;
+	.navItem {
+		padding: 5px;
+	}
+
+	.menu {
+		background-color: transparent;
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		gap: 4rem;
 	}
 	.logoImg {
 		max-width: 90px;
