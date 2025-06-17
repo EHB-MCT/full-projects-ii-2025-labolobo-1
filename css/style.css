@@ -3,9 +3,4 @@
 @import "./buttons.css";
 @import "./nav.css";
 
-header {
-	background-image: url("../assets/Eersteselectiewebsite/HomeBgHQ.png");
-	background-position: center;
-	background-size: cover;
-	background-color: black;
-}
+
