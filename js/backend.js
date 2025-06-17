@@ -8,6 +8,8 @@ function init() {
   fetcher();
 
   console.log(language);
+  if (language.toLowerCase().includes("nl")) {
+  }
 }
 
 async function fetcher() {
