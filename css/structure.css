@@ -125,3 +125,24 @@
 		margin: 0 auto;
 	}
 }
+
+.body-container {
+	display: flex;
+	margin: 20px;
+	flex-direction: column;
+}
+.footer {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+
+.Nieuws img {
+	height: auto;
+	max-width: 100%;
+}
+
+.logofooter {
+	height: auto;
+	max-width: 100px;
+}

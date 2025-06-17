@@ -1,3 +1,4 @@
+
 /* MOBILE: */
 
 .partnerLogo {
@@ -11,6 +12,10 @@
 		justify-self: center;
 		width: 100%;
 	}
+}
+
+.logoImg {
+    width: 80px;
 }
 
 .partnerLogo:hover {
@@ -55,33 +60,39 @@
 h3 {
 	margin: 10px;
 }
+
+=======
+
+.menu-container {
+	display: flex;
+	justify-content: space-between;
+	text-align: right;
+    padding: 20px;
+    padding-bottom: 400px;
+}
+
 @media only screen and (max-width: 768px) {
 	.burger-menu {
-		display: none;
+		display: flex;
 	}
-	.menu .navItem {
+	.navItem {
 		height: 30px;
 	}
 	.menu {
-		background-color: none;
-
+		align-items: end;
 		display: flex;
 		flex-direction: column;
-		top: 10px;
-		right: 20px;
+		position: absolute;
+		top: 30px;
+		right: 10px;
 		padding: 1em;
 		border-radius: 8px;
-		width: 100px;
-		height: 250px;
 	}
-	/*
+
 	.logo {
-		background-image: url(https://lh3.googleusercontent.com/pw/AP1GczOt2rcjzXLGPqSqaEkS3fvBaN_Wi7EiSPYqglRWItgIydURgl4yPQ8GogxR_vnNPiaPYg5m8JN97kKUE7bh6RUCdiD53bRMIi7owlKKG7i8vuaBgn0z1Tm2pWfvWYP_G9_4g_cLNr6JfRKgw1D46_NXAg=w1024-h683-s-no-gm?authuser=0);
-		background-color: red;
-		background-size: cover;
+		background-image: url("./assets/Eersteselectiewebsite/DDD 3.jpeg#");
 		height: 600px;
 	}
-		*/
 	.Nieuws {
 		display: flex;
 		height: 350px;
