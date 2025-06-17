@@ -12,6 +12,8 @@ function init() {
     localStorage.setItem("lang", "nl");
   } else if (language.toLowerCase().includes("fr")) {
     localStorage.setItem("lang", "fr");
+  } else {
+    localStorage.setItem("lang", "nl");
   }
 }
 
