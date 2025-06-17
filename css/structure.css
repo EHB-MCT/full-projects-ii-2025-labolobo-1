@@ -66,17 +66,21 @@ footer hr {
 		background-image: url("./assets/Eersteselectiewebsite/DDD 3.jpeg#");
 		height: 600px;
 	}
-
+	
 	.Nieuws {
 		display: flex;
 		height: 350px;
 		flex-direction: row;
 		max-width: 300px;
 		flex-wrap: wrap;
+		margin: 10px;
 	}
 
-	.Nieuws-container h3 {
-		align-self: center;
+	.newsDivs {
+		justify-content: space-around;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
 	.nieuwsimg {
