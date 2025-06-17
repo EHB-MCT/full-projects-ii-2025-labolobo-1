@@ -49,7 +49,7 @@
 	}
 }
 
-@media only screen and (max-width: 678px) {
+@media only screen and (max-width: 768px) {
 	.burger-menu {
 		display: flex;
 	}
@@ -81,9 +81,6 @@
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-	}
-	.nieuwsimg {
-		max-width: 300px;
 	}
 	.partnerLogo {
 		margin-left: 10px;
