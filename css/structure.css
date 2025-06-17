@@ -35,10 +35,6 @@
 .navItem {
 	text-decoration: none;
 }
-.footer {
-	padding: 20px;
-	text-align: left;
-}
 
 .partners {
 	margin-top: 100px;
@@ -68,21 +64,17 @@ footer hr {
 		background-image: url("./assets/Eersteselectiewebsite/DDD 3.jpeg#");
 		height: 600px;
 	}
-	
+
 	.Nieuws {
 		display: flex;
 		height: 350px;
 		flex-direction: row;
 		max-width: 300px;
 		flex-wrap: wrap;
-		margin: 10px;
 	}
 
-	.newsDivs {
-		justify-content: space-around;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
+	.Nieuws-container h3 {
+		align-self: center;
 	}
 	
 	.nieuwsimg {
@@ -105,24 +97,7 @@ footer hr {
 		margin-top: 10px;
 	}
 
-	h2 {
-		margin: 20px;
-		text-align: left;
-	}
-	h3 {
-		margin: 10px;
-		text-align: left;
-	}
-	p {
-		text-align: left;
-		justify-content: left;
-	}
 
-	button {
-		margin: 10px;
-		width: 100px;
-		justify-content: left;
-  }
 
 .footerContact,
 .footerDono,
