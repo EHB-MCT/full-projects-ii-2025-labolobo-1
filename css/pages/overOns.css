@@ -3,10 +3,6 @@ main {
 	margin-right: 10%;
 }
 
-main img {
-	max-width: 70%;
-	height: auto;
-}
 p a {
 	color: black;
 }
@@ -18,6 +14,23 @@ main h4 {
 main p {
 	margin-top: 1em;
 	margin-bottom: 1em;
+	max-width: 100%;
+}
+
+/* Mission section */
+
+.mission {
+	width: 90%;
+	margin: 0 auto;
+	justify-content: center;
+	align-content: center;
+}
+.mission img {
+	max-width: 100%;
+}
+.mission p {
+	max-width: 85%;
+	margin: 1.5em auto;
 }
 
 /* team Grid */
@@ -48,4 +61,11 @@ main p {
 	grid-column-end: 3;
 	align-content: center;
 	justify-content: center;
+}
+
+/* Team section */
+
+.team p {
+	max-width: 85%;
+	margin: 1.5em auto;
 }
