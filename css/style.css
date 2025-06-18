@@ -1,7 +1,7 @@
 @import "./structure.css";
 @import "./typo.css";
 @import "./buttons.css";
-@import "./forms.css";
+@import "./form.css";
 
 header {
 	background-color: black;
