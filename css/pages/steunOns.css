@@ -3,3 +3,18 @@
 	grid-column: 1 / 13;
 }
 
+@media screen and (min-width: 768px) {
+	.steun {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+	}
+
+	.steun p,b {
+		grid-column: 1 / 7;
+	}
+
+	.giftButton {
+		grid-column: 8 / 13;
+		justify-self: center;
+	}
+}
