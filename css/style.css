@@ -5,21 +5,10 @@
 
 header {
 	background-color: black;
-
-	background-image: url("../assets/Eersteselectiewebsite/HomeBgHQ.png");
 	background-position: center;
 	background-size: cover;
 }
 
-.navItem {
-	color: white;
-}
-
-.contact-info p,
-.donatie p,
-.footer-bottom p {
-	color: white;
-}
 a {
 	color: white;
 	text-decoration: underline;
@@ -27,33 +16,7 @@ a {
 hr {
 	border-top: 1px solid white;
 }
-.footer-bottom a {
-	color: white;
-	text-decoration: underline;
-}
 
-.footer-bottom a {
-	color: white;
-	text-decoration: underline;
-}
 footer {
 	background-color: black;
-}
-.navItem {
-	background-color: #0b08355e;
-}
-
-.contact-info p,
-.donatie p,
-.footer-bottom p {
-	color: white;
-}
-
-.partnerLogo:hover {
-	.partnerName {
-		opacity: 1;
-		bottom: 1.4rem;
-		width: 100%;
-		background-color: rgba(206, 205, 205, 0.788);
-	}
 }

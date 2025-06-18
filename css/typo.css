@@ -52,36 +52,6 @@ dd {
 	color: #0b0835;
 }
 
-.copyright {
-	font-size: 0.7rem;
-}
-
-.nav.active a {
-	font-family: "Bebas Neue", sans-serif;
-	font-size: 28px;
-}
-
-.nav.active a.sub {
-	font-family: "Bebas Neue", sans-serif;
-	font-size: 18px;
-}
-
-.nav a {
-	font-family: "Bebas Neue", sans-serif;
-	font-size: 24px;
-}
-
-.nav a.sub {
-	font-family: "Bebas Neue", sans-serif;
-	font-size: 18px;
-}
-
-.lang {
-	font-family: "Bebas Neue", sans-serif;
-	font-size: 28px;
-	color: #0b0835;
-}
-
 footer p,
 footer a {
 	color: whitesmoke;
