@@ -1,7 +1,7 @@
 import Project from "./classes/Project.js";
 import Txt from "./classes/Txt.js";
 
-const URL = `http://localhost:8090/api/collections`;
+const pb = new PocketBase("http://localhost:8090");
 // if you can't access it: you need my IP, doofus
 // might change, so ask if it doesn' work
 // address: 10.2.88.244:8090/_/
@@ -15,21 +15,25 @@ let teamTxt = [];
 const rapid = [`projects`, `txt`, `articles`, `team`];
 
 let language = navigator.language;
+if (language.toLowerCase().includes("nl")) {
+  localStorage.setItem("lang", "nl");
+} else if (language.toLowerCase().includes("fr")) {
+  localStorage.setItem("lang", "fr");
+} else {
+  localStorage.setItem("lang", "nl");
+}
 
 init();
 
 async function init() {
-  // forEach doesn't do waiting, for of does
-  for (const e of rapid) {
-    await fetcher(e);
+  for (const i of rapid) {
+    await fetcher(i);
   }
-
-  render();
+  setTimeout(render(), 100);
 }
 
 async function fetcher(option) {
-  const rep = await fetch(URL + `/${option}/records`);
-  const json = await rep.json();
+  const rep = await pb.collection(option).getFullList();
   const targets = {
     txt: txtTxt,
     projects: projectsTxt,
@@ -38,8 +42,8 @@ async function fetcher(option) {
   };
   let target = targets[option];
 
-  for (const e of json.items) {
-    let data;
+  let data;
+  for (const e of rep) {
     if (option == `txt`) {
       data = new Txt(e.nl, e.fr);
     } else {
@@ -53,24 +57,20 @@ async function fetcher(option) {
         e.img
       );
     }
+
     target.push(data);
   }
-  // check if we can use `${language}` in the calls
 }
+// check if we can use `${language}` in the calls
 
-async function render() {
-  if (language.toLowerCase().includes("nl")) {
-    localStorage.setItem("lang", "nl");
-  } else if (language.toLowerCase().includes("fr")) {
-    localStorage.setItem("lang", "fr");
-  } else {
-    localStorage.setItem("lang", "nl");
-  }
-
+function render() {
   language = localStorage.getItem("lang");
   console.log(language);
 
   console.log(txtTxt);
   console.log(txtTxt[1]._nl);
-  document.getElementById(`slogan`).innerHTML = txtTxt[1]._nl;
+
+  let HTML = `${txtTxt[1]._nl}`;
+
+  document.getElementById(`slogan`).innerHTML = HTML;
 }
