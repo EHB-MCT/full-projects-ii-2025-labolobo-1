@@ -5,6 +5,11 @@
 	grid-column: 1 / 13;
 }
 
+header {
+	background-image: url("../../assets/Eersteselectiewebsite/HomeBgHQ.png");
+	height: 450px;
+}
+
 .mission h2 {
 	font-size: 28px;
 	margin: 50px 0px 25px;
@@ -51,7 +56,36 @@
 	display: none;
 }
 
-.partnerLogo:hover {
+@media screen and (min-width: 768px) {
+	.mission {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+	}
+
+	.mission h2,p {
+		grid-column: 1 / 7;
+		align-self: center;
+	}
+
+	.ctaHome {
+		grid-column: 8 / 13;
+	}
+
+
+	.aboutUsGeneral {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+	}
+
+	.aboutUsImg {
+		grid-column: 1 / 7;
+	}
+
+	.topMargin {
+		grid-column: 8 / 13;
+	}
+  
+  .partnerLogo:hover {
 	.partnerName {
 		opacity: 1;
 		bottom: 1.4rem;
@@ -60,11 +94,7 @@
 		scale: 1.1;
 	}
 }
-
-/* 
-For responsive!
-
-.partnerName {
+  .partnerName {
 	display: block;
 	position: relative;
 	-webkit-overflow-scrolling: touch;
@@ -78,4 +108,6 @@ For responsive!
 		text-indent: 0;
 		text-wrap: wrap;
 	}
-} */
+}
+}
+
