@@ -52,5 +52,16 @@ header {
 	}
 
 
-	
+	.aboutUsGeneral {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+	}
+
+	.aboutUsImg {
+		grid-column: 1 / 7;
+	}
+
+	.topMargin {
+		grid-column: 8 / 13;
+	}
 }
