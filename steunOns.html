@@ -1,172 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/reset.css" />
-		<link rel="stylesheet" href="./css/style.css" />
-		<link rel="stylesheet" href="./css/pages/steunOns.css" />
-		<script>
-			(function () {
-				emailjs.init("Cz9ladQZEg6akvCA5"); // <-- Vervang door je eigen EmailJS public key
-			})();
-		</script>
-		<!-- Laad jouw externe JS bestand -->
-		<script src="forms.js"></script>
-		<title>Steun ons!</title>
-	</head>
-	<body>
-		<header>
-			<div class="container">
-				<div class="headerLogo">
-					<img
-						class="logoImg"
-						src="./assets/logos/labolobo_white.png" />
-				</div>
-				<div class="burger-menu" id="burgerMenu">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<nav class="menu" id="menu">
-					<div class="navItem"><a href="./index.html">Home</a></div>
-					<div class="navItem"
-						><a href="./overOns.html">Over Ons</a></div
-					>
-					<div class="navItem"
-						><a href="./projecten.html">Projecten</a></div
-					>
-					<div class="navItem"
-						><a href="./steunOns.html">Steun</a></div
-					>
-					<div class="navItem"
-						><a href="./contact.html">Contact</a></div
-					>
-					<div class="navItem"><button>NL</button></div>
-				</nav>
-			</div>
-		</header>
-		<div class="container">
-			<div class="steun">
-				<h2>DOE EEN GIFT</h2>
-				<p>
-					<b
-						>Help Labolobo met het creëren van duurzame, waardevolle
-						banden tussen generaties.</b
-					>
-				</p>
-				<p class="topMargin">
-					<b>Dankzij jouw gift</b> kan Labolobo artistieke en
-					verbindende projecten opzetten die
-					<b>ouderen uit hun isolement</b> halen, en waardevolle
-					banden creëren met jongere generaties. Laten we zo samen
-					empathie, respect en solidariteit bevorderen over generaties
-					heen!
-				</p>
-				<button class="giftButton">
-					<a
-						href="https://payments.better-app.org/fr/partner-checkout/better-labolobo-fr#step1"
-						target="_blank"
-						>Doe een gift</a
-					>
-				</button>
-				<p>
-					Liever via overschrijving? Alle giften zijn welkom op ons
-					rekeningnummer: <b>BE93 3631 3329 0467</b>
-				</p>
-			</div>
-			<div class="vrijwilliger">
-				<div class="vrijwilligerText">
-					<h3>WORD VRIJWILLIGER</h3>
-					<p>
-						Zin om ouderen een glimlach op het gezicht te toveren?
-						Deel uit te maken van het fantastische Labolobo-team?
-						Samen een fijn, verbindend moment door te brengen?
-					</p>
-					<p>
-						We zijn altijd op zoek naar vrijwilligers om met onze
-						TUKTUKs te rijden!
-					</p>
-					<p>
-						Stuur een mailtje naar kevin@labolobo.eu om je in te
-						schrijven voor onze volgende pilootvorming.
-					</p>
-					<p>Tot binnenkort!</p>
-					<p
-						>Voor meer info over TUKTUKJette,
-						<a href="#">klik hier.</a></p
-					>
-				</div>
-			</div>
-			<diiv class="form">
-				<form>
-					<div class="field">
-						<label for="naam">Naam</label>
-						<input type="text" name="naam" class="naam" required />
-					</div>
-					<div class="field">
-						<label for="voornaam">Voornaam</label>
-						<input
-							type="text"
-							name="voornaam"
-							class="voornaam"
-							required />
-					</div>
-					<div class="field">
-						<label for="email">E-mailadres</label>
-						<input
-							type="email"
-							name="email"
-							class="email"
-							required />
-					</div>
-					<div class="field">
-						<label for="bericht">Bericht</label>
-						<textarea
-							name="bericht"
-							class="bericht"
-							required></textarea>
-					</div>
-					<input type="submit" class="button" value="Submit" />
-				</form>
-			</diiv>
-		</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/pages/steunOns.css" />
+    <script>
+      (function () {
+        emailjs.init("Cz9ladQZEg6akvCA5"); // <-- Vervang door je eigen EmailJS public key
+      })();
+    </script>
+    <!-- Laad jouw externe JS bestand -->
+    <script src="forms.js"></script>
+    <title>Steun ons!</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="headerLogo">
+          <img class="logoImg" src="./assets/logos/labolobo_white.png" />
+        </div>
+        <div class="burger-menu" id="burgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="menu" id="menu">
+          <div class="navItem"><a href="./index.html">Home</a></div>
+          <div class="navItem">
+            <a href="./overOns.html" aria-label="1611b0n86psu6k5">Over ons</a>
+          </div>
+          <div class="navItem">
+            <a href="./projecten.html" aria-label="w1s24580017r0ut"
+              >Projecten</a
+            >
+          </div>
+          <div class="navItem">
+            <a href="./steunOns.html" aria-label="t34s93ityx4n0f5">Steun ons</a>
+          </div>
+          <div class="navItem"><a href="./contact.html">Contact</a></div>
+          <div class="navItem">
+            <button id="language" aria-label="nbew7c1970dx1h3">NL</button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <div class="steun">
+        <h2>DOE EEN GIFT</h2>
+        <p>
+          <b
+            >Help Labolobo met het creëren van duurzame, waardevolle banden
+            tussen generaties.</b
+          >
+        </p>
+        <p class="topMargin">
+          <b>Dankzij jouw gift</b> kan Labolobo artistieke en verbindende
+          projecten opzetten die <b>ouderen uit hun isolement</b> halen, en
+          waardevolle banden creëren met jongere generaties. Laten we zo samen
+          empathie, respect en solidariteit bevorderen over generaties heen!
+        </p>
+        <button class="giftButton">
+          <a
+            href="https://payments.better-app.org/fr/partner-checkout/better-labolobo-fr#step1"
+            target="_blank"
+            >Doe een gift</a
+          >
+        </button>
+        <p>
+          Liever via overschrijving? Alle giften zijn welkom op ons
+          rekeningnummer: <b>BE93 3631 3329 0467</b>
+        </p>
+      </div>
+      <div class="vrijwilliger">
+        <div class="vrijwilligerText">
+          <h3>WORD VRIJWILLIGER</h3>
+          <p>
+            Zin om ouderen een glimlach op het gezicht te toveren? Deel uit te
+            maken van het fantastische Labolobo-team? Samen een fijn, verbindend
+            moment door te brengen?
+          </p>
+          <p>
+            We zijn altijd op zoek naar vrijwilligers om met onze TUKTUKs te
+            rijden!
+          </p>
+          <p>
+            Stuur een mailtje naar kevin@labolobo.eu om je in te schrijven voor
+            onze volgende pilootvorming.
+          </p>
+          <p>Tot binnenkort!</p>
+          <p>Voor meer info over TUKTUKJette, <a href="#">klik hier.</a></p>
+        </div>
+      </div>
+      <diiv class="form">
+        <form>
+          <div class="field">
+            <label for="naam">Naam</label>
+            <input type="text" name="naam" class="naam" required />
+          </div>
+          <div class="field">
+            <label for="voornaam">Voornaam</label>
+            <input type="text" name="voornaam" class="voornaam" required />
+          </div>
+          <div class="field">
+            <label for="email">E-mailadres</label>
+            <input type="email" name="email" class="email" required />
+          </div>
+          <div class="field">
+            <label for="bericht">Bericht</label>
+            <textarea name="bericht" class="bericht" required></textarea>
+          </div>
+          <input type="submit" class="button" value="Submit" />
+        </form>
+      </diiv>
+    </div>
 
-		<footer class="topMargin">
-			<div class="container">
-				<div class="footerContact">
-					<img
-						class="logoImg"
-						src="./assets/logos/labolobo_white.png" />
-					<p>Telefoon: <a href="tel:022703411">02 270 34 11</a></p>
-					<p
-						>E-mail:
-						<a href="mailto:info@labolobo.eu"
-							>info@labolobo.eu</a
-						></p
-					>
-					<p class="topMargin"
-						>Firmin Lecharlierlaan 4<br />1090 Jette</p
-					>
-				</div>
-				<hr />
-				<div class="footerDono">
-					<p>
-						Een donatie doen? Dat is mogelijk op ons rekeningnummer:
-						BE93 3631 3329 0467
-					</p>
-				</div>
-				<hr />
-				<div class="footerExtra">
-					<p>©2025 Alle rechten voorbehouden.</p>
-					<p>
-						<!--JOACHIM! WERKT ENKEL WANNEER NIET GOEPEND IN RESPONSIVE-->
-						<a href="/assets/documents/GDPR_2021_NL.pdf"
-							>Privacybeleid</a
-						>
-					</p>
-				</div>
-			</div>
-		</footer>
-	</body>
+    <footer class="topMargin">
+      <div class="container">
+        <div class="footerContact">
+          <img class="logoImg" src="./assets/logos/labolobo_white.png" />
+          <p>Telefoon: <a href="tel:022703411">02 270 34 11</a></p>
+          <p>E-mail: <a href="mailto:info@labolobo.eu">info@labolobo.eu</a></p>
+          <p class="topMargin">Firmin Lecharlierlaan 4<br />1090 Jette</p>
+        </div>
+        <hr />
+        <div class="footerDono">
+          <p>
+            Een donatie doen? Dat is mogelijk op ons rekeningnummer: BE93 3631
+            3329 0467
+          </p>
+        </div>
+        <hr />
+        <div class="footerExtra">
+          <p>©2025 Alle rechten voorbehouden.</p>
+          <p>
+            <!--JOACHIM! WERKT ENKEL WANNEER NIET GOEPEND IN RESPONSIVE-->
+            <a href="/assets/documents/GDPR_2021_NL.pdf">Privacybeleid</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
