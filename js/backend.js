@@ -12,10 +12,14 @@ let projectsTxt = [];
 let articlesTxt = [];
 let teamTxt = [];
 let language;
-
 const rapid = [`projects`, `txt`, `articles`, `team`];
 if (!localStorage.getItem("lang")) {
   language = navigator.language;
+  if (language.toLowerCase().includes("fr")) {
+    localStorage.setItem("lang", "fr");
+  } else {
+    localStorage.setItem("lang", "nl");
+  }
 } else {
   language = localStorage.getItem("lang");
 }
@@ -26,7 +30,8 @@ async function init() {
   for (const i of rapid) {
     await fetcher(i);
   }
-  setTimeout(render(), 1000);
+  console.log(`init`, language);
+  render();
 }
 
 async function fetcher(option) {
@@ -61,22 +66,14 @@ async function fetcher(option) {
 }
 
 function render() {
-  if (language.toLowerCase().includes("fr")) {
-    localStorage.setItem("lang", "fr");
-    document.getElementById("language").innerHTML = `FR`;
-  } else {
-    localStorage.setItem("lang", "nl");
-    document.getElementById("language").innerHTML = `NL`;
-  }
-
-  console.log(language);
   let elements = document.querySelectorAll("[aria-label]");
   for (const i of elements) {
     const item = i.ariaLabel;
     const foo = `_` + language;
     const HTML = txtTxt.find((obj) => obj._id == item);
-
-    console.log(HTML[foo]);
+    if (HTML[foo] == undefined) {
+      window.location.reload();
+    }
     i.innerHTML = HTML[foo];
   }
 }
