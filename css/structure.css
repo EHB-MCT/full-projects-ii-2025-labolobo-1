@@ -73,9 +73,9 @@ footer hr {
 	.menu {
 		display: flex;
 		flex-direction: row;
-		grid-column: 8 / span 5;
+		grid-column: 7 / span 6;
 		align-items: center;
-		width: 35rem;
+		width: 40rem;
 		gap: 1.5rem;
 	}
 
