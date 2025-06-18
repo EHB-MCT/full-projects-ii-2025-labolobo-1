@@ -16,6 +16,9 @@ button {
 	color: whitesmoke;
 	width: fit-content;
 }
+button a:hover {
+	color: black;
+}
 button:hover {
 	background-color: whitesmoke;
 	color: black;
