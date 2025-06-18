@@ -1,4 +1,3 @@
-
 /* general styling for main */
 
 main {
@@ -8,4 +7,10 @@ main {
 
 main img {
 	max-width: 100%;
+}
+
+/* Typography */
+
+.projectName {
+	font-weight: bold;
 }
