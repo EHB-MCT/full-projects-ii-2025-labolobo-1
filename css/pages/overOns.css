@@ -10,6 +10,15 @@ main img {
 p a {
 	color: black;
 }
+main h4 {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-weight: bolder;
+}
+main p {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
 
 /* team Grid */
 
@@ -19,6 +28,7 @@ p a {
 	grid-row-gap: 2em;
 	max-width: 70%;
 	margin: 0 auto;
+	padding: 1em;
 }
 .gridContainer img {
 	display: block;
