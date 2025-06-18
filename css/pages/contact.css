@@ -1,3 +1,4 @@
+
 .contact,
 .map {
 	grid-column: 1 / 13;
@@ -41,4 +42,3 @@ p {
 	.signUp {
 		grid-column: 11 / 13;
 	}
-}
