@@ -84,11 +84,7 @@ footer hr {
 	.nieuwsimg {
 		width: 300px;
 	}
-	.logofooter {
-		max-width: 90px;
-		height: auto;
-		margin: 20px;
-	}
+
 
 	.contact-info p,
 	.donatie p,
@@ -126,12 +122,6 @@ footer hr {
 	}
 }
 
-.logofooter {
-	min-width: 90px;
-	height: auto;
-	margin: 20px;
-}
-
 .contact-info p,
 .donatie p,
 .footer-bottom p {
@@ -150,7 +140,6 @@ a {
 .footer {
 	display: flex;
 	flex-direction: column;
-	margin: 20px;
 }
 
 .Nieuws img {
@@ -160,5 +149,6 @@ a {
 
 .logofooter {
 	height: auto;
-	min-width: 80px;
+	max-width: 80px;
+	margin: 20px;
 }
