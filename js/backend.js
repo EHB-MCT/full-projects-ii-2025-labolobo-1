@@ -86,7 +86,7 @@ function createNews() {
   // add 3 most recent posts
   document.getElementById("news").innerHTML = ``;
 
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < 4; i++) {
     const article = articlesTxt[articlesTxt.length - 1 - i];
     console.log(article);
     const foo = `_` + language;
