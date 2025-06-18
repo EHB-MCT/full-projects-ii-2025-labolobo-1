@@ -1,0 +1,19 @@
+/* Form styles */
+
+input,
+textarea {
+	background-color: rgba(0, 0, 0, 0.05);
+	border-radius: 8px;
+	display: block;
+	border: 1px solid gray;
+	box-sizing: border-box;
+}
+input {
+	min-height: 2em;
+}
+textarea {
+	min-height: 6em;
+}
+label {
+	margin-bottom: 0.5em;
+}

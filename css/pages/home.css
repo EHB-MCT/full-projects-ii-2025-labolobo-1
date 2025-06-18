@@ -16,10 +16,22 @@ header {
 }
 
 .newsImg,
-.aboutUs img,
-.partnerLogo img {
+.aboutUs img {
 	width: 100%;
 	height: auto;
+}
+
+.partnerLogo {
+	scale: 1;
+	transition: 0.2s ease-in-out;
+	width: 100px;
+	height: 100px;
+	margin-bottom: 30px;
+
+	img {
+		justify-self: center;
+		width: 100%;
+	}
 }
 
 .newsPart2,
@@ -32,8 +44,16 @@ header {
 }
 
 .partnerLogos {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	z-index: 1;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 20px;
+	padding: 20px 0;
+}
+
+.partnerName {
+	display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -64,4 +84,30 @@ header {
 	.topMargin {
 		grid-column: 8 / 13;
 	}
+  
+  .partnerLogo:hover {
+	.partnerName {
+		opacity: 1;
+		bottom: 1.4rem;
+		width: 100%;
+		background-color: rgba(206, 205, 205, 0.788);
+		scale: 1.1;
+	}
 }
+  .partnerName {
+	display: block;
+	position: relative;
+	-webkit-overflow-scrolling: touch;
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+	bottom: 0px;
+	text-align: center;
+	justify-self: center;
+	p {
+		font-size: 0.5rem;
+		text-indent: 0;
+		text-wrap: wrap;
+	}
+}
+}
+
