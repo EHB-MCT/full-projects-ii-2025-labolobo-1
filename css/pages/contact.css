@@ -1,19 +1,25 @@
-@media only screen and (max-width: 768px) {
-	.map iframe {
-		position: relative;
-		width: 90%;
-		height: 400px;
-		margin: 10px;
-	}
+.contact,
+.map {
+	grid-column: 1 / 13;
+}
 
-	.contact ul,
-	li,
-	h3,
-	p {
+.contact ul,
+li,
+h3,
+p {
 		margin: 10px;
-	}
-	header {
-		background-color: black !important;
-		background-image: none;
+}
+
+.map iframe {
+	position: relative;
+	width: 90%;
+	height: 400px;
+	margin: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+
+	.map iframe {
+		width: 40rem;
 	}
 }
