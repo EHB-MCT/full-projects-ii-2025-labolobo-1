@@ -62,20 +62,20 @@ header {
 }
 
 .menu {
-    display: flex;
-	flex-direction: column;
-	grid-column: 12 / 13;
-	text-align: right;
-	margin-top: 16px;
-	gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  grid-column: 12 / 13;
+  text-align: right;
+  margin-top: 16px;
+  gap: 1rem;
 }
 
 .menu a {
-	display: flex;
-	background-color: #0D101D90;
-	padding: 1rem;
-	justify-content: space-between;
-	justify-self: right;
+  display: flex;
+  background-color: #0d101d90;
+  padding: 1rem;
+  justify-content: space-between;
+  justify-self: right;
 }
 
 @media screen and (min-width: 768px) {
@@ -84,18 +84,18 @@ header {
     grid-template-columns: repeat(12, 1fr);
   }
 
-    .menu {
-    	display: flex;
-        flex-direction: row;
-        grid-column: 7 / span 6;
-        align-items: center;
-        width: 40rem;
-        gap: 1.5rem;
-    }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    grid-column: 7 / span 6;
+    align-items: center;
+    width: 40rem;
+    gap: 1.5rem;
+  }
 
-	.menu a {
-		background-color: transparent;
-	}
+  .menu a {
+    background-color: transparent;
+  }
 
   .mission h2,
   p {
