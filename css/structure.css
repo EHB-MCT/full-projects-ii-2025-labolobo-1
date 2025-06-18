@@ -13,7 +13,8 @@
 }
 
 .headerLogo,
-.footerContact {
+.footerContact,
+.footer {
 	height: auto;
 	img {
 		height: 4rem;
