@@ -1,0 +1,41 @@
+main {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+main img {
+	max-width: 70%;
+	height: auto;
+}
+p a {
+	color: black;
+}
+
+/* team Grid */
+
+.gridContainer {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-row-gap: 2em;
+	max-width: 70%;
+	margin: 0 auto;
+}
+.gridContainer img {
+	display: block;
+}
+.gridContainer strong {
+	display: block;
+	margin-top: 1em;
+}
+.gridTeam1 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	align-content: center;
+	justify-content: center;
+}
+.gridTeam2 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	align-content: center;
+	justify-content: center;
+}

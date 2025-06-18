@@ -13,6 +13,12 @@ button {
 	font-family: "Bebas Neue", sans-serif;
 	font-size: 18px;
 	font-weight: bold;
+	color: whitesmoke;
+	width: fit-content;
+}
+button:hover {
+	background-color: whitesmoke;
+	color: black;
 }
 
 button a {

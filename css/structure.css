@@ -59,7 +59,6 @@ footer hr {
 	margin: 20px 0px;
 }
 
-
 @media only screen and (max-width: 768px) {
 	.logo {
 		background-image: url("./assets/Eersteselectiewebsite/DDD 3.jpeg#");
@@ -127,40 +126,39 @@ footer hr {
 	}
 }
 
-	.logofooter {
-		max-width: 90px;
-		height: auto;
-		margin: 20px;
-	}
+.logofooter {
+	min-width: 90px;
+	height: auto;
+	margin: 20px;
+}
 
-	.contact-info p,
-	.donatie p,
-	.footer-bottom p {
-		margin: 20px 0;
-	}
+.contact-info p,
+.donatie p,
+.footer-bottom p {
+	margin: 20px 0;
+}
 
-	a {
-		text-decoration: underline;
-	}
+a {
+	text-decoration: underline;
+}
 
-	.body-container {
-		display: flex;
-		margin: 20px;
-		flex-direction: column;
-	}
-	.footer {
-		display: flex;
-		flex-direction: column;
-		margin: 20px;
-	}
+.body-container {
+	display: flex;
+	margin: 20px;
+	flex-direction: column;
+}
+.footer {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
 
-	.Nieuws img {
-		height: auto;
-		max-width: 100%;
-	}
+.Nieuws img {
+	height: auto;
+	max-width: 100%;
+}
 
-	.logofooter {
-		height: auto;
-		max-width: 100px;
-	}
-
+.logofooter {
+	height: auto;
+	min-width: 80px;
+}
