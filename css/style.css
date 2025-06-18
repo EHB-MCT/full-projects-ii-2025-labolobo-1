@@ -1,21 +1,31 @@
 @import "./structure.css";
 @import "./typo.css";
 @import "./buttons.css";
+@import "./form.css";
 
 header {
-	background-color: black;
-	background-position: center;
-	background-size: cover;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
 }
 
 a {
-	color: white;
-	text-decoration: underline;
+  color: lightskyblue;
+  text-decoration: underline;
 }
+
+header {
+  color: whitesmoke;
+  a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+}
+
 hr {
-	border-top: 1px solid white;
+  border-top: 1px solid white;
 }
 
 footer {
-	background-color: black;
+  background-color: black;
 }
