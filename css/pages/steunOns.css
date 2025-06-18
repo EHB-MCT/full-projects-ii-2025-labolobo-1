@@ -3,13 +3,10 @@
 	grid-column: 1 / 13;
 }
 
-.vrijwilliger {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-}
-
 .form.topMargin {
-	justify-self: right;
+	display: flex;
+	flex-direction: column;
+	justify-self: left;
 }
 
 .nameDiv, .surnameDiv, .emailDiv, .explanationDiv {
@@ -34,8 +31,19 @@
 		margin: 0;
 	}
 
-	.vrijwilliger p,h3 {
+	.vrijwilliger {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-column: 1 / 13;
+	}
+
+	.vrijwilligerText {
 
 		grid-column: 1 / 7;
+	}
+
+	.form.topMargin {
+		grid-column: 8 / 13;
+		align-self: center;
 	}
 }
