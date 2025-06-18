@@ -49,9 +49,10 @@ async function fetcher(option) {
   let data;
   for (const e of rep) {
     if (option == `txt`) {
-      data = new Txt(e.nl, e.fr);
+      data = new Txt(e.id, e.nl, e.fr);
     } else {
       data = new Project(
+        e.id,
         e.nl,
         e.fr,
         e.nl_title,
@@ -71,9 +72,11 @@ function render() {
   console.log(language);
   let elements = document.querySelectorAll("[aria-label]");
   for (const i of elements) {
-    console.log(i.ariaLabel);
-  }
+    const item = i.ariaLabel;
+    const foo = `_` + language;
+    const HTML = txtTxt.find((obj) => obj._id == item);
 
-  let HTML = `${txtTxt[1]._nl}`;
-  console.log(HTML);
+    console.log(HTML[foo]);
+    i.innerHTML = HTML[foo];
+  }
 }
