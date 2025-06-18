@@ -11,16 +11,20 @@ let txtTxt = []; //this is the only one that doesn't contain any imgs
 let projectsTxt = [];
 let articlesTxt = [];
 let teamTxt = [];
+let language;
 
 const rapid = [`projects`, `txt`, `articles`, `team`];
-
-let language = navigator.language;
-if (language.toLowerCase().includes("nl")) {
-  localStorage.setItem("lang", "nl");
-} else if (language.toLowerCase().includes("fr")) {
-  localStorage.setItem("lang", "fr");
+if (!localStorage.getItem("lang")) {
+  language = navigator.language;
+  if (language.toLowerCase().includes("nl")) {
+    localStorage.setItem("lang", "nl");
+  } else if (language.toLowerCase().includes("fr")) {
+    localStorage.setItem("lang", "fr");
+  } else {
+    localStorage.setItem("lang", "nl");
+  }
 } else {
-  localStorage.setItem("lang", "nl");
+  language = localStorage.getItem("lang");
 }
 
 init();
@@ -29,7 +33,7 @@ async function init() {
   for (const i of rapid) {
     await fetcher(i);
   }
-  setTimeout(render(), 100);
+  setTimeout(render(), 1000);
 }
 
 async function fetcher(option) {
@@ -64,17 +68,12 @@ async function fetcher(option) {
 // check if we can use `${language}` in the calls
 
 function render() {
-  language = localStorage.getItem("lang");
   console.log(language);
-
-  console.log(txtTxt);
-  console.log(teamTxt);
-  console.log(projectsTxt);
-  console.log(articlesTxt);
-
-  console.log(txtTxt[1]._nl);
+  let elements = document.querySelectorAll("[aria-label]");
+  for (const i of elements) {
+    console.log(i.ariaLabel);
+  }
 
   let HTML = `${txtTxt[1]._nl}`;
-
-  document.getElementById(`slogan`).innerHTML = HTML;
+  console.log(HTML);
 }
