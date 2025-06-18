@@ -32,6 +32,7 @@ async function init() {
   }
   console.log(`init`, language);
   render();
+  createNews();
 }
 
 async function fetcher(option) {
@@ -57,7 +58,8 @@ async function fetcher(option) {
         e.fr_title,
         e.nl_sub,
         e.fr_sub,
-        e.img
+        e.img,
+        e.updated
       );
     }
 
@@ -77,4 +79,11 @@ function render() {
     console.log(HTML[foo]);
     i.innerHTML = HTML[foo];
   }
+}
+
+function createNews() {
+  // get div
+  // erase innerHTML
+  // add 3 most recent posts
+  console.log(articlesTxt);
 }
