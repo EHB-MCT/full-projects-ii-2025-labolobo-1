@@ -16,13 +16,6 @@ let language;
 const rapid = [`projects`, `txt`, `articles`, `team`];
 if (!localStorage.getItem("lang")) {
   language = navigator.language;
-  if (language.toLowerCase().includes("nl")) {
-    localStorage.setItem("lang", "nl");
-  } else if (language.toLowerCase().includes("fr")) {
-    localStorage.setItem("lang", "fr");
-  } else {
-    localStorage.setItem("lang", "nl");
-  }
 } else {
   language = localStorage.getItem("lang");
 }
@@ -66,9 +59,16 @@ async function fetcher(option) {
     target.push(data);
   }
 }
-// check if we can use `${language}` in the calls
 
 function render() {
+  if (language.toLowerCase().includes("fr")) {
+    localStorage.setItem("lang", "fr");
+    document.getElementById("language").innerHTML = `FR`;
+  } else {
+    localStorage.setItem("lang", "nl");
+    document.getElementById("language").innerHTML = `NL`;
+  }
+
   console.log(language);
   let elements = document.querySelectorAll("[aria-label]");
   for (const i of elements) {
