@@ -13,36 +13,33 @@
 	</head>
 	<body>
 		<header>
-			<div class="menu-container">
-				<div class="burger-menu" id="burgerMenu">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-				<nav class="menu" id="menu">
-					<div class="navItem">
-						<a href="./index.html"> Home </a>
-					</div>
-					<div class="navItem">
-						<a href="./overOns.html"> Over Ons </a>
-					</div>
-					<div class="navItem">
-						<a href="./projecten.html"> Projecten </a>
-					</div>
-					<div class="navItem">
-						<a href="./steunOns.html"> Steun </a>
-					</div>
-					<div class="navItem">
-						<a href="./contact.html"> Contact </a>
-					</div>
-				</nav>
-			</div>
 			<div class="container">
 				<div class="headerLogo">
 					<img
 						class="logoImg"
 						src="./assets/logos/labolobo_white.png" />
 				</div>
+				<div class="burger-menu" id="burgerMenu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<nav class="menu" id="menu">
+					<div class="navItem"><a href="./index.html">Home</a></div>
+					<div class="navItem"
+						><a href="./overOns.html">Over Ons</a></div
+					>
+					<div class="navItem"
+						><a href="./projecten.html">Projecten</a></div
+					>
+					<div class="navItem"
+						><a href="./steunOns.html">Steun</a></div
+					>
+					<div class="navItem"
+						><a href="./contact.html">Contact</a></div
+					>
+					<div class="navItem"><button>NL</button></div>
+				</nav>
 			</div>
 		</header>
 		<main>
@@ -194,25 +191,39 @@
 				<button> Lees meer </button>
 			</div>
 		</main>
-		<footer>
+		<footer class="topMargin">
 			<div class="container">
 				<div class="footerContact">
 					<img
 						class="logoImg"
 						src="./assets/logos/labolobo_white.png" />
-					<p>Telefoon: 02 270 34 11</p>
-					<p>E-mail: info@labolobo.eu</p>
-					<p>Firmin Lecharlierlaan 4<br />1090 Jette</p>
+					<p>Telefoon: <a href="tel:022703411">02 270 34 11</a></p>
+					<p
+						>E-mail:
+						<a href="mailto:info@labolobo.eu"
+							>info@labolobo.eu</a
+						></p
+					>
+					<p class="topMargin"
+						>Firmin Lecharlierlaan 4<br />1090 Jette</p
+					>
 				</div>
+				<hr />
 				<div class="footerDono">
 					<p>
 						Een donatie doen? Dat is mogelijk op ons rekeningnummer:
 						BE93 3631 3329 0467
 					</p>
 				</div>
+				<hr />
 				<div class="footerExtra">
 					<p>©2025 Alle rechten voorbehouden.</p>
-					<p>Privacybeleid</p>
+					<p>
+						<!--JOACHIM! WERKT ENKEL WANNEER NIET GOEPEND IN RESPONSIVE-->
+						<a href="/assets/documents/GDPR_2021_NL.pdf"
+							>Privacybeleid</a
+						>
+					</p>
 				</div>
 			</div>
 		</footer>
