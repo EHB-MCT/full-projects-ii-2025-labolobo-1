@@ -1,10 +1,5 @@
 /* Form styles */
 
-form {
-	max-width: 80%;
-	margin: 0 auto;
-}
-
 input,
 textarea {
 	background-color: rgba(0, 0, 0, 0.05);
@@ -12,7 +7,6 @@ textarea {
 	display: block;
 	border: 1px solid gray;
 	box-sizing: border-box;
-	resize: none;
 }
 input {
 	min-height: 2em;
