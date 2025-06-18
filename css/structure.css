@@ -51,17 +51,8 @@
 footer {
 	padding: 25px 0px;
 }
-/* footer .container {
-	grid-template-columns: 1fr;
-} */
+
 footer hr {
 	width: 90vw;
 	margin: 20px 0px;
-	border-top: none;
 }
-
-/* .footerContact,
-.footerDono,
-.footerExtra {
-	grid-column: 1 / 13;
-} */
