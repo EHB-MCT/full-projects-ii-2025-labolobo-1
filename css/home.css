@@ -97,6 +97,15 @@ header {
 	width: 500px;
 }
 
+.partners {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.partners p {
+	text-align: center;
+}
+
 @media only screen and (max-width: 768px) {
 	.burger-menu {
 		display: none;
