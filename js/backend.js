@@ -7,23 +7,58 @@ const URL = `http://localhost:8090/api/collections`;
 // address: 10.2.88.244:8090/_/
 // you know where to find the login
 
-const projects = `/projects/records`;
-const base = `/txt/records`; //base is the basetxt for the website
-const articles = `/articles/records`;
-const team = `/team/records`;
-const rapid = [projects, base, articles, team];
-
-let baseTxt = []; //this is the only one that doesn't contain any imgs
-let projectTxt = [];
-let articleTxt = [];
+let txtTxt = []; //this is the only one that doesn't contain any imgs
+let projectsTxt = [];
+let articlesTxt = [];
 let teamTxt = [];
+
+const rapid = [`projects`, `txt`, `articles`, `team`];
 
 let language = navigator.language;
 
 init();
 
-function init() {
-  console.log(language);
+async function init() {
+  // forEach doesn't do waiting, for of does
+  for (const e of rapid) {
+    await fetcher(e);
+  }
+
+  render();
+}
+
+async function fetcher(option) {
+  const rep = await fetch(URL + `/${option}/records`);
+  const json = await rep.json();
+  const targets = {
+    txt: txtTxt,
+    projects: projectsTxt,
+    articles: articlesTxt,
+    team: teamTxt,
+  };
+  let target = targets[option];
+
+  for (const e of json.items) {
+    let data;
+    if (option == `txt`) {
+      data = new Txt(e.nl, e.fr);
+    } else {
+      data = new Project(
+        e.nl,
+        e.fr,
+        e.nl_title,
+        e.fr_title,
+        e.nl_sub,
+        e.fr_sub,
+        e.img
+      );
+    }
+    target.push(data);
+  }
+  // check if we can use `${language}` in the calls
+}
+
+async function render() {
   if (language.toLowerCase().includes("nl")) {
     localStorage.setItem("lang", "nl");
   } else if (language.toLowerCase().includes("fr")) {
@@ -33,19 +68,9 @@ function init() {
   }
 
   language = localStorage.getItem("lang");
+  console.log(language);
 
-  rapid.forEach(function (e) {
-    fetcher(e);
-  });
-}
-
-async function fetcher(option) {
-  const rep = await fetch(URL + option);
-
-  const json = await rep.json();
-  console.log(json.items);
-  // json.items.forEach(function (e) {});
-
-  // fetch everything, put in classes
-  // check if we can use `${language}` in the calls
+  console.log(txtTxt);
+  console.log(txtTxt[1]._nl);
+  document.getElementById(`slogan`).innerHTML = txtTxt[1]._nl;
 }
