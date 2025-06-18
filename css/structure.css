@@ -53,7 +53,6 @@
 
 .navItem {
 	text-decoration: none;
-	grid-column: 8 / span 5;
 }
 
 .topMargin {
@@ -74,7 +73,14 @@ footer hr {
 	.menu {
 		display: flex;
 		flex-direction: row;
-		gap: 1rem;
+		grid-column: 8 / span 5;
+		align-items: center;
+		width: 35rem;
+		gap: 1.5rem;
+	}
+
+	.menu a {
+		padding: 1rem;
 	}
 
 	.burger-menu {
