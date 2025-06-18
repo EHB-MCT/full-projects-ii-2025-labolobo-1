@@ -6,6 +6,13 @@
 		<link rel="stylesheet" href="./css/reset.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/pages/steunOns.css" />
+		<script>
+			(function () {
+				emailjs.init("Cz9ladQZEg6akvCA5"); // <-- Vervang door je eigen EmailJS public key
+			})();
+		</script>
+		<!-- Laad jouw externe JS bestand -->
+		<script src="forms.js"></script>
 		<title>Steun ons!</title>
 	</head>
 	<body>
@@ -75,9 +82,26 @@
 					<p>Tot binnenkort!</p>
 					<p>Voor meer info over TUKTUKJette, <a href="#">klik hier.</a></p>
 				</div>
-				      <form class="form topMargin" action="mailto:gjxjinx@gmail.com">
-          <button type="submit" value="send">email</button>
-        </form>
+			<form id="contactForm">
+				<div class="field">
+					<label for="naam">Naam</label>
+					<input type="text" name="naam" id="naam" required />
+				</div>
+				<div class="field">
+					<label for="voornaam">Voornaam</label>
+					<input type="text" name="voornaam" id="voornaam" required />
+				</div>
+				<div class="field">
+					<label for="email">E-mailadres</label>
+					<input type="email" name="email" id="email" required />
+				</div>
+				<div class="field">
+					<label for="bericht">Bericht</label>
+					<textarea name="bericht" id="bericht" required></textarea>
+				</div>
+				<input type="submit" id="button" value="Submit" />
+			</form>
+
 		</div>
 		<footer class="topMargin">
 			<div class="container">

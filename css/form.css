@@ -1,5 +1,10 @@
 /* Form styles */
 
+form {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
 input,
 textarea {
 	background-color: rgba(0, 0, 0, 0.05);
@@ -7,6 +12,7 @@ textarea {
 	display: block;
 	border: 1px solid gray;
 	box-sizing: border-box;
+	resize: none;
 }
 input {
 	min-height: 2em;
@@ -16,4 +22,22 @@ textarea {
 }
 label {
 	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+	display: block;
+	font-weight: bold;
+}
+input[type="submit"] {
+	cursor: pointer;
+	background-color: black;
+	border-style: solid;
+	border-radius: 20px;
+	font-weight: bold;
+	color: whitesmoke;
+	width: fit-content;
+	margin-top: 1em;
+	padding: 1em;
+}
+input[type="submit"]:hover {
+	background-color: whitesmoke;
+	color: black;
 }
