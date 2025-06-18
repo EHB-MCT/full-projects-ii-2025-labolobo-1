@@ -39,10 +39,6 @@ header {
   margin-top: 50px;
 }
 
-.newsDate {
-  font-size: 11px;
-}
-
 .partnerLogos {
   z-index: 1;
   display: flex;

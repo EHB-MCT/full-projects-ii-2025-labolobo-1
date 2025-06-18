@@ -101,3 +101,9 @@ footer hr {
     cursor: pointer;
   }
 }
+
+.newsDate {
+  /* put here for future references in news page */
+  font-size: 11px;
+  margin-top: 5px;
+}
