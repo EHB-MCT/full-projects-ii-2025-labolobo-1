@@ -35,15 +35,6 @@
 	text-decoration: none;
 }
 
-.partners {
-	margin-top: 100px;
-	margin-bottom: 100px;
-}
-
-.partners p {
-	text-align: center;
-}
-
 .topMargin {
 	margin-top: 25px;
 }
@@ -55,4 +46,5 @@ footer {
 footer hr {
 	width: 90vw;
 	margin: 20px 0px;
+	grid-column: 1 / 13;
 }
