@@ -5,6 +5,11 @@
 	grid-column: 1 / 13;
 }
 
+header {
+	background-image: url("../../assets/Eersteselectiewebsite/HomeBgHQ.png");
+	height: 450px;
+}
+
 .mission h2 {
 	font-size: 28px;
 	margin: 50px 0px 25px;
