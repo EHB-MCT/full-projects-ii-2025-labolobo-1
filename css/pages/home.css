@@ -1,9 +1,32 @@
 .mission,
-.news {
+.aboutUs,
+.news,
+.partners {
 	grid-column: 1 / 13;
 }
 
-.newsImg {
+.mission h2 {
+	font-size: 28px;
+	margin: 50px 0px 25px;
+}
+
+.newsImg,
+.aboutUs img,
+.partnerLogo img {
 	width: 100%;
 	height: auto;
+}
+
+.newsPart2,
+.newsPart3 {
+	margin-top: 50px;
+}
+
+.newsDate {
+	font-size: 11px;
+}
+
+.partnerLogos {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
 }
