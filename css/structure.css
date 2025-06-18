@@ -1,3 +1,5 @@
+
+
 .container {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -9,7 +11,6 @@
 .headerLogo {
 	column-gap: 16px;
 	grid-template-rows: auto;
-	width: 90%;
 	margin: 0 auto;
 }
 
@@ -17,8 +18,10 @@
 .footerContact {
 	height: auto;
 	img {
-		height: 6rem;
+		height: 4rem;
+		width: 4rem;
 		margin: 1rem;
+		margin-left: 0;
 	}
 }
 .menu-container {
@@ -26,9 +29,26 @@
 }
 
 .menu {
+	display: none;
+}
+
+.burger-menu {
 	display: flex;
-	flex-direction: row;
-	gap: 1rem;
+	height: 2rem;
+	width: auto;
+	flex-direction: column;
+	gap: 0.5rem;
+	align-self: center;
+	grid-column: 12;
+}
+
+.burger-menu span {
+	display: flex;
+	justify-content: space-around;
+	background-color: white;
+	height: 0.3rem;
+	width: 3rem;
+	border-radius: 1rem;
 }
 
 .navItem {
@@ -47,4 +67,23 @@ footer hr {
 	width: 90vw;
 	margin: 20px 0px;
 	grid-column: 1 / 13;
+}
+
+@media screen and (min-width: 768px) {
+	.menu {
+		display: flex;
+		flex-direction: row;
+		grid-column: 7 / span 6;
+		align-items: center;
+		width: 40rem;
+		gap: 1.5rem;
+	}
+
+	.menu a {
+		padding: 1rem;
+	}
+
+	.burger-menu {
+		display: none;
+	}
 }
