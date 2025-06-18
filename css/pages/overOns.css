@@ -72,3 +72,20 @@ main p {
 	max-width: 85%;
 	margin: 1.5em auto;
 }
+
+@media screen and (min-width: 768px) {
+	.mission img {
+		max-width: 70%;
+		margin: 0 auto;
+		display: block;
+	}
+	.team {
+		max-width: 80%;
+	}
+	.gridContainer {
+		margin: 0 auto;
+	}
+	.mission p {
+		max-width: 70%;
+	}
+}
