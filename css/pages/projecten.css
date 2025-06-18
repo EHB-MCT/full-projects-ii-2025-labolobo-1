@@ -1,3 +1,11 @@
+
+/* general styling for main */
+
+main {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
 main img {
 	max-width: 100%;
 }
