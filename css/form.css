@@ -7,7 +7,6 @@ textarea {
 	display: block;
 	border: 1px solid gray;
 	box-sizing: border-box;
-	resize: none;
 }
 input {
 	min-height: 2em;
