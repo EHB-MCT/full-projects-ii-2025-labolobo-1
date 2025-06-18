@@ -35,3 +35,22 @@ header {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 }
+
+@media screen and (min-width: 768px) {
+	.mission {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+	}
+
+	.mission h2,p {
+		grid-column: 1 / 7;
+		align-self: center;
+	}
+
+	.ctaHome {
+		grid-column: 8 / 13;
+	}
+
+
+	
+}
