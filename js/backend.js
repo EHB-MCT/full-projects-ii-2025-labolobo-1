@@ -30,7 +30,6 @@ async function init() {
   for (const i of rapid) {
     await fetcher(i);
   }
-  console.log(`init`, language);
   render();
   createNews();
 }
@@ -81,24 +80,22 @@ function render() {
 }
 
 function createNews() {
-  // get div
-  // erase innerHTML
-  // add 3 most recent posts
-  document.getElementById("news").innerHTML = ``;
+  if (document.getElementById("news")) {
+    document.getElementById("news").innerHTML = ``;
 
-  for (let i = 0; i < 4; i++) {
-    const article = articlesTxt[articlesTxt.length - 1 - i];
-    console.log(article);
-    const foo = `_` + language;
-    const title = foo + `Title`;
-    const sub = foo + `Sub`;
-    const preview = trunc(article[foo], 150);
+    for (let i = 0; i < 4; i++) {
+      const article = articlesTxt[articlesTxt.length - 1 - i];
+      console.log(article);
+      const foo = `_` + language;
+      const title = foo + `Title`;
+      const sub = foo + `Sub`;
+      const preview = trunc(article[foo], 150);
 
-    let news = ``;
-    const date = new Date(article._date);
-    const form = new Intl.DateTimeFormat(language, { dateStyle: "long" });
+      let news = ``;
+      const date = new Date(article._date);
+      const form = new Intl.DateTimeFormat(language, { dateStyle: "long" });
 
-    news = `<div class="newsPart" onclick="console.log('click, now open overlay');">
+      news = `<div class="newsPart" onclick="console.log('click, now open overlay');">
             ${
               article._img
                 ? `<img
@@ -114,7 +111,8 @@ function createNews() {
             </div>
           </div>`;
 
-    document.getElementById("news").innerHTML += news;
+      document.getElementById("news").innerHTML += news;
+    }
   }
 }
 
