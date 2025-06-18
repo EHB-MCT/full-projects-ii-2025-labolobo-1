@@ -1,3 +1,5 @@
+
+
 .container {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -9,7 +11,6 @@
 .headerLogo {
 	column-gap: 16px;
 	grid-template-rows: auto;
-	width: 90%;
 	margin: 0 auto;
 }
 
@@ -17,8 +18,10 @@
 .footerContact {
 	height: auto;
 	img {
-		height: 6rem;
+		height: 4rem;
+		width: 4rem;
 		margin: 1rem;
+		margin-left: 0;
 	}
 }
 .menu-container {
