@@ -18,24 +18,13 @@ let language = navigator.language;
 
 init();
 
-function init() {
-  if (language.toLowerCase().includes("nl")) {
-    localStorage.setItem("lang", "nl");
-  } else if (language.toLowerCase().includes("fr")) {
-    localStorage.setItem("lang", "fr");
-  } else {
-    localStorage.setItem("lang", "nl");
+async function init() {
+  // forEach doesn't do waiting, for of does
+  for (const e of rapid) {
+    await fetcher(e);
   }
 
-  language = localStorage.getItem("lang");
-  console.log(language);
-
-  rapid.forEach(function (e) {
-    fetcher(e);
-  });
-  setTimeout(() => {
-    render();
-  }, 100);
+  render();
 }
 
 async function fetcher(option) {
@@ -69,8 +58,19 @@ async function fetcher(option) {
   // check if we can use `${language}` in the calls
 }
 
-function render() {
+async function render() {
+  if (language.toLowerCase().includes("nl")) {
+    localStorage.setItem("lang", "nl");
+  } else if (language.toLowerCase().includes("fr")) {
+    localStorage.setItem("lang", "fr");
+  } else {
+    localStorage.setItem("lang", "nl");
+  }
+
+  language = localStorage.getItem("lang");
+  console.log(language);
+
   console.log(txtTxt);
-  console.log(txtTxt[1]);
+  console.log(txtTxt[1]._nl);
   document.getElementById(`slogan`).innerHTML = txtTxt[1]._nl;
 }
