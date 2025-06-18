@@ -9,7 +9,7 @@
 		<script type="module" src="./js/index.js" defer></script>
 		<script src="./js/backend.js"></script>
 
-		<title>home</title>
+		<title>Contact</title>
 	</head>
 	<body>
 		<header>
@@ -33,36 +33,31 @@
 				</nav>
 			</div>
 		</header>
-		<div class="body-container">
-			<h1>CONTACT</h1>
-
-			<div class="contact">
-				<h3>Adres</h3>
-				<ul>
-					<li>Onze ruimte: Firmin Lecharlierlaan 4, 1090 Jette</li>
-					<li>Telefoon:02 270 34 11</li>
-					<li>E-mail:info@labolobo.eu</li>
-				</ul>
-				<h3>Hoofdkantoor</h3>
-				<ul>
-					<li>Labolobo asbl/vzw</li>
-					<li>Dansettestraat 47, 1090 Jette</li>
-					<li>KBO/BCE: 0547.971.014</li>
-					<li>Rekeningnummer: BE93 3631 3329 0467</li>
-				</ul>
+		<div class="container">
+			<h2>CONTACT</h2>
+			<div class="adress">
+				<p><b>Adres</b></p>
+				<p>Firmin Lecharlierlaan 4, 1090 Jette</p>
+				<p>Telefoon: <a href="callto:022703411">02 270 34 11</a></p>
+				<p>E-mail: <a href="mailto:info@labolobo.eu">info@labolobo.eu</a></p>
+				<p class="topMargin"><b>Hoofdkantoor</b></p>
+				<p>Labolobo asbl/vzw</p>
+				<p>Dansettestraat 47, 1090 Jette</p>
+				<p>KBO/BCE: 0547.971.014</p>
+				<p>Rekeningnummer: BE93 3631 3329 0467</p>
 			</div>
-			<div class="map">
+			<div class="map topMargin">
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1265.4461078082068!2d4.328299!3d50.872295!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c3c7071f6d43%3A0x1fe9061be1ea0818!2sLabolobo!5e1!3m2!1snl!2sus!4v1750164341557!5m2!1snl!2sus"
-					width="600"
-					height="450"
+					width="100%"
+					height="auto"
 					style="border: 0"
 					allowfullscreen=""
 					loading="lazy"
 					referrerpolicy="no-referrer-when-downgrade"
 				></iframe>
 			</div>
-			<div>
+			<div class="availability">
 				<h3>Bereikbaarheid</h3>
 				<p><b>NMBS/STIB</b></p>
 				<p>Metro 6: halte Belgica</p>
@@ -80,7 +75,7 @@
 					halte Belgica.
 				</p>
 			</div>
-			<div>
+			<div class="register">
 				<h3>Inschrijvingen</h3>
 				<p>
 					Via onze website of ter plaatse tijdens de openingsuren (cash).
@@ -89,30 +84,30 @@
 				</p>
 			</div>
 		</div>
+		<footer class="topMargin">
+			<div class="container">
+				<div class="footerContact">
+					<img class="logoImg" src="./assets/logos/labolobo_white.png" />
+					<p>Telefoon: <a href="tel:022703411">02 270 34 11</a></p>
+					<p>E-mail: <a href="mailto:info@labolobo.eu">info@labolobo.eu</a></p>
+					<p class="topMargin">Firmin Lecharlierlaan 4<br />1090 Jette</p>
+				</div>
+				<hr />
+				<div class="footerDono">
+					<p>
+						Een donatie doen? Dat is mogelijk op ons rekeningnummer: BE93 3631
+						3329 0467
+					</p>
+				</div>
+				<hr />
+				<div class="footerExtra">
+					<p>©2025 Alle rechten voorbehouden.</p>
+					<p>
+						<!--JOACHIM! WERKT ENKEL WANNEER NIET GOEPEND IN RESPONSIVE-->
+						<a href="/assets/documents/GDPR_2021_NL.pdf">Privacybeleid</a>
+					</p>
+				</div>
+			</div>
+		</footer>
 	</body>
-	<footer class="footer">
-		<img class="logofooter" src="./assets/logos/labolobo_white.png" />
-
-		<div class="contact-info">
-			<p>Telefoon: <a href="tel:022703411">02 270 34 11</a></p>
-			<p>E-mail: <a href="mailto:info@labolobo.eu">info@labolobo.eu</a></p>
-			<p>Firmin Lecharlierlaan 4<br />1090 Jette</p>
-		</div>
-
-		<hr />
-
-		<div class="donatie">
-			<p>
-				Een donatie doen? Dat is mogelijk op ons rekeningnummer:<br />
-				<strong>BE93 3631 3329 0467</strong>
-			</p>
-		</div>
-
-		<hr />
-
-		<div class="footer-bottom">
-			<p>©2025 Alle rechten voorbehouden.</p>
-			<a href="#">Privacybeleid</a>
-		</div>
-	</footer>
 </html>

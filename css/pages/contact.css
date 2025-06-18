@@ -1,19 +1,6 @@
-@media only screen and (max-width: 768px) {
-	.map iframe {
-		position: relative;
-		width: 90%;
-		height: 400px;
-		margin: 10px;
-	}
-
-	.contact ul,
-	li,
-	h3,
-	p {
-		margin: 10px;
-	}
-	header {
-		background-color: black !important;
-		background-image: none;
-	}
+.adress,
+.map,
+.availability,
+.register {
+	grid-column: 1 / 13;
 }
