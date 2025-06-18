@@ -74,6 +74,7 @@ function render() {
     if (HTML[foo] == undefined) {
       window.location.reload();
     }
+    console.log(HTML[foo]);
     i.innerHTML = HTML[foo];
   }
 }
