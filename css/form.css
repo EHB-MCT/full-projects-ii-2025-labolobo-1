@@ -1,9 +1,5 @@
 /* Form styles */
 
-form {
-	max-width: 80%;
-}
-
 input,
 textarea {
 	background-color: rgba(0, 0, 0, 0.05);
