@@ -127,12 +127,6 @@ header {
     gap: 10px;
   }
 
-  .newsPart {
-    grid-column: span 4;
-    margin: 10px 0;
-    cursor: pointer;
-  }
-
   .partnerLogo:hover {
     scale: 1.1;
     .partnerName {
