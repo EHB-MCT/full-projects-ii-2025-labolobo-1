@@ -68,6 +68,10 @@ function render() {
   console.log(language);
 
   console.log(txtTxt);
+  console.log(teamTxt);
+  console.log(projectsTxt);
+  console.log(articlesTxt);
+
   console.log(txtTxt[1]._nl);
 
   let HTML = `${txtTxt[1]._nl}`;

@@ -11,5 +11,4 @@ document.getElementById(`pdfOpen`).addEventListener("click", function () {
   window.open(`../assets/documents/GDPR_2021_NL.pdf`);
 });
 
-// eventlistener language button
-// geef language button een ID
+document.getElementById(`lang`).addEventListener("click", function () {});
