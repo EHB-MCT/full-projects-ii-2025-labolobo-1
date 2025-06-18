@@ -1,0 +1,50 @@
+input[type="text"] {
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 30px;
+	box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+/*
+#text {
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 30px;
+	width: 25%;
+	border: none;
+	height: 2em;
+	margin-bottom: 10px;
+	box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+	display: block;
+}
+#email {
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 30px;
+	width: 25%;
+	height: 1.8em;
+	border: none;
+	margin-bottom: 10px;
+	box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+	display: block;
+}
+#select {
+	background-color: rgba(255, 255, 255, 0.4);
+	width: 25%;
+	border-radius: 30px;
+	height: 2em;
+	margin-bottom: 10px;
+	display: block;
+	font-family: "Open Sans", "regular", sans-serif;
+	font-weight: 600;
+}
+#textarea {
+	background-color: rgba(255, 255, 255, 0.4);
+	padding: 1em;
+	border-radius: 30px;
+	height: 4em;
+	width: 25%;
+	border: none;
+	margin-bottom: 10px;
+	box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+	display: block;
+}
+
+*/
