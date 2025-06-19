@@ -70,7 +70,11 @@ header {
 
 .steunButton {
 	grid-column: 1 / 13;
-	align-self: center;
+	justify-content: center;
+}
+
+.partners h3 {
+	justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
