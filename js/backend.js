@@ -144,11 +144,12 @@ function createNews(type) {
     toOpen.forEach(function (page) {});
     const overlay = document.querySelector(".overlay");
     const overlayImg = document.querySelector(".overlay_inner img");
-    const date = document.querySelector("date");
+    const date = document.querySelector(".date");
     function open(e) {
       overlay.classList.add("display");
       const src = e.currentTarget.querySelector("img").src;
       const artDate = e.currentTarget.querySelector(".newsDate").innerText;
+      console.log(artDate);
       overlayImg.src = src;
       date.innerHTML = artDate;
     }
