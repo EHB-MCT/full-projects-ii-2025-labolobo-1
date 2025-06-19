@@ -71,7 +71,11 @@ header {
 .steunButton {
   display: grid;
   grid-column: 1 / 13;
-  align-self: center;
+  justify-content: center;
+}
+
+.partners h3 {
+  justify-content: center;
   justify-content: center;
 }
 
