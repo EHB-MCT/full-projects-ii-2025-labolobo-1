@@ -1,6 +1,8 @@
 .mission,
 .allPijlers,
-.team {
+.team,
+.helpers,
+.join {
 	grid-column: 1 / 13;
 }
 
@@ -13,12 +15,20 @@ img {
 	font-size: 16px;
 }
 
+/*height div wilt niet aanpassen aan content, naam vn medewerker wilt niet centreren*/
 .teamContainer {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 5%;
+	width: 100%;
+	height: auto;
 }
 
 .teammate {
 	grid-column: span 1;
+}
+
+.teamText p {
+	font-weight: bold;
+	justify-content: center;
 }
