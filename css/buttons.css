@@ -5,9 +5,10 @@ hamburgerButton {
 }
 
 button {
-	background-color: black;
+	background-color: #d98e04;
 	border-style: solid;
 	border-radius: 20px;
+	border-color: #d98e04;
 	margin: 25px 0px;
 	padding: 10px 15px;
 	font-family: sans-serif;
@@ -16,12 +17,10 @@ button {
 	color: whitesmoke;
 	width: fit-content;
 }
-button a:hover {
-	color: black;
-}
+
 button:hover {
 	background-color: whitesmoke;
-	color: black;
+	color: #d98e04;
 }
 
 button a {
