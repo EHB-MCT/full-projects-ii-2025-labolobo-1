@@ -3,8 +3,14 @@
 	grid-column: 1 / 13;
 }
 
+.bottomContainer {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column: 1 / 13;
+}
+
 .map {
-	grid-column: 1 / 8;
+	grid-column: 1 / 13;
 }
 
 @media only screen and (min-width: 768px) {
@@ -12,18 +18,12 @@
 		grid-column: 1 / 5;
 	}
 
-	.bottomContainer {
-		display: grid;
-		grid-template-columns: repeat(12, 1fr);
-		grid-column: 1 / 13;
-	}
-
 	.availability {
 		grid-column: 1 / 5;
 	}
 
 	.map {
-		grid-column: 7 / 12;
+		grid-column: 6 / 12;
 		min-height: 20rem;
 	}
 }
