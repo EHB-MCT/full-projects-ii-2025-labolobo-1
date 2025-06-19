@@ -1,7 +1,6 @@
 .adress,
 .map,
-.availability,
-.register {
+.availability {
 	grid-column: 1 / 13;
 }
 
@@ -12,5 +11,6 @@
 
 	.map {
 		grid-column: 7 / 13;
+		height: auto;
 	}
 }
