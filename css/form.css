@@ -8,18 +8,23 @@ textarea {
 	border: 1px solid gray;
 	box-sizing: border-box;
 }
+
 input {
 	min-height: 2em;
+	width: 100%;
 }
+
 textarea {
 	min-height: 6em;
+	width: 100%;
 }
+
 label {
-	margin-bottom: 0.5em;
-	margin-top: 0.5em;
+	margin: 0.5em 0px;
 	display: block;
 	font-weight: bold;
 }
+
 input[type="submit"] {
 	cursor: pointer;
 	background-color: black;
@@ -31,6 +36,7 @@ input[type="submit"] {
 	margin-top: 1em;
 	padding: 1em;
 }
+
 input[type="submit"]:hover {
 	background-color: whitesmoke;
 	color: black;

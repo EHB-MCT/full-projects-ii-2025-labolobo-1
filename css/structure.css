@@ -87,6 +87,10 @@ footer hr {
   margin-top: 5px;
 }
 
+img {
+  border-radius: 5px;
+}
+
 .newsImg {
   width: 100%;
   height: auto;
@@ -119,7 +123,7 @@ footer hr {
   .menu {
     display: flex;
     flex-direction: row;
-    grid-column: 7 / span 6;
+    grid-column: 4 / 13;
     align-items: center;
     justify-content: flex-end;
     gap: 20px;
