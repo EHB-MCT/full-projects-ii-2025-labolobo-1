@@ -17,13 +17,13 @@ img {
 
 .teamContainer {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
 	column-gap: 5%;
 	width: 100%;
 }
 
 .teammate {
-	grid-column: span 1;
+	grid-row: 1 / 3 ;
 }
 
 .teamText p {
@@ -74,7 +74,7 @@ img {
 		text-align: center;
 	}
 
-	.aboutUsCTA {
+	.aboutUsCTA, .aboutUsContact {
 		display: flex;
 		justify-self: center;
 	}
@@ -85,5 +85,11 @@ img {
 		margin-top: 2rem;
 	}
 
-	
+	.helpers p {
+		text-align: center;
+	}
+
+	.join p {
+		text-align: center;
+	}
 }
