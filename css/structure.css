@@ -99,5 +99,17 @@ footer hr {
     grid-column: span 4;
     margin: 10px 0;
     cursor: pointer;
+    align-self: baseline;
   }
+}
+
+.newsDate {
+  /* put here for future references in news page */
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.newsImg {
+  width: 100%;
+  height: auto;
 }
