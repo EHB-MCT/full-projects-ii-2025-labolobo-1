@@ -113,12 +113,12 @@ function createNews(type) {
               article._img
                 ? `<img
               class="newsImg"
-              src="${IP}/api/files/${directory}/${article._id}/${article._img}"/>`
+              src="${IP}/api/files/${directory}/${article._id}/${article._img}?thumb"/>`
                 : ``
             }
-            <b class="articleTitle">${article[title]}</b>
+            <h4 class="articleTitle">${article[title]}</h4>
             <p class="newsDate">${form.format(date)}</p>
-            <u class="articleSub">${article[sub]}</u>
+            <b class="articleSub">${article[sub]}</b>
             <div class="smallTopMargin bottomLine articleText">
             ${preview}
             </div>
@@ -134,10 +134,11 @@ function createNews(type) {
     <div class='overlay'>
           <div class='overlay_inner'>
           <div class="margin">
+          <div class="close">close X</div>
           <img>
           <p class="date newsDate"></p>
           <h3 class='artTitle'></h3>
-          <u class='artSub'></u>
+          <h4 class='artSub'></h4>
            <div class="artBody"></div>
             </div></div></div>`;
     const toOpen = document.querySelectorAll(".newsPart");
