@@ -4,8 +4,7 @@ import Txt from "./classes/Txt.js";
 const pb = new PocketBase("http://localhost:8090");
 // if you can't access it: you need my IP, doofus
 // might change, so ask if it doesn' work
-// address: 10.2.88.244:8090/_/
-// you know where to find the login
+// ./pocketbase serve --http=0.0.0.0:8090
 
 let txtTxt = []; //this is the only one that doesn't contain any imgs
 let projectsTxt = [];
