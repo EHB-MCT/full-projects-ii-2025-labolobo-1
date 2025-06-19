@@ -133,7 +133,8 @@ function createNews(type) {
     }></h3></div>
     <div class='overlay'>
           <div class='overlay_inner'>
-          <p class="newsDate"></p>
+          <img>
+          <p class="date"></p>
           <h3 class='articleTitle></h3>
           <u class='articleSub'></u>
            <div class="smallTopMargin articleText">
@@ -143,11 +144,13 @@ function createNews(type) {
     toOpen.forEach(function (page) {});
     const overlay = document.querySelector(".overlay");
     const overlayImg = document.querySelector(".overlay_inner img");
-
+    const date = document.querySelector("date");
     function open(e) {
       overlay.classList.add("display");
       const src = e.currentTarget.querySelector("img").src;
+      const artDate = e.currentTarget.querySelector(".newsDate").innerText;
       overlayImg.src = src;
+      date.innerHTML = artDate;
     }
     function close() {
       overlay.classList.remove("display");
