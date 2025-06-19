@@ -2,57 +2,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
 
 b,
-bold {
-	font-weight: bold;
+bold,
+strong {
+  font-weight: bold;
 }
 
 body {
-	font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1 {
-	font-family: "Bebas Neue", sans-serif;
-	font-size: 50px;
-	font-weight: 900;
-	color: #0b0835;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  color: #0b0835;
 }
 
 h2 {
-	font-family: "Bebas Neue", sans-serif;
-	font-size: 50px;
-	font-weight: bold;
-	color: #0b0835;
-	margin: 50px 0px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #0b0835;
+  margin: 50px 0px;
 }
 
 h3 {
-	font-family: "Bebas Neue", sans-serif;
-	font-size: 28px;
-	font-weight: bold;
-	color: #0b0835;
-	margin: 50px 0px 25px;
-	/* Maybe make HR later */
-	text-decoration: underline;
-	text-decoration-color: rgba(248, 154, 87, 1);
-	text-decoration-thickness: 5px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #0b0835;
+  margin: 50px 0px 25px;
+  /* Maybe make HR later */
+  text-decoration: underline;
+  text-decoration-color: rgba(248, 154, 87, 1);
+  text-decoration-thickness: 5px;
 }
 
 p {
-	font-size: 14px;
-	line-height: 120%;
-	color: #0b0835;
+  font-size: 14px;
+  line-height: 120%;
+  color: #0b0835;
 }
 
 a {
-	color: #0b0835;
+  color: #0b0835;
 }
 
 dd {
-	font-size: 14px;
-	color: #0b0835;
+  font-size: 14px;
+  color: #0b0835;
 }
 
 footer p,
 footer a {
-	color: whitesmoke;
+  color: whitesmoke;
 }
