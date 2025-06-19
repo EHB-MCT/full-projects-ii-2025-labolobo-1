@@ -11,6 +11,7 @@ let projectsTxt = [];
 let articlesTxt = [];
 let teamTxt = [];
 let language;
+let postLimit = 5;
 const rapid = [`projects`, `txt`, `articles`, `team`];
 if (!localStorage.getItem("lang")) {
   language = navigator.language;
@@ -95,7 +96,7 @@ function createNews(type) {
   if (document.getElementById(type)) {
     document.getElementById(type).innerHTML = ``;
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < postLimit; i++) {
       const article = lib[lib.length - 1 - i];
       const foo = `_` + language;
       const title = foo + `Title`;
@@ -122,6 +123,10 @@ function createNews(type) {
           </div>`;
       document.getElementById(type).innerHTML += news;
     }
+
+    document.getElementById(
+      type
+    ).innerHTML += `<div class="newsPart" id="more"><h3>Laad meer></h3></div>`;
   }
 }
 
