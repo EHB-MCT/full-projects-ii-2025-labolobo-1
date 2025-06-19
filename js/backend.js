@@ -113,7 +113,7 @@ function createNews(type) {
               article._img
                 ? `<img
               class="newsImg"
-              src="${IP}/api/files/${directory}/${article._id}/${article._img}?thumb"/>`
+              src="${IP}/api/files/${directory}/${article._id}/${article._img}?thumb=640x360"/>`
                 : ``
             }
             <h4 class="articleTitle">${article[title]}</h4>
@@ -123,6 +123,9 @@ function createNews(type) {
             ${preview}
             </div>
           </div>`;
+      console.log(
+        `${IP}/api/files/${directory}/${article._id}/${article._img}?thumb=640x360`
+      );
       document.getElementById(type).innerHTML += news;
     }
 
@@ -153,7 +156,6 @@ function createNews(type) {
       overlay.classList.add("display");
       const artId = localStorage.getItem("art");
       let art = lib.find((obj) => obj._id == artId);
-      console.log(art[foo]);
       const src = e.currentTarget.querySelector("img").src;
       const artDate = e.currentTarget.querySelector(".newsDate").innerText;
       const artTitle = e.currentTarget.querySelector(".articleTitle").innerText;
