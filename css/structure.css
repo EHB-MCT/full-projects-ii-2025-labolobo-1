@@ -87,12 +87,8 @@ footer hr {
 		flex-direction: row;
 		grid-column: 7 / span 6;
 		align-items: center;
-		width: 40rem;
-		gap: 1.5rem;
-	}
-
-	.menu a {
-		padding: 1rem;
+		justify-content: flex-end;
+		gap: 20px;
 	}
 
 	.burger-menu {
