@@ -127,7 +127,11 @@ function createNews(type) {
 
     document.getElementById(
       type
-    ).innerHTML += `<div class="newsPart" id="more"><h3>Laad meer></h3></div>`;
+    ).innerHTML += `<div id="more"><h3>Laad meer></h3></div>`;
+    document.getElementById("more").addEventListener("click", function () {
+      postLimit += 5;
+      render();
+    });
   }
 }
 
