@@ -31,3 +31,45 @@ img {
 	font-weight: bold;
 	text-align: center;
 }
+
+@media screen and (min-width: 768px) {
+	.aboutUsIntro {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+	}
+
+	.aboutUsHero {
+		grid-column: 8 / 13;
+	}
+	.aboutUsText {
+		grid-column: 1 / 7;
+	}
+
+	.pijler {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+	}
+
+	.pijlerImg {
+		grid-column: 1 / 7;
+	}
+
+	.tuktukImg {
+		grid-column: 1 / 7;
+	}
+
+	.laboloboImg {
+		grid-column: 1 / 7;
+	}
+
+	.smallTopMargin {
+		grid-column: 8 / 13;
+		align-self: center;
+	}
+
+	.topMargin {
+		grid-column: 3 / 11;
+		align-self: center;
+		text-align: center;
+	}
+}
