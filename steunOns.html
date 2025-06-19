@@ -6,7 +6,6 @@
 		<link rel="stylesheet" href="./css/reset.css" />
 		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/pages/steunOns.css" />
-		<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 		<script>
 			(function () {
 				emailjs.init("Cz9ladQZEg6akvCA5"); // <-- Vervang door je eigen EmailJS public key
@@ -69,7 +68,7 @@
 						>Doe een gift</a
 					>
 				</button>
-				<p class="responsiveMargin" aria-label="3hw9gaj5wpcw333">
+				<p aria-label="3hw9gaj5wpcw333">
 					Liever via overschrijving? Alle giften zijn welkom op ons
 					rekeningnummer:<br /><b>BE93 3631 3329 0467</b>
 				</p>
@@ -94,45 +93,46 @@
 				</div>
 			</div>
 			<div class="form">
-				<form id="contactForm">
+				<form>
 					<div class="field">
 						<label for="naam" aria-label="43pfe2645g6psy9">Naam</label>
-						<input type="text" name="naam" id="naam" required />
+						<input type="text" name="naam" class="naam" required />
 					</div>
 					<div class="field">
 						<label for="voornaam" aria-label="8pkc2m3i976h995">Voornaam</label>
-						<input type="text" name="voornaam" id="voornaam" required />
+						<input type="text" name="voornaam" class="voornaam" required />
 					</div>
 					<div class="field">
 						<label for="email" aria-label="5a09j71x03404z8">E-mailadres</label>
-						<input type="email" name="email" id="email" required />
+						<input type="email" name="email" class="email" required />
 					</div>
 					<div class="field">
 						<label for="bericht" aria-label="te11w6ahmt78b3a">Bericht</label>
-						<textarea name="bericht" id="bericht" required></textarea>
+						<textarea name="bericht" class="bericht" required></textarea>
 					</div>
 					<!-- maak tekst in deze button anders? Op deze manier kan ik de tekst erin niet aanpassen -->
-					<input type="submit" id="button" value="Verstuur" />
+					<input type="submit" class="button" value="Submit" />
 				</form>
 			</div>
 		</div>
-
 		<footer class="topMargin">
 			<div class="container">
 				<div class="footerContact">
 					<img class="logoImg" src="./assets/logos/labolobo_white.png" />
 					<p>Telefoon: <a href="tel:022703411">02 270 34 11</a></p>
 					<p>E-mail: <a href="mailto:info@labolobo.eu">info@labolobo.eu</a></p>
-					<p class="topMargin">Firmin Lecharlierlaan 4<br />1090 Jette</p>
+					<div class="addressThing">
+						<p class="topMargin">Firmin Lecharlierlaan 4<br />1090 Jette</p>
+					</div>
 				</div>
-				<hr />
+				<hr class="footerDivider1" />
 				<div class="footerDono">
 					<p>
-						Een donatie doen? Dat is mogelijk op ons rekeningnummer: BE93 3631
-						3329 0467
+						Een donatie doen? <br />
+						Dat is mogelijk op ons rekeningnummer: BE93 3631 3329 0467
 					</p>
 				</div>
-				<hr />
+				<hr class="footerDivider2" />
 				<div class="footerExtra">
 					<p>©2025 Alle rechten voorbehouden.</p>
 					<p>
