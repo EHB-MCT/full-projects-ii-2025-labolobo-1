@@ -125,9 +125,9 @@ function createNews(type) {
       document.getElementById(type).innerHTML += news;
     }
 
-    document.getElementById(
-      type
-    ).innerHTML += `<div id="more"><h3>Laad meer></h3></div>`;
+    document.getElementById(type).innerHTML += `<div id="more"><h3>${
+      language == "nl" ? "Laad meer" : "charger plus"
+    }></h3></div>`;
     document.getElementById("more").addEventListener("click", function () {
       postLimit += 5;
       render();

@@ -107,6 +107,7 @@ footer hr {
 
 #more {
   grid-column: span 4;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
