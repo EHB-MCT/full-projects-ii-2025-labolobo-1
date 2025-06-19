@@ -105,6 +105,10 @@ footer hr {
 		cursor: pointer;
 		align-self: baseline;
 	}
+
+	.footerDivider1 {
+		display: none;
+	}
 }
 
 .newsDate {
