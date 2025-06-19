@@ -90,6 +90,7 @@ footer hr {
 .newsImg {
   width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
 .newsContainer {
