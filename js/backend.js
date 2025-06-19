@@ -84,6 +84,7 @@ function createNews(type) {
   let lib;
   let directory = ``;
   let length;
+
   if (type == "news") {
     lib = articlesTxt;
     directory = `articles`;
