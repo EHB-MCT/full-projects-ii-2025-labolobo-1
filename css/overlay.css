@@ -26,7 +26,7 @@
   flex-direction: column;
   img {
     border-radius: 5px;
-    height: 20rem;
+    width: 100%;
   }
   .margin {
     width: 90%;
@@ -40,6 +40,7 @@
   }
   .artBody {
     margin-top: 0.5rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -49,4 +50,13 @@
 
 body:has(.overlay.display) {
   overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .overlay_inner {
+    img {
+      height: 22.5rem;
+      width: auto;
+    }
+  }
 }
