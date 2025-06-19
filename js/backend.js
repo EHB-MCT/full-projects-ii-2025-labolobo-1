@@ -1,6 +1,6 @@
 import Project from "./classes/Project.js";
 import Txt from "./classes/Txt.js";
-const IP = `http://localhost:8090`;
+const IP = `http://10.2.89.158:8090/`;
 // if you can't access it: you need my IP, doofus
 // might change, so ask if it doesn' work
 // ./pocketbase serve --http=0.0.0.0:8090
@@ -106,7 +106,6 @@ function createNews(type) {
       let news = ``;
       const date = new Date(article._date);
       const form = new Intl.DateTimeFormat(language, { dateStyle: "long" });
-      // localhost, has to be switched to actual IP
       news = `<div class="newsPart" onclick="console.log('click, now open overlay');">
             ${
               article._img
@@ -118,7 +117,7 @@ function createNews(type) {
             <b>${article[title]}</b>
             <p class="newsDate">${form.format(date)}</p>
             <u>${article[sub]}</u>
-            <div class="smallTopMargin">
+            <div class="smallTopMargin bottomLine">
             ${preview}
             </div>
           </div>`;
@@ -132,7 +131,7 @@ function createNews(type) {
     }></h3></div>`;
     document.getElementById("more").addEventListener("click", function () {
       postLimit += 5;
-      render();
+      createNews(type);
     });
   }
 }
