@@ -113,7 +113,7 @@ function createNews(type) {
               article._img
                 ? `<img
               class="newsImg"
-              src="${IP}/api/files/${directory}/${article._id}/${article._img}?thumb=480x360"/>`
+              src="${IP}/api/files/${directory}/${article._id}/${article._img}?thumb=578x400"/>`
                 : ``
             }
             <h4 class="articleTitle">${article[title]}</h4>
