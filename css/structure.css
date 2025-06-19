@@ -13,11 +13,11 @@
 }
 
 .headerLogo,
-.footer {
+.footerContact {
 	height: auto;
 	img {
-		height: 4rem;
 		width: 4rem;
+		height: 4rem;
 		margin: 1rem;
 		margin-left: 0;
 	}
