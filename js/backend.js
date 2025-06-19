@@ -106,7 +106,9 @@ function createNews(type) {
       let news = ``;
       const date = new Date(article._date);
       const form = new Intl.DateTimeFormat(language, { dateStyle: "long" });
-      news = `<div class="newsPart" onclick="console.log('click, now open overlay');">
+      news = `<div class="newsPart" id='${article._id}' onclick="console.log('${
+        article._id
+      }');">
             ${
               article._img
                 ? `<img
@@ -128,7 +130,34 @@ function createNews(type) {
       type
     ).innerHTML += `<div id="more" class="newsPart"><h3>${
       language == "nl" ? "Laad meer" : "charger plus"
-    }></h3></div>`;
+    }></h3></div>
+    <div class='overlay'>
+          <div class='overlay_inner'>
+          <p class="newsDate"></p>
+          <h3 class='articleTitle></h3>
+          <u class='articleSub'></u>
+           <div class="smallTopMargin articleText">
+            </div>
+          </div></div>`;
+    const toOpen = document.querySelectorAll(".newsPart");
+    toOpen.forEach(function (page) {});
+    const overlay = document.querySelector(".overlay");
+    const overlayImg = document.querySelector(".overlay_inner img");
+
+    function open(e) {
+      overlay.classList.add("display");
+      const src = e.currentTarget.querySelector("img").src;
+      overlayImg.src = src;
+    }
+    function close() {
+      overlay.classList.remove("display");
+    }
+
+    toOpen.forEach((e) => {
+      e.addEventListener("click", open);
+      overlay.addEventListener("click", close);
+    });
+
     document.getElementById("more").addEventListener("click", function () {
       postLimit += 5;
       createNews(type);
