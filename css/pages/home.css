@@ -54,7 +54,7 @@ header {
 .menu {
   display: flex;
   flex-direction: column;
-  grid-column: 12 / 13;
+  grid-column: 10 / 13;
   text-align: right;
   margin-top: 16px;
   gap: 1rem;
