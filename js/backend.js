@@ -126,14 +126,15 @@ function createNews(type) {
 
     document.getElementById(
       type
-    ).innerHTML += `<div id="more" class="newsPart"><h3>${
+    ).innerHTML += `<div id="more" class="newsPart" onclick="console.log('active')"><h3>${
       language == "nl" ? "Laad meer" : "charger plus"
     }></h3></div>`;
+    document.getElementById("more").addEventListener("click", function () {
+      postLimit += 5;
+      console.log(postLimit);
+      createNews(type);
+    });
   }
-  // document.getElementById("more").addEventListener("click", function () {
-  //   postLimit += 5;
-  //   render();
-  // });
 }
 
 function trunc(input, l) {
