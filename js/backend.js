@@ -1,6 +1,6 @@
 import Project from "./classes/Project.js";
 import Txt from "./classes/Txt.js";
-const IP = `http://localhost:8090`;
+const IP = `http://10.2.89.158:8090/`;
 // if you can't access it: you need my IP, doofus
 // might change, so ask if it doesn' work
 // ./pocketbase serve --http=0.0.0.0:8090

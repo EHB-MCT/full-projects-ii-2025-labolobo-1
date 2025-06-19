@@ -99,7 +99,7 @@ footer hr {
 }
 
 .newsPart {
-  grid-column: span 6;
+  grid-column: span 12;
   margin: 10px 0;
   cursor: pointer;
   align-self: baseline;
