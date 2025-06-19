@@ -113,7 +113,7 @@ function createNews(type) {
               article._img
                 ? `<img
               class="newsImg"
-              src="${IP}/api/files/${directory}/${article._id}/${article._img}?thumb=640x360"/>`
+              src="${IP}/api/files/${directory}/${article._id}/${article._img}?thumb=480x360"/>`
                 : ``
             }
             <h4 class="articleTitle">${article[title]}</h4>
@@ -123,9 +123,6 @@ function createNews(type) {
             ${preview}
             </div>
           </div>`;
-      console.log(
-        `${IP}/api/files/${directory}/${article._id}/${article._img}?thumb=640x360`
-      );
       document.getElementById(type).innerHTML += news;
     }
 
