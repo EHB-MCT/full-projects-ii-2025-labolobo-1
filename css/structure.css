@@ -31,7 +31,12 @@
 }
 
 .active {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	grid-column: 1 / 13;
+	justify-self: center;
+	text-align: center;
+	gap: 1rem;
 }
 
 .burger-menu {
