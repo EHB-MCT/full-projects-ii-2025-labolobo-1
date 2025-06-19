@@ -107,7 +107,8 @@ footer hr {
 	}
 
 	.footerDivider1 {
-		display: none;
+		grid-column: 4 / 5;
+		width: 0px;
 	}
 
 	.footerDono {
@@ -115,6 +116,10 @@ footer hr {
 		justify-self: center;
 		align-self: center;
 		text-align: center;
+	}
+
+	.footerExtra {
+		grid-column: 1 / 4;
 	}
 }
 
