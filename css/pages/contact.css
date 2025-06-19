@@ -1,47 +1,16 @@
-.contact,
-.map {
+.adress,
+.map,
+.availability,
+.register {
 	grid-column: 1 / 13;
-}
-
-.contact ul,
-li,
-h3,
-p {
-	margin: 10px;
-}
-h3 {
-	margin-top: 1em;
-	margin-bottom: 1em;
-}
-
-.map {
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-}
-
-.map iframe {
-	width: 100%;
-	grid-column: 1 / 13;
-	height: 400px;
-	margin: 10px;
-}
-
-.reach {
-	grid-column: 1 / 7;
-}
-.signUp {
-	grid-column: 7 / 12;
 }
 
 @media only screen and (min-width: 768px) {
-	.map iframe {
+	.adress {
 		grid-column: 1 / 7;
 	}
 
-	.reach {
-		grid-column: 8 / 10;
-	}
-	.signUp {
-		grid-column: 11 / 13;
+	.map {
+		grid-column: 7 / 13;
 	}
 }
