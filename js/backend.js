@@ -1,17 +1,17 @@
 import Project from "./classes/Project.js";
 import Txt from "./classes/Txt.js";
-
-const pb = new PocketBase("http://localhost:8090");
+const IP = `http://localhost:8090`;
 // if you can't access it: you need my IP, doofus
 // might change, so ask if it doesn' work
-// address: 10.2.88.244:8090/_/
-// you know where to find the login
+// ./pocketbase serve --http=0.0.0.0:8090
+const pb = new PocketBase(IP);
 
 let txtTxt = []; //this is the only one that doesn't contain any imgs
 let projectsTxt = [];
 let articlesTxt = [];
 let teamTxt = [];
 let language;
+let postLimit = 5;
 const rapid = [`projects`, `txt`, `articles`, `team`];
 if (!localStorage.getItem("lang")) {
   language = navigator.language;
@@ -31,7 +31,8 @@ async function init() {
     await fetcher(i);
   }
   render();
-  createNews();
+  createNews("news");
+  createNews("projects");
 }
 
 async function fetcher(option) {
@@ -79,28 +80,39 @@ function render() {
   }
 }
 
-function createNews() {
-  if (document.getElementById("news")) {
-    document.getElementById("news").innerHTML = ``;
+function createNews(type) {
+  let lib;
+  let directory = ``;
+  let length;
 
-    for (let i = 0; i < 4; i++) {
-      const article = articlesTxt[articlesTxt.length - 1 - i];
-      console.log(article);
+  if (type == "news") {
+    lib = articlesTxt;
+    directory = `articles`;
+    length = 150;
+  } else if (type == "projects") {
+    lib = projectsTxt;
+    directory = `projects`;
+    length = 300;
+  }
+  if (document.getElementById(type)) {
+    document.getElementById(type).innerHTML = ``;
+
+    for (let i = 0; i < postLimit; i++) {
+      const article = lib[lib.length - 1 - i];
       const foo = `_` + language;
       const title = foo + `Title`;
       const sub = foo + `Sub`;
-      const preview = trunc(article[foo], 150);
-
+      const preview = trunc(article[foo], length);
       let news = ``;
       const date = new Date(article._date);
       const form = new Intl.DateTimeFormat(language, { dateStyle: "long" });
-
+      // localhost, has to be switched to actual IP
       news = `<div class="newsPart" onclick="console.log('click, now open overlay');">
             ${
               article._img
                 ? `<img
               class="newsImg"
-              src="http://localhost:8090/api/files/articles/${article._id}/${article._img}"/>`
+              src="${IP}/api/files/${directory}/${article._id}/${article._img}"/>`
                 : ``
             }
             <b>${article[title]}</b>
@@ -110,9 +122,18 @@ function createNews() {
             ${preview}
             </div>
           </div>`;
-
-      document.getElementById("news").innerHTML += news;
+      document.getElementById(type).innerHTML += news;
     }
+
+    document.getElementById(
+      type
+    ).innerHTML += `<div id="more" class="newsPart"><h3>${
+      language == "nl" ? "Laad meer" : "charger plus"
+    }></h3></div>`;
+    document.getElementById("more").addEventListener("click", function () {
+      postLimit += 5;
+      render();
+    });
   }
 }
 

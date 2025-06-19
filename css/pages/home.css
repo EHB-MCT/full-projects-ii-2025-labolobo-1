@@ -33,11 +33,6 @@ header {
   }
 }
 
-.newsPart2,
-.newsPart3 {
-  margin-top: 50px;
-}
-
 .partnerLogos {
   z-index: 1;
   display: flex;
@@ -118,12 +113,6 @@ header {
   .aboutUsTextnButton {
     grid-column: 8 / 13;
     align-self: center;
-  }
-
-  .newsContainer {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 10px;
   }
 
   .partnerLogo:hover {
