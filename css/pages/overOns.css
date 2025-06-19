@@ -1,74 +1,24 @@
-/* general styling for main */
-
-main {
-	margin-left: 10%;
-	margin-right: 10%;
+.mission,
+.allPijlers,
+.team {
+	grid-column: 1 / 13;
 }
 
-p a {
-	color: black;
-}
-main h4 {
-	margin-top: 1em;
-	margin-bottom: 1em;
-	font-weight: bolder;
-}
-main p {
-	margin-top: 1em;
-	margin-bottom: 1em;
-	max-width: 100%;
+img {
+	width: 100%;
+	height: auto;
 }
 
-/* Mission section */
-
-.mission {
-	width: 90%;
-	margin: 0 auto;
-	justify-content: center;
-	align-content: center;
-}
-.mission img {
-	max-width: 100%;
-}
-.mission p {
-	max-width: 85%;
-	margin: 1.5em auto;
-	line-height: 120%;
+.pijlers {
+	font-size: 16px;
 }
 
-/* team Grid */
-
-.gridContainer {
+.teamContainer {
 	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-row-gap: 2em;
-	max-width: 70%;
-	margin: 0 auto;
-	padding: 1em;
-}
-.gridContainer img {
-	display: block;
-}
-.gridContainer strong {
-	display: block;
-	margin-top: 1em;
-}
-.gridTeam1 {
-	grid-column-start: 1;
-	grid-column-end: 2;
-	align-content: center;
-	justify-content: center;
-}
-.gridTeam2 {
-	grid-column-start: 2;
-	grid-column-end: 3;
-	align-content: center;
-	justify-content: center;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 5%;
 }
 
-/* Team section */
-
-.team p {
-	max-width: 85%;
-	margin: 1.5em auto;
+.teammate {
+	grid-column: span 1;
 }
