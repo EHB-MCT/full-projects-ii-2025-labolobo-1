@@ -70,12 +70,10 @@ header {
 
 .steunButton {
   display: grid;
-  grid-column: 1 / 13;
   justify-content: center;
 }
 
 .partners h3 {
-  justify-content: center;
   text-align: center;
 }
 
