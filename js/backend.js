@@ -30,7 +30,8 @@ async function init() {
     await fetcher(i);
   }
   render();
-  createNews();
+  createNews("news");
+  createNews("projects");
 }
 
 async function fetcher(option) {
@@ -78,28 +79,38 @@ function render() {
   }
 }
 
-function createNews() {
-  if (document.getElementById("news")) {
-    document.getElementById("news").innerHTML = ``;
+function createNews(type) {
+  let lib;
+  let directory = ``;
+  let length;
+  if (type == "news") {
+    lib = articlesTxt;
+    directory = `articles`;
+    length = 150;
+  } else if (type == "projects") {
+    lib = projectsTxt;
+    directory = `projects`;
+    length = 300;
+  }
+  if (document.getElementById(type)) {
+    document.getElementById(type).innerHTML = ``;
 
     for (let i = 0; i < 4; i++) {
-      const article = articlesTxt[articlesTxt.length - 1 - i];
-      console.log(article);
+      const article = lib[lib.length - 1 - i];
       const foo = `_` + language;
       const title = foo + `Title`;
       const sub = foo + `Sub`;
-      const preview = trunc(article[foo], 150);
-
+      const preview = trunc(article[foo], length);
       let news = ``;
       const date = new Date(article._date);
       const form = new Intl.DateTimeFormat(language, { dateStyle: "long" });
-
+      // localhost, has to be switched to actual IP
       news = `<div class="newsPart" onclick="console.log('click, now open overlay');">
             ${
               article._img
                 ? `<img
               class="newsImg"
-              src="http://localhost:8090/api/files/articles/${article._id}/${article._img}"/>`
+              src="http://localhost:8090/api/files/${directory}/${article._id}/${article._img}"/>`
                 : ``
             }
             <b>${article[title]}</b>
@@ -109,8 +120,7 @@ function createNews() {
             ${preview}
             </div>
           </div>`;
-
-      document.getElementById("news").innerHTML += news;
+      document.getElementById(type).innerHTML += news;
     }
   }
 }

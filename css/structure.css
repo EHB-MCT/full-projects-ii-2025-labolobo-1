@@ -76,6 +76,30 @@ footer hr {
   grid-column: 1 / 13;
 }
 
+.newsDate {
+  /* put here for future references in news page */
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.newsImg {
+  width: 100%;
+  height: auto;
+}
+
+.newsContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+}
+
+.newsPart {
+  grid-column: span 4;
+  margin: 10px 0;
+  cursor: pointer;
+  align-self: baseline;
+}
+
 @media screen and (min-width: 768px) {
   .menu {
     display: flex;
@@ -94,22 +118,4 @@ footer hr {
   .burger-menu {
     display: none;
   }
-
-  .newsPart {
-    grid-column: span 4;
-    margin: 10px 0;
-    cursor: pointer;
-    align-self: baseline;
-  }
-}
-
-.newsDate {
-  /* put here for future references in news page */
-  font-size: 11px;
-  margin-top: 5px;
-}
-
-.newsImg {
-  width: 100%;
-  height: auto;
 }
