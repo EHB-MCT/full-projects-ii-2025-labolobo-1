@@ -1,6 +1,6 @@
 import Project from "./classes/Project.js";
 import Txt from "./classes/Txt.js";
-const IP = `http://10.2.89.158:8090/`;
+const IP = `http://localhost:8090/`;
 // if you can't access it: you need my IP, doofus
 // might change, so ask if it doesn' work
 // ./pocketbase serve --http=0.0.0.0:8090
@@ -96,28 +96,30 @@ function createNews(type) {
   }
   if (document.getElementById(type)) {
     document.getElementById(type).innerHTML = ``;
+    const foo = `_` + language;
 
     for (let i = 0; i < postLimit; i++) {
       const article = lib[lib.length - 1 - i];
-      const foo = `_` + language;
       const title = foo + `Title`;
       const sub = foo + `Sub`;
       const preview = trunc(article[foo], length);
       let news = ``;
       const date = new Date(article._date);
       const form = new Intl.DateTimeFormat(language, { dateStyle: "long" });
-      news = `<div class="newsPart" onclick="console.log('click, now open overlay');">
+      news = `<div class="newsPart" id='${
+        article._id
+      }' onclick="localStorage.setItem('art', '${article._id}');">
             ${
               article._img
                 ? `<img
               class="newsImg"
-              src="${IP}/api/files/${directory}/${article._id}/${article._img}"/>`
+              src="${IP}/api/files/${directory}/${article._id}/${article._img}?thumb"/>`
                 : ``
             }
-            <b>${article[title]}</b>
+            <h4 class="articleTitle">${article[title]}</h4>
             <p class="newsDate">${form.format(date)}</p>
-            <u>${article[sub]}</u>
-            <div class="smallTopMargin bottomLine">
+            <b class="articleSub">${article[sub]}</b>
+            <div class="smallTopMargin bottomLine articleText">
             ${preview}
             </div>
           </div>`;
@@ -128,7 +130,51 @@ function createNews(type) {
       type
     ).innerHTML += `<div id="more" class="newsPart"><h3>${
       language == "nl" ? "Laad meer" : "charger plus"
-    }></h3></div>`;
+    }></h3></div>
+    <div class='overlay'>
+          <div class='overlay_inner'>
+          <div class="margin">
+          <div class="close">close X</div>
+          <img>
+          <p class="date newsDate"></p>
+          <h3 class='artTitle'></h3>
+          <h4 class='artSub'></h4>
+           <div class="artBody"></div>
+            </div></div></div>`;
+    const toOpen = document.querySelectorAll(".newsPart");
+    toOpen.forEach(function (page) {});
+    const overlay = document.querySelector(".overlay");
+    const overlayImg = document.querySelector(".overlay_inner img");
+    const date = document.querySelector(".date");
+    const title = document.querySelector(".artTitle");
+    const sub = document.querySelector(".artSub");
+    const text = document.querySelector(".artBody");
+    function open(e) {
+      overlay.classList.add("display");
+      const artId = localStorage.getItem("art");
+      let art = lib.find((obj) => obj._id == artId);
+      console.log(art[foo]);
+      const src = e.currentTarget.querySelector("img").src;
+      const artDate = e.currentTarget.querySelector(".newsDate").innerText;
+      const artTitle = e.currentTarget.querySelector(".articleTitle").innerText;
+      const artSub = e.currentTarget.querySelector(".articleSub").innerText;
+      const artTxt = art[foo];
+
+      overlayImg.src = src;
+      date.innerHTML = artDate;
+      title.innerHTML = artTitle;
+      sub.innerHTML = artSub;
+      text.innerHTML = artTxt;
+    }
+    function close() {
+      overlay.classList.remove("display");
+    }
+
+    toOpen.forEach((e) => {
+      e.addEventListener("click", open);
+      overlay.addEventListener("click", close);
+    });
+
     document.getElementById("more").addEventListener("click", function () {
       postLimit += 5;
       createNews(type);
