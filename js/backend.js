@@ -1,10 +1,10 @@
 import Project from "./classes/Project.js";
 import Txt from "./classes/Txt.js";
-
-const pb = new PocketBase("http://localhost:8090");
+const IP = `http://localhost:8090`;
 // if you can't access it: you need my IP, doofus
 // might change, so ask if it doesn' work
 // ./pocketbase serve --http=0.0.0.0:8090
+const pb = new PocketBase(IP);
 
 let txtTxt = []; //this is the only one that doesn't contain any imgs
 let projectsTxt = [];
@@ -112,7 +112,7 @@ function createNews(type) {
               article._img
                 ? `<img
               class="newsImg"
-              src="http://localhost:8090/api/files/${directory}/${article._id}/${article._img}"/>`
+              src="${IP}/api/files/${directory}/${article._id}/${article._img}"/>`
                 : ``
             }
             <b>${article[title]}</b>
@@ -125,7 +125,9 @@ function createNews(type) {
       document.getElementById(type).innerHTML += news;
     }
 
-    document.getElementById(type).innerHTML += `<div id="more"><h3>${
+    document.getElementById(
+      type
+    ).innerHTML += `<div id="more" class="newsPart"><h3>${
       language == "nl" ? "Laad meer" : "charger plus"
     }></h3></div>`;
     document.getElementById("more").addEventListener("click", function () {
