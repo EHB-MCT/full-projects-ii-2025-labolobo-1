@@ -1,98 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./css/reset.css" />
-		<link rel="stylesheet" href="./css/style.css" />
-		<title>Niews</title>
-	</head>
-	<body>
-		<header>
-			<div class="menu-container">
-				<div class="burger-menu" id="burgerMenu">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Niews</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-container">
+        <div class="burger-menu" id="burgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-				<nav class="menu" id="menu">
-					<div class="navItem"><a href="./index.html">Home</a></div>
-					<div class="navItem">
-						<a href="./overOns.html" aria-label="1611b0n86psu6k5">Over ons</a>
-					</div>
-					<div class="navItem">
-						<a href="./projecten.html" aria-label="w1s24580017r0ut"
-							>Projecten</a
-						>
-					</div>
-					<div class="navItem">
-						<a href="./steunOns.html" aria-label="t34s93ityx4n0f5">Steun ons</a>
-					</div>
-					<div class="navItem"><a href="./contact.html">Contact</a></div>
-					<div class="navItem">
-						<button id="language" aria-label="nbew7c1970dx1h3">NL</button>
-					</div>
-				</nav>
-			</div>
-			<div class="logo">
-				<div class="headerLogo">
-					<img class="logoImg" src="./assets/logos/labolobo_white.png" />
-				</div>
-			</div>
-		</header>
+        <nav class="menu" id="menu">
+          <div class="navItem"><a href="./index.html">Home</a></div>
+          <div class="navItem">
+            <a href="./overOns.html" aria-label="1611b0n86psu6k5">Over ons</a>
+          </div>
+          <div class="navItem">
+            <a href="./projecten.html" aria-label="w1s24580017r0ut"
+              >Projecten</a
+            >
+          </div>
+          <div class="navItem currentPage">
+            <a href="./nieuws.html" aria-label="w1s24580017r0ut">Nieuws</a>
+          </div>
+          <div class="navItem">
+            <a href="./steunOns.html" aria-label="t34s93ityx4n0f5">Steun ons</a>
+          </div>
+          <div class="navItem"><a href="./contact.html">Contact</a></div>
+          <div class="navItem">
+            <button id="language" aria-label="nbew7c1970dx1h3">NL</button>
+          </div>
+        </nav>
+      </div>
+      <div class="logo">
+        <div class="headerLogo">
+          <img class="logoImg" src="./assets/logos/labolobo_white.png" />
+        </div>
+      </div>
+    </header>
 
-		<div class="container">
-			<h2 aria-label="axw370m5e4oqt3u">Nieuws</h2>
-		</div>
-		<div class="container">
-			<div id="news">
-				<div
-					class="newsPart"
-					id="${article._id}"
-					onclick="localStorage.setItem('art', '${article._id}');"
-				>
-					<img class="newsImg" src="./assets/DDD 17.JPG" />
-					<h4 class="articleTitle">Bye bye</h4>
-					<p class="newsDate">32 Oktober 3000</p>
-					<b class="articleSub">Ding dong the witch is dead</b>
-					<div class="smallTopMargin bottomLine articleText">
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
-						consequuntur suscipit nulla quas commodi incidunt reprehenderit
-						blanditiis accusantium...
-					</div>
-				</div>
-			</div>
-		</div>
-		<footer class="topMargin">
-			<div class="container">
-				<div class="footerContact">
-					<img class="logoImg" src="./assets/logos/labolobo_white.png" />
-					<p>Telefoon: <a href="tel:022703411">02 270 34 11</a></p>
-					<p>E-mail: <a href="mailto:info@labolobo.eu">info@labolobo.eu</a></p>
-					<div class="addressThing">
-						<p class="topMargin">Firmin Lecharlierlaan 4<br />1090 Jette</p>
-					</div>
-				</div>
-				<hr class="footerDivider1" />
-				<div class="footerDono">
-					<p>
-						Een donatie doen? <br />
-						Dat is mogelijk op ons rekeningnummer: BE93 3631 3329 0467
-					</p>
-				</div>
-				<hr class="footerDivider2" />
-				<div class="footerExtra">
-					<p>©2025 Alle rechten voorbehouden.</p>
-					<p>
-						<a href="/assets/documents/GDPR_2021_NL.pdf" id="pdfOpen"
-							>Privacybeleid</a
-						>
-					</p>
-				</div>
-			</div>
-		</footer>
-	</body>
+    <div class="container">
+      <h2 aria-label="axw370m5e4oqt3u">Nieuws</h2>
+    </div>
+    <div class="container">
+      <div id="news">
+        <div
+          class="newsPart"
+          id="${article._id}"
+          onclick="localStorage.setItem('art', '${article._id}');"
+        >
+          <img class="newsImg" src="./assets/DDD 17.JPG" />
+          <h4 class="articleTitle">Bye bye</h4>
+          <p class="newsDate">32 Oktober 3000</p>
+          <b class="articleSub">Ding dong the witch is dead</b>
+          <div class="smallTopMargin bottomLine articleText">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+            consequuntur suscipit nulla quas commodi incidunt reprehenderit
+            blanditiis accusantium...
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="topMargin">
+      <div class="container">
+        <div class="footerContact">
+          <img class="logoImg" src="./assets/logos/labolobo_white.png" />
+          <p>Telefoon: <a href="tel:022703411">02 270 34 11</a></p>
+          <p>E-mail: <a href="mailto:info@labolobo.eu">info@labolobo.eu</a></p>
+          <div class="addressThing">
+            <p class="topMargin">Firmin Lecharlierlaan 4<br />1090 Jette</p>
+          </div>
+        </div>
+        <hr class="footerDivider1" />
+        <div class="footerDono">
+          <p>
+            Een donatie doen? <br />
+            Dat is mogelijk op ons rekeningnummer: BE93 3631 3329 0467
+          </p>
+        </div>
+        <hr class="footerDivider2" />
+        <div class="footerExtra">
+          <p>©2025 Alle rechten voorbehouden.</p>
+          <p>
+            <a href="/assets/documents/GDPR_2021_NL.pdf" id="pdfOpen"
+              >Privacybeleid</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
 <script src="./pocketbase.umd.js"></script>
 <script type="module" src="./js/index.js"></script>
