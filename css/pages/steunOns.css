@@ -1,61 +1,65 @@
 .steun,
 .vrijwilliger {
-  grid-column: 1 / 13;
+	grid-column: 1 / 13;
 }
 
 .form.topMargin {
-  display: flex;
-  flex-direction: column;
-  justify-self: left;
+	display: flex;
+	flex-direction: column;
+	justify-self: left;
 }
 
 .nameDiv,
 .surnameDiv,
 .emailDiv,
 .explanationDiv {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 .giftButton {
-  width: 10rem;
-  height: 3rem;
+	width: 10rem;
+	height: 3rem;
 }
 
 .giftButton:hover {
-  a {
-    color: black;
-  }
+	a {
+		color: black;
+	}
 }
 
 @media screen and (min-width: 768px) {
-  .steun {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-  }
+	.steun {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+	}
 
-  .steun p,
-  b,
-  h2 {
-    grid-column: 1 / 7;
-  }
+	.steun p,
+	b,
+	h2 {
+		grid-column: 1 / 7;
+	}
 
-  .giftButton {
-    grid-column: 8 / 13;
-    margin: 0;
-  }
+	.giftButton {
+		grid-column: 8 / 13;
+		margin: 0;
+	}
 
-  .vrijwilliger {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column: 1 / 13;
-  }
+	.vrijwilliger {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-column: 1 / 13;
+	}
 
-  .vrijwilligerText {
-    grid-column: 1 / 7;
-  }
+	.vrijwilligerText {
+		grid-column: 1 / 7;
+	}
 
-  .form.topMargin {
-    grid-column: 8 / 13;
-    align-self: center;
-  }
+	.form.topMargin {
+		grid-column: 8 / 13;
+		align-self: center;
+	}
+
+	.responsiveMargin {
+		margin: 10px 0px;
+	}
 }
