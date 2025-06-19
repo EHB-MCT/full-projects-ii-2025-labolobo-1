@@ -106,7 +106,6 @@ function createNews(type) {
       let news = ``;
       const date = new Date(article._date);
       const form = new Intl.DateTimeFormat(language, { dateStyle: "long" });
-      // localhost, has to be switched to actual IP
       news = `<div class="newsPart" onclick="console.log('click, now open overlay');">
             ${
               article._img
@@ -118,7 +117,7 @@ function createNews(type) {
             <b>${article[title]}</b>
             <p class="newsDate">${form.format(date)}</p>
             <u>${article[sub]}</u>
-            <div class="smallTopMargin">
+            <div class="smallTopMargin bottomLine">
             ${preview}
             </div>
           </div>`;
@@ -130,11 +129,11 @@ function createNews(type) {
     ).innerHTML += `<div id="more" class="newsPart"><h3>${
       language == "nl" ? "Laad meer" : "charger plus"
     }></h3></div>`;
-    document.getElementById("more").addEventListener("click", function () {
-      postLimit += 5;
-      render();
-    });
   }
+  // document.getElementById("more").addEventListener("click", function () {
+  //   postLimit += 5;
+  //   render();
+  // });
 }
 
 function trunc(input, l) {
