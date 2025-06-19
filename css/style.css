@@ -26,3 +26,7 @@ hr {
 footer {
   background-color: black;
 }
+
+.currentPage {
+  text-decoration: overline 2px solid rgba(245, 245, 245, 0.7);
+}
