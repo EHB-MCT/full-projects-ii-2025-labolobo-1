@@ -56,16 +56,22 @@ header {
   flex-direction: column;
   grid-column: 10 / 13;
   text-align: right;
-  margin-top: 16px;
+  margin-top: 1rem;
   gap: 1rem;
 }
 
 .menu a {
   display: flex;
   background-color: #0d101d90;
-  padding: 1rem;
+  padding: 0.5rem;
   /* justify-content: space-between; */
   justify-self: right;
+  border-radius: 5px;
+}
+
+.currentPage {
+  text-decoration: none;
+  /* add some colour here to highlight or smth */
 }
 
 .steunButton {
@@ -86,7 +92,7 @@ header {
   .menu {
     display: flex;
     flex-direction: row;
-    grid-column: 7 / 13;
+    grid-column: 4 / 13;
     align-items: center;
     justify-content: flex-end;
     gap: 20px;
