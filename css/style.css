@@ -5,29 +5,30 @@
 @import "./overlay.css";
 
 header {
-  background-color: black;
-  background-position: center;
-  background-size: cover;
+	background-color: #e17722;
+	background-position: center;
+	background-size: cover;
 }
 
 header {
-  color: whitesmoke;
-  a {
-    color: whitesmoke;
-    text-decoration: none;
-  }
+	color: whitesmoke;
+	a {
+		color: whitesmoke;
+		text-decoration: none;
+	}
 }
 
 hr {
-  color: #c4c8d8;
-  margin: 25px 0px;
+	color: #c4c8d8;
+	margin: 25px 0px;
 }
 
 footer {
-  background-color: black;
+	background-color: black;
 }
+
 @media only screen and (min-width: 768px) {
-  .currentPage {
-    text-decoration: overline 2px solid rgba(245, 245, 245, 0.7);
-  }
+	.currentPage {
+		text-decoration: overline 2px solid rgba(245, 245, 245, 0.7);
+	}
 }
