@@ -59,12 +59,20 @@ a {
 
 	.pijlers,
 	.extraTextPijler,
-	.aboutUsButton {
+	.aboutUsButton,
+	.contactButton {
 		grid-column: 1 / 13;
 	}
 
 	.wanting {
+		grid-column: 1 / 13;
 		text-align: center;
+	}
+
+	.aboutUsButton,
+	.contactButton {
+		display: grid;
+		justify-content: center;
 	}
 
 	.bigMargin {
@@ -73,12 +81,6 @@ a {
 
 	.pijler {
 		grid-column: span 4;
-	}
-
-	.aboutUsCTA,
-	.aboutUsContact {
-		display: flex;
-		justify-self: center;
 	}
 
 	.helpers p {
