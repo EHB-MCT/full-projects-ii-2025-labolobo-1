@@ -51,32 +51,28 @@ a {
 		align-self: center;
 	}
 
-	.pijler {
+	.allPijlers {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
+		column-gap: 5%;
 	}
 
-	.pijlerImg {
-		grid-column: 1 / 7;
+	.pijlers,
+	.extraTextPijler,
+	.aboutUsButton {
+		grid-column: 1 / 13;
 	}
 
-	.tuktukImg {
-		grid-column: 1 / 7;
-	}
-
-	.laboloboImg {
-		grid-column: 1 / 7;
-	}
-
-	.smallTopMargin {
-		grid-column: 8 / 13;
-		align-self: center;
-	}
-
-	.topMargin {
-		grid-column: 3 / 11;
-		align-self: center;
+	.wanting {
 		text-align: center;
+	}
+
+	.bigMargin {
+		margin-top: 60px;
+	}
+
+	.pijler {
+		grid-column: span 4;
 	}
 
 	.aboutUsCTA,
