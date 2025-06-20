@@ -142,36 +142,41 @@ function createNews(type) {
            <div class="artBody"></div>
             </div></div></div>`;
     const toOpen = document.querySelectorAll(".newsPart");
-    toOpen.forEach(function (page) {});
     const overlay = document.querySelector(".overlay");
     const overlayImg = document.querySelector(".overlay_inner img");
     const date = document.querySelector(".date");
     const title = document.querySelector(".artTitle");
     const sub = document.querySelector(".artSub");
     const text = document.querySelector(".artBody");
-    function open(e) {
-      overlay.classList.add("display");
-      const artId = localStorage.getItem("art");
-      let art = lib.find((obj) => obj._id == artId);
-      const src = e.currentTarget.querySelector("img").src;
-      const artDate = e.currentTarget.querySelector(".newsDate").innerText;
-      const artTitle = e.currentTarget.querySelector(".articleTitle").innerText;
-      const artSub = e.currentTarget.querySelector(".articleSub").innerText;
-      const artTxt = art[foo];
 
-      overlayImg.src = src;
-      date.innerHTML = artDate;
-      title.innerHTML = artTitle;
-      sub.innerHTML = artSub;
-      text.innerHTML = artTxt;
+    function open(e) {
+      if (e.currentTarget.id != `more`) {
+        overlay.classList.add("display");
+        const artId = localStorage.getItem("art");
+        let art = lib.find((obj) => obj._id == artId);
+        const src = e.currentTarget.querySelector("img").src;
+        const artDate = e.currentTarget.querySelector(".newsDate").innerText;
+        const artTitle =
+          e.currentTarget.querySelector(".articleTitle").innerText;
+        const artSub = e.currentTarget.querySelector(".articleSub").innerText;
+        const artTxt = art[foo];
+
+        overlayImg.src = src;
+        date.innerHTML = artDate;
+        title.innerHTML = artTitle;
+        sub.innerHTML = artSub;
+        text.innerHTML = artTxt;
+      }
     }
     function close() {
       overlay.classList.remove("display");
+      localStorage.removeItem("art");
     }
 
     toOpen.forEach((e) => {
       e.addEventListener("click", open);
       overlay.addEventListener("click", close);
+      console.log(e);
     });
 
     document.getElementById("more").addEventListener("click", function () {
