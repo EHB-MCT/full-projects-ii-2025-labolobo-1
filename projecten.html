@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/pages/projecten.css" />
     <title>Projecten</title>
   </head>
   <body>
@@ -45,9 +44,25 @@
 
     <div class="container">
       <h2 aria-label="w1s24580017r0ut">Projecten</h2>
-    </div>
-    <div id="projects" class="newsContainer"></div>
 
+      <div id="projects" class="newsContainer">
+        <div
+          class="newsPart"
+          id="${article._id}"
+          onclick="localStorage.setItem('art', '${article._id}');"
+        >
+          <img class="newsImg" src="./assets/DDD 17.JPG" />
+          <h4 class="articleTitle">Bye bye</h4>
+          <p class="newsDate">32 Oktober 3000</p>
+          <b class="articleSub">Ding dong the witch is dead</b>
+          <div class="smallTopMargin bottomLine articleText">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere
+            consequuntur suscipit nulla quas commodi incidunt reprehenderit
+            blanditiis accusantium...
+          </div>
+        </div>
+      </div>
+    </div>
     <footer class="topMargin">
       <div class="container">
         <div class="footerContact">
