@@ -1,0 +1,29 @@
+button,
+headerButton,
+hamburgerButton {
+	cursor: pointer;
+}
+
+button {
+	background-color: #d98e04;
+	border-style: solid;
+	border-radius: 20px;
+	border-color: #d98e04;
+	margin: 25px 0px;
+	padding: 10px 15px;
+	font-family: sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: whitesmoke;
+	width: fit-content;
+}
+
+button:hover {
+	background-color: whitesmoke;
+	color: #d98e04;
+}
+
+button a {
+	color: whitesmoke;
+	text-decoration: none;
+}

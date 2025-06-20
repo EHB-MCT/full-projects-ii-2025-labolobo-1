@@ -1,0 +1,43 @@
+/* Form styles */
+
+input,
+textarea {
+	background-color: rgba(0, 0, 0, 0.05);
+	border-radius: 8px;
+	display: block;
+	border: 1px solid gray;
+	box-sizing: border-box;
+}
+
+input {
+	min-height: 2em;
+	width: 100%;
+}
+
+textarea {
+	min-height: 6em;
+	width: 100%;
+}
+
+label {
+	margin: 0.5em 0px;
+	display: block;
+	font-weight: bold;
+}
+
+input[type="submit"] {
+	cursor: pointer;
+	background-color: black;
+	border-style: solid;
+	border-radius: 20px;
+	font-weight: bold;
+	color: whitesmoke;
+	width: fit-content;
+	margin-top: 1em;
+	padding: 1em;
+}
+
+input[type="submit"]:hover {
+	background-color: whitesmoke;
+	color: black;
+}

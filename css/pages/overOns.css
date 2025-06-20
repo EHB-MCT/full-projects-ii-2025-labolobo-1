@@ -1,0 +1,103 @@
+.mission,
+.allPijlers,
+.team,
+.helpers,
+.join {
+	grid-column: 1 / 13;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.pijlers {
+	font-size: 16px;
+}
+
+.teamText p {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.teammate {
+	max-width: 10rem;
+	justify-self: center;
+	margin-top: 2rem;
+	margin: 0.5rem;
+}
+
+.teamContainer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+a {
+	text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+	.aboutUsIntro {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+	}
+
+	.aboutUsHero {
+		grid-column: 7 / 13;
+	}
+	.aboutUsText {
+		grid-column: 1 / 6;
+		align-self: center;
+	}
+
+	.allPijlers {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		column-gap: 5%;
+	}
+
+	.pijlers,
+	.extraTextPijler,
+	.aboutUsButton,
+	.contactButton {
+		grid-column: 1 / 13;
+	}
+
+	.wanting {
+		grid-column: 1 / 13;
+		text-align: center;
+	}
+
+	.aboutUsButton,
+	.contactButton {
+		display: grid;
+		justify-content: center;
+	}
+
+	.bigMargin {
+		margin-top: 60px;
+	}
+
+	.pijler {
+		grid-column: span 4;
+	}
+
+	.helpers p {
+		text-align: center;
+	}
+
+	.join p {
+		text-align: center;
+	}
+
+	.teamRow1 {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.teamRow2 {
+		display: flex;
+		justify-content: space-around;
+	}
+}
