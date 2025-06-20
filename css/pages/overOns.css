@@ -15,8 +15,6 @@ img {
 	font-size: 16px;
 }
 
-
-
 .teamText p {
 	font-size: 16px;
 	font-weight: bold;
@@ -35,6 +33,10 @@ img {
 	grid-template-columns: repeat(2, 1fr);
 }
 
+a {
+	text-decoration: none;
+}
+
 @media screen and (min-width: 768px) {
 	.aboutUsIntro {
 		display: grid;
@@ -49,37 +51,36 @@ img {
 		align-self: center;
 	}
 
-	.pijler {
+	.allPijlers {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
+		column-gap: 5%;
 	}
 
-	.pijlerImg {
-		grid-column: 1 / 7;
+	.pijlers,
+	.extraTextPijler,
+	.aboutUsButton,
+	.contactButton {
+		grid-column: 1 / 13;
 	}
 
-	.tuktukImg {
-		grid-column: 1 / 7;
-	}
-
-	.laboloboImg {
-		grid-column: 1 / 7;
-	}
-
-	.smallTopMargin {
-		grid-column: 8 / 13;
-		align-self: center;
-	}
-
-	.topMargin {
-		grid-column: 3 / 11;
-		align-self: center;
+	.wanting {
+		grid-column: 1 / 13;
 		text-align: center;
 	}
 
-	.aboutUsCTA, .aboutUsContact {
-		display: flex;
-		justify-self: center;
+	.aboutUsButton,
+	.contactButton {
+		display: grid;
+		justify-content: center;
+	}
+
+	.bigMargin {
+		margin-top: 60px;
+	}
+
+	.pijler {
+		grid-column: span 4;
 	}
 
 	.helpers p {
