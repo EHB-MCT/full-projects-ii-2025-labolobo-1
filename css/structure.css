@@ -99,12 +99,13 @@ img {
 
 .newsContainer {
   display: grid;
+  grid-column: 1/13;
   grid-template-columns: repeat(12, 1fr);
   gap: 10px;
 }
 
 .newsPart {
-  grid-column: span 12;
+  grid-column: 1/13;
   margin: 10px 0;
   cursor: pointer;
   align-self: baseline;
